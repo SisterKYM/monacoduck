@@ -1,0 +1,19 @@
+{% comment %} 
+This file handles block.settings from the product-template section block
+ {% endcomment %}
+
+
+
+<div class="product-review">
+    <div class="review-container">
+        <div class="image-container">
+            {%- assign img_url = block.settings.review_image | img_url: '200x200' -%}
+            <img class="lazyload review-image"
+                data-src="{{ img_url }}">
+        </div>
+        <div class="text-container">
+            <h4 class="review-name">{{ block.settings.review_author }}</h4>
+            <div class="review-text">{{ block.settings.review_text }}</div>
+        </div>
+    </div>
+</div>

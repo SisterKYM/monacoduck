@@ -1,0 +1,45 @@
+<script defer type="text/javascript">
+  document.addEventListener("DOMContentLoaded", () => {
+    //added delayed loading
+    var scriptsLoadDelay = 6500;
+
+    setTimeout(function () {
+      // Gorgias Script
+        !function(_){_.GORGIAS_CHAT_APP_ID="1223",_.GORGIAS_CHAT_BASE_URL="us-east1-898b.production.gorgias.chat",_.GORGIAS_API_BASE_URL="config.gorgias.chat";var e=new XMLHttpRequest;e.open("GET","https://config.gorgias.chat/applications/1223",!0),e.onload=function(n){if(4===e.readyState)if(200===e.status){var t=JSON.parse(e.responseText);if(!t.application||!t.bundleVersion)throw new Error("Missing fields in the response body - https://config.gorgias.chat/applications/1223");if(_.GORGIAS_CHAT_APP=t.application,_.GORGIAS_CHAT_BUNDLE_VERSION=t.bundleVersion,t&&t.texts&&(_.GORGIAS_CHAT_TEXTS=t.texts),!document.getElementById("gorgias-chat-container")){var o=document.createElement("div");o.id="gorgias-chat-container",document.body.appendChild(o);var r=document.createElement("script");r.setAttribute("defer",!0),r.src="https://storage.googleapis.com/gorgias-chat-production-client-builds/{bundleVersion}/static/js/main.js".replace("{bundleVersion}",t.bundleVersion),document.body.appendChild(r)}}else console.error("Failed request GET - https://config.gorgias.chat/applications/1223")},e.onerror=function(_){console.error(_)},e.send()}(window||{});!function(n){n.IS_SHOPIFY=!0,n.SHOPIFY_PERMANENT_DOMAIN="{{shop.permanent_domain}}",n.SHOPIFY_CUSTOMER_ID="{{customer.id}}"}(window||{});
+        // End Gorgias Script
+        console.log("Delayed pixel loaded");
+
+      // Pinterest Pixel Base Code
+        // var script = document.createElement('script'); 
+        // script.type = 'text/javascript'; 
+        // script.async = true;
+        // script.src = "https://s.pinimg.com/ct/core.js";
+        // var s = document.getElementsByTagName('script')[0]; 
+        // s.parentNode.insertBefore(script, s);
+        // pintrk("load", "2612958180513");
+        // pintrk("page");
+        // pintrk('track', 'pagevisit');
+        // console.log("Delayed Pinterest Pixel loaded");
+
+      // Global site tag (gtag.js) - Google Ads: 777024836
+        var script = document.createElement('script'); 
+        script.type = 'text/javascript'; 
+        script.async = true;
+        script.src = "https://www.googletagmanager.com/gtag/js?id=AW-777024836";
+        var s = document.getElementsByTagName('script')[0]; 
+        s.parentNode.insertBefore(script, s);
+        window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-777024836');     
+        console.log("Google Tag loaded");
+
+       // Klaviyo Snippet
+        var script = document.createElement('script'); 
+        script.type = 'text/javascript'; 
+        script.async = true;
+        script.src = "https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=VBncBJ";
+        var s = document.getElementsByTagName('script')[0]; 
+        s.parentNode.insertBefore(script, s);
+        console.log("Klaviyo Snippet loaded");
+    }, scriptsLoadDelay);
+  });
+
+</script>

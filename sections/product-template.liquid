@@ -1,0 +1,232 @@
+{%- liquid
+  assign isModal = false
+  if template == 'product.modal'
+    assign isModal = true
+  endif
+-%}
+
+{%- render 'product-template',
+  product: product,
+  section: section,
+  description_style: section.settings.description_style,
+  image_position: section.settings.image_position,
+  image_container_width: section.settings.image_size,
+  section_id: product.id,
+  social: section.settings.social_enable,
+  isModal: isModal,
+  thumbnail_position: section.settings.thumbnail_position,
+  thumbnail_arrows: section.settings.thumbnail_arrows,
+  video_looping: section.settings.enable_video_looping,
+  video_style: section.settings.product_video_style 
+-%}
+
+<script defer type="text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    'ecommerce': {
+      'detail': {
+        'actionField': {'list': '{{ product.collections.first.title }}'},    // 'detail' actions have an optional list property.
+        'products': [{
+          'name': '{{ product.title }}',         // Name or ID is required.
+          'id': '{{ product.id }}',
+          'price': '{{ product.price | money_without_currency }}',
+          'brand': '{{ product.vendor }}',
+          'category': '{{ product.type }}',
+          'variant': '{{ product.selected_or_first_available_variant.title }}'
+         }]
+       }
+     }
+  });
+  console.log(window.dataLayer);      
+</script>
+
+{% schema %}
+  {
+    "name": "Product pages",
+    "settings": [ 
+      {
+        "type": "richtext",
+        "id"  : "under_buttons_text",
+        "label" : "Text under form buttons"
+      },
+      {
+        "type": "richtext",
+        "id"  : "under_buttons_text_preorder",
+        "label" : "Text if Pre Order" 
+      },
+      {
+        "type": "select",
+        "id": "description_style",
+        "label": "Description position",
+        "default": "default",
+        "options": [
+          {
+            "value": "default",
+            "label": "Next to media"
+          },
+          {
+            "value": "full",
+            "label": "Below media"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "social_enable",
+        "label": "Enable social sharing",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Media"
+      },
+      {
+        "type": "paragraph",
+        "content": "Learn more about [media types](https://help.shopify.com/en/manual/products/product-media)"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_image_slider",
+        "label": "Enable Image Slider",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "image_position",
+        "label": "Position",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "image_size",
+        "label": "Size",
+        "default": "medium",
+        "options": [
+          {
+            "value": "small",
+            "label": "Small"
+          },
+          {
+            "value": "medium",
+            "label": "Medium"
+          },
+          {
+            "value": "large",
+            "label": "Large"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "thumbnail_position",
+        "label": "Thumbnail position",
+        "default": "beside",
+        "options": [
+          {
+            "value": "beside",
+            "label": "Next to media"
+          },
+          {
+            "value": "below",
+            "label": "Below media"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "thumbnail_arrows",
+        "label": "Show thumbnail arrows"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_video_looping",
+        "label": "Enable video looping",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "product_video_style",
+        "label": "Video style",
+        "default": "muted",
+        "options": [
+          {
+            "value": "muted",
+            "label": "Video without sound"
+          },
+          {
+            "value": "unmuted",
+            "label": "Video with sound"
+          }
+        ],
+        "info": "Video with sound will not autoplay"
+      },
+      {
+        "type": "url",
+        "id": "shipping_return_url",
+        "label": "Shipping and Return FAQ Link"
+      },
+      {
+        "type": "textarea",
+        "id": "shipping_return_text",
+        "label": "Shipping and Return FAQ tooltip Content"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "product_type",
+        "name": "Product tag",
+        "settings": [
+          {
+            "type": "text",
+            "id": "type",
+            "label": "Product tag", 
+            "default": "Boots"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading"
+          },
+          {
+            "type": "page",
+            "id": "page",
+            "label": "Select page"
+          }
+        ]
+      },
+      {
+        "type": "product_reviews",
+        "name": "Product reviews",
+        "settings": [
+          {
+            "type": "text",
+            "id": "review_author",
+            "label": "Author",
+            "default": "John Smith"
+          },
+          {
+            "type": "richtext",
+            "id": "review_text",
+            "label": "Product review",
+            "default": "<p>The body of the review</p>"
+          },
+          {
+            "type": "image_picker",
+            "id": "review_image",
+            "label": "Author's image"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,48 @@
+{% comment %}
+<div id="swym-wishlist-render-container"></div>
+{% endcomment %}
+
+<div class="page-width wishlist_custom">
+    <header class="section-header">
+        <h1 class="section-header__title">{{ 'pages.wishlist.title' | t }}</h1>
+    </header>
+    
+    {%- comment -%}
+    <div id="swym-wishlist-render-container-custom" class="grid"></div>
+    {%- endcomment -%}
+    <style>
+        body #MainContent .swym-wishlist-detail-content {
+            display: block !important;
+        }
+    </style>
+    <div id="swym-wishlist-render-container"></div>
+</div>
+<script>
+    {%- capture wishlist_layout -%}
+    <div class="grid__item">
+        {% if settings.wishlist_title != blank %}
+            <h3 class="swym-empty-wishlist-title swym-heading swym-heading-1">{{ settings.wishlist_title }}</h3>
+        {% endif %}
+        {% if settings.wishlist_description != blank %}
+            <p class='swym-empty-wishlist-text swym-text swym-text-1'>{{ settings.wishlist_description }}</p>
+        {% endif %}
+        {% if settings.wishlist_btn_label != blank and settings.wishlist_btn_link != blank %}
+        <a href="{{ settings.wishlist_btn_link }}" class="swym-empty-wishlist-continue-btn swym-button swym-button-1 swym-is-button btn">{{ settings.wishlist_btn_label }}</a>
+        {% endif %}
+    </div>
+    {%- endcapture -%}
+    window.wishlist_layout = `{{ wishlist_layout }}`;
+  </script>
+{% comment %}
+<div id="swym-shared-wishlist-render-container"></div>
+<script type="text/javascript">// <![CDATA[
+window.SwymCallbacks = window.SwymCallbacks || [];
+window.SwymCallbacks.push(function(swat) {
+  var queryParams = swat.utils.getEncodedAsObject(window.location.search);
+  var sharedHkey = queryParams["hkey"] || queryParams["lid"];
+  var sharedWishlistContainerElement = document.querySelector("#swym-shared-wishlist-render-container");
+  swat.ui.renderSharedWishlistInContainer(sharedWishlistContainerElement, sharedHkey, queryParams);
+});
+// ]]></script>
+
+{% endcomment %}

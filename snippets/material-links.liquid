@@ -1,0 +1,53 @@
+<div class="material_nav">
+  
+    {%- if block.settings.linktext_button1 != blank -%}
+
+    <a class="material_button" href="{{ block.settings.link_button1 }}"> {{ block.settings.linktext_button1 }} </a>
+
+    {%- endif -%}
+    
+    {%- if block.settings.linktext_button2 != blank -%}
+
+    <a class="material_button" href="{{ block.settings.link_button2 }}"> {{ block.settings.linktext_button2 }} </a>
+
+    {%- endif -%}
+
+    {%- if block.settings.linktext_button3 != blank -%}
+
+    <a class="material_button" href="{{ block.settings.link_button3 }}"> {{ block.settings.linktext_button3 }} </a>
+
+    {%- endif -%}
+
+    {%- if block.settings.linktext_button4 != blank -%}
+
+    <a class="material_button" href="{{ block.settings.link_button4 }}"> {{ block.settings.linktext_button4 }} </a>
+
+    {%- endif -%}
+
+  </div>  
+
+
+  {% style %}
+
+  .material_nav {
+      margin: 3em auto 3em auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+      width: 80%;
+  }
+
+  .material_button {
+    background: {{ block.settings.button_color }};
+    border: 1px solid {{ block.settings.border_color }};
+    color: {{ block.settings.text_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+    padding: 10px;
+    min-width: 200px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    margin: 1em auto 1em auto;
+  }
+
+  {% endstyle %}

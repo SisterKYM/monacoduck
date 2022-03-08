@@ -1,0 +1,130 @@
+{%- comment -%}
+  Inputs:
+    - banner - block object
+    - collection - collection object
+{%- endcomment -%}
+
+{%- style -%}
+  {%- if banner.settings.type == 'hero_banner' -%}
+  .collection-banner-{{ banner.id }} .banner-wrapper,
+  .collection-banner-{{ banner.id }} .banner-wrapper img,
+  .collection-banner-{{ banner.id }} .banner-wrapper img.lazyloaded {
+    height: {{ banner.settings.banner_height }}px !important;
+  }
+  {%- endif -%}
+
+  .collection-banner-{{ banner.id }} .banner-text {
+    font-size: {{ banner.settings.text_size }}px;
+    color: {{ banner.settings.text_color }};
+    top: {{ banner.settings.text_top }}%;
+    {%- if banner.settings.text_top == "50" -%}
+    transform: translateY(-50%);
+    {%- endif -%}
+    {%- if banner.settings.text_top == "100" -%}
+    transform: translateY(-100%);
+    {%- endif -%}
+  }
+  .collection-banner-{{ banner.id }} .banner-bottom {
+    font-size: {{ banner.settings.bottom_text_size }}px;
+    color: {{ banner.settings.bottom_text_color }};
+  }
+
+  @media (max-width: 768px) {
+    .collection-banner-{{ banner.id }} .banner-wrapper,
+    .collection-banner-{{ banner.id }} .banner-wrapper img,
+    .collection-banner-{{ banner.id }} .banner-wrapper img.lazyloaded {
+      {%- if banner.settings.type == 'hero_banner' -%}
+      height: {{ banner.settings.banner_height_mobile }}px !important;
+      {%- else -%}
+      max-height: {{ banner.settings.banner_height_mobile }}px !important;
+      {%- endif -%}
+    }
+    .collection-banner-{{ banner.id }} .banner-text {
+      font-size: {{ banner.settings.text_size_mobile }}px;
+    }   
+    .collection-banner-{{ banner.id }} .banner-bottom {
+      font-size: {{ banner.settings.bottom_text_size_mobile }}px;
+    } 
+  }
+{%- endstyle -%} 
+
+<div 
+  class="collection-banner collection-banner-{{ banner.id }}"
+  data-block-id="{{ banner.id }}"
+  data-type="{{ banner.settings.type }}"
+  data-collection="{{ banner.settings.collection }}"
+  data-position="{{ banner.settings.position }}"
+  data-position-mobile="{{ banner.settings.position_mobile }}"
+  style="display: none;"
+>
+  <div class="banner-wrapper">
+    {%- render 'media', media: banner.settings.image -%}
+    
+    {%- if banner.settings.text != blank -%}
+    <div class="banner-text">
+      {{ banner.settings.text }}
+    </div>
+    {%- endif -%}
+  </div>
+
+  {%- if banner.settings.bottom_text != blank and banner.settings.type != 'hero_banner' -%}
+  <div class="banner-bottom" style="background: {{ banner.settings.bottom_text_bg }};">
+    {{ banner.settings.bottom_text }}
+  </div>
+  {%- endif -%}
+  
+  {%- if banner.settings.usp_enable and banner.settings.usp_image1 != blank -%}
+    {%- if banner.settings.usp_collection == blank or banner.settings.usp_collection == collection.handle -%}
+    <div class="banner-usp">
+      {%- if banner.settings.usp_image1 != blank -%}
+      <div class="usp-block">
+        <div class="usp-image">
+          {%- render 'media', media: banner.settings.usp_image1 -%}
+        </div>
+        {%- if banner.settings.usp_text1 != blank -%}
+        <div class="usp-text">
+          {{ banner.settings.usp_text1 }}
+        </div>
+        {%- endif -%}
+      </div>
+      {%- endif -%}
+      {%- if banner.settings.usp_image2 != blank -%}
+      <div class="usp-block">
+        <div class="usp-image">
+          {%- render 'media', media: banner.settings.usp_image2 -%}
+        </div>
+        {%- if banner.settings.usp_text2 != blank -%}
+        <div class="usp-text">
+          {{ banner.settings.usp_text2 }}
+        </div>
+        {%- endif -%}
+      </div>
+      {%- endif -%}
+      {%- if banner.settings.usp_image3 != blank -%}
+      <div class="usp-block">
+        <div class="usp-image">
+          {%- render 'media', media: banner.settings.usp_image3 -%}
+        </div>
+        {%- if banner.settings.usp_text3 != blank -%}
+        <div class="usp-text">
+          {{ banner.settings.usp_text3 }}
+        </div>
+        {%- endif -%}
+      </div>
+      {%- endif -%}
+      {%- if banner.settings.usp_image4 != blank -%}
+      <div class="usp-block">
+        <div class="usp-image">
+          {%- render 'media', media: banner.settings.usp_image4 -%}
+        </div>
+        {%- if banner.settings.usp_text4 != blank -%}
+        <div class="usp-text">
+          {{ banner.settings.usp_text4 }}
+        </div>
+        {%- endif -%}
+      </div>
+      {%- endif -%}
+    </div>
+    {%- endif -%}
+  {%- endif -%}
+</div>

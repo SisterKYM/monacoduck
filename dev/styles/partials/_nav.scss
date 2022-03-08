@@ -1,0 +1,16 @@
+#NavDrawer {
+  .ly-custom-dropdown-switcher {
+    position: relative !important;
+    padding: 0px !important;
+    display: block !important;
+  }
+}
+
+#footer-service-drawer {
+  .page-width {
+    @media only screen and (min-width: 769px) {
+      padding: 0 17px;
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+name: PRE-PRODUCTION DEPLOYMENT
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - master
+    types: [opened,closed,labeled]
+
+jobs:
+  Build-Theme:
+    name: Build & Deploy to (staging) Theme
+    runs-on: [self-hosted, linux]
+    steps:   
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      
+      - name: Current Branch
+        run: echo "running on branch ${{ github.event.pull_request.head.ref }}"
+
+      - name: Install Dependencies
+        working-directory: dev
+        run: yarn install
+
+      - name: Build & Compile
+        working-directory: dev
+        run: gulp build
+
+      - name: Generate Themekit Config
+        env:
+          SHOPIFY_PASSWORD: ${{ secrets.MD_STAGING_PASSWORD }}
+          SHOPIFY_STORE_URL: ${{ secrets.MD_STAGING_STORE }}
+          SHOPIFY_THEME_ID: ${{ secrets.MD_STAGING_THEMEID }}
+        run: theme configure --password=$SHOPIFY_PASSWORD --store=$SHOPIFY_STORE_URL --themeid=$SHOPIFY_THEME_ID --ignores=themekit_ignores_staging
+
+      - name: Deploy Theme files
+        run: theme deploy --nodelete
+    
+      - name: Remove Deployment Label from Pull Request
+        uses: buildsville/add-remove-label@v1
+        with:
+          token: ${{secrets.GITHUB_TOKEN}}
+          label: deploy-staging
+          type: remove

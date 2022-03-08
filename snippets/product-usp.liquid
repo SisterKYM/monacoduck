@@ -1,0 +1,63 @@
+{%- style -%}
+  .product-usp-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .usp_item{
+    margin-bottom: 40px;
+  }
+  .usp_item img {
+    height: 50px;
+  }
+  .usp_title{
+    font-weight: 700;
+    padding: 10px 0;
+  }
+  .usp_text{
+    max-width: 250px;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  @media (max-width: 1024px) {
+    .usp_item { 
+      flex: 0 0 50%;
+    }
+  }  
+  @media (max-width: 768px) {
+    .usp_item { 
+      flex: 0 0 100%;
+    }
+  }
+{%- endstyle -%}
+<div class="grid page-width product-usp-container">
+{%- assign tag_block_index = 0 -%}
+{%- for block in blocks -%}
+  {%- liquid 
+    if block.settings.product_tag != blank
+      unless product.tags contains block.settings.product_tag
+        continue
+      endunless
+      assign tag_block_index = tag_block_index | plus: 1
+    endif
+
+    if block.settings.usp_image contains '.jpg' 
+      assign image = block.settings.usp_image | img_url: '80x', format: 'pjpg'
+    else
+      assign image = block.settings.usp_image | img_url: '80x'
+    endif  
+  -%}
+  <div class="usp_item grid__item one-quarter small--one-whole text-center usp_item--{%- if block.settings.product_tag != blank -%}tag{% else %}notag{% endif %} ">
+    <img class="lazyload" src="{{ image }}" data-src="{{ image }}" height="50">
+    <div class="usp_title">{{ block.settings.usp_title }}</div>
+    <div class="usp_text">{{ block.settings.usp_text }}</div>
+  </div>
+{%- endfor -%}
+{%- unless tag_block_index == 0 -%}
+  {%- style -%}
+    .usp_item--notag{
+      display: none;
+    }
+  {%- endstyle -%}
+{%- endunless -%}
+</div>

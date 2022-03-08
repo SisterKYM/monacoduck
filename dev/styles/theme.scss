@@ -1,0 +1,326 @@
+@charset 'UTF-8';
+* {
+  letter-spacing: 0 !important;
+}
+// Helpers/Mixins - Global
+@import "mixins/helpers";
+
+// Layout
+@import "partials/header";
+@import "partials/footer";
+@import "partials/typography";
+@import "partials/nav";
+
+@import "partials/main";
+
+@import "partials/wishlist";
+
+
+.collection-hero {
+  z-index: 0;
+}
+
+.icon-sold-out {
+  vertical-align: middle;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .promo-grid__bg-image--a69a0b95-f87b-434b-9754-4ddc5a3cfd6b {
+    position: relative;
+    width: 770px;
+    height: auto;
+    bottom: 700px;
+  }
+
+  .PromotionGrid.noVideo .block-with-bg .promo-grid__bg {
+    height: 57%;
+    overflow: hidden;
+  }
+
+  .promo-grid__bg-image--365a9b6d-2978-4a56-80a9-162821d32ab8 {
+    position: relative;
+    width: 770px;
+    height: auto;
+    max-height: 100%;
+  }
+
+  .promo-grid__bg-image--03013f8d-c3de-40c6-91fe-9285baf166b7 {
+    position: absolute;
+    object-position: center -180px !important;
+    font-family: "object-fit: cover; object-position: center center;";
+  }
+
+  #CollectionHeaderSection img {
+    object-position: center -17px !important; /* damenschuhe */
+    
+  }
+
+ .hero__image--a3ab1e39-79d2-48fc-895d-117131186277 {
+  background-position: center 130px !important; /* slideshow.liquid */
+ }
+
+ .background-media-text__container .parallax-image {
+  background-position: 50% top;
+ }
+
+ .hero__image--d990009b-0f05-427e-b0d1-32437794a6cf {
+  background-position: right;
+  background-size: cover;
+}
+
+.background-media-text__container, .background-media-text__video {
+  position: relative;
+  height: 270px;
+}
+
+.grid__image-ratio--cover {
+  background-size: cover;
+  background-position: top;
+}
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+}
+
+
+#minimized-trustbadge-98e3dadd90eb493088abdc5597a70810 {
+  margin: 50px 0 !important;
+  left: 15px!important;
+}
+
+@media (max-width: 767px) {
+  #minimized-trustbadge-98e3dadd90eb493088abdc5597a70810 {
+    margin: 50px 0 !important;
+  }
+}
+
+._owyw4l {
+  margin: 50px 0 !important;
+}
+
+body .ly-hide { 
+  display: block !important;
+}
+.site-nav__icons .ly-switcher-wrapper {
+  margin-right: 10px;
+}
+
+// #ly-language-switcher {
+//   display: none!important;
+// }
+
+.site-nav__icons .ly-is-open {
+  background: #fff !important;
+  .ly-custom-dropdown-current {
+    color: #000 !important;
+  }
+  .ly-custom-dropdown-list {
+    background: #fff !important;
+    color: #000 !important;
+    .ly-custom-dropdown-list-element {
+      color: #000 !important;
+    }
+  }
+  svg path {
+    fill: #000 !important;
+  }
+}
+
+.btn.cta {
+  background: #ffbe3c;
+  border: 1px solid #ffbe3c;
+  padding: 10px;
+  min-width: 260px;
+  color: #000!important;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 28px;
+  border-radius: 7px;
+  @media (max-width: 768px) {
+    width: 100%;
+    min-width: initial;
+    max-width: 380px;
+    margin: 15px auto 0;
+  }
+}
+
+.text-and-image-block {
+  .h3 {
+    font-size: 42px !important;
+    line-height: 50px !important;
+    margin-top: 25px !important;
+    font-weight: 500 !important;
+    font-family: Montserrat, sans-serif !important;
+  }
+  .featured-row__subtext {
+    font-size: 17px !important;
+    line-height: 26px !important;
+    margin-top: 25px !important;
+    font-family: Montserrat, sans-serif !important;
+  }
+  .btn {
+    margin-top: 35px !important;
+    font-family: Montserrat, sans-serif !important;
+  }
+  @media (max-width: 768px) {
+    .h3 {
+      font-size: 24px !important;
+      line-height: 29px !important;
+      margin-top: 25px !important;
+      font-weight: 500 !important;
+    }
+    .featured-row__subtext {
+      font-size: 16px !important;
+      line-height: 26px !important;
+      margin-top: 25px !important;
+    }
+    .btn {
+      margin-top: 25px !important;
+    }
+  }
+}
+
+[data-section-id='header'] {
+  position: relative;
+  z-index: 100;
+  .dropdown {
+    z-index: 99;
+  }
+}
+
+$xy-border: (
+  top: t,
+  bottom: b,
+  left: l,
+  right: r
+); 
+
+[data-tooltip] {
+
+  $triangle: .3rem;
+  $background-color: rgba(51,51,51,.9);
+
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  position: relative;
+
+  &::after {
+    background-color: $background-color;
+    border-radius: $triangle;
+    color: #fff;
+    content: attr(data-tooltip);
+    font-size: 1rem;
+    font-size: 85%;
+    font-weight: normal;
+    line-height: 1.15rem;
+    opacity: 0;
+    padding: .25rem .5rem;
+    position: absolute;
+    text-align: center;
+    text-transform: none;
+    transition: opacity .2s;
+    visibility: hidden;
+    z-index: 1;
+    width: 100%;
+  }
+
+  @each $direction, $d in $xy-border {
+    &.tooltip-#{$direction} {
+      // arrows
+      &::before {
+        border-style: solid;
+        border-width: $triangle;
+        content: "";
+        opacity: 0;
+        position: absolute;
+        transition: opacity .2s;
+        visibility: hidden;
+        @if $direction == top {
+          border-color: $background-color transparent transparent transparent;
+          top: 0;
+          left: 50%;
+          margin-left: -$triangle;
+        } @else
+        if $direction == bottom {
+          border-color: transparent transparent $background-color transparent;
+          bottom: 0;
+          left: 50%;
+          margin-left: -$triangle;
+        } @else
+        if $direction == left {
+          border-color: transparent transparent transparent $background-color;
+          top: $triangle;
+          right: calc(110% - #{$triangle});
+          margin-top: -$triangle;
+        } @else
+        if $direction == right {
+          border-color: transparent $background-color transparent transparent;
+          top: 50%;
+          top: $triangle;
+          left: calc(110% - #{$triangle});
+          margin-top: -$triangle;
+        }
+      }
+
+      &::after {
+        @if $direction == top {
+          bottom: 100%;
+          left: 50%;
+          transform: translate(-50%);
+        } @else
+        if $direction == bottom {
+          top: 100%;
+          left: 50%;
+          transform: translate(-50%);
+        } @else
+        if $direction == left {
+          top: -$triangle;
+          right: calc(110% + #{$triangle});
+        } @else
+        if $direction == right {
+          top: -$triangle;
+          left: calc(110% + #{$triangle});
+        }
+      }
+    }
+  }
+
+    @media (max-width: 767px) {
+      &::before {
+        display: none;
+      }
+
+      &:after {
+        font-size: 1rem;
+        max-width: 20rem;
+        position: fixed;
+        bottom: auto; top: 50%;
+        left: 50%;
+        text-align: left;
+        transform: translate(-50%);
+        white-space: normal;
+      }
+    }
+  
+  &:hover::after,
+  &[class*=tooltip-]:hover::before {
+    visibility: visible;
+    opacity: 1;
+  }
+} 

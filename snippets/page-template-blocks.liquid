@@ -1,0 +1,109 @@
+{% comment %}
+  This file handles each block available on product.sections or page.sections templates.
+  Each block is a near identical duplicate of a section also available on the home page.
+  Exception is sections that had blocks become hard coded options.
+{% endcomment %}
+
+{%- liquid
+  if request.page_type == 'product'
+    assign isTaggedTextAndImageBlockExists = false
+    for block in section.blocks 
+      if block.type == 'text-and-image'
+        if product.tags contains block.settings.product_tag
+          assign isTaggedTextAndImageBlockExists = true
+        endif
+      endif
+    endfor
+  endif
+-%}   
+
+<div class="page-blocks">
+  {%- for block in section.blocks -%}
+    {%- liquid 
+      assign hasBgColor = false 
+      assign bgStyle = ''
+      if block.settings.block_bg != null
+        assign hasBgColor = true
+        assign bgStyle = 'style="background: ' | append: block.settings.block_bg | append: ';"'
+      endif
+    -%}
+    <div {{ bgStyle }} class="block block{{ forloop.index }} {%- if hasBgColor -%}blockWithBgColor{%- endif -%}" {{ block.shopify_attributes }}>
+      {%- case block.type -%}
+
+        {%- when 'additional-content' -%}
+          {%- render 'page-block-product-additional-content-tabs', block: block -%}
+
+        {%- when 'contact-form' -%}
+          {%- render 'page-block-contact-form', block: block -%}
+
+        {%- when 'material-links' -%}
+          {%- render 'material-links', block: block -%}
+
+        {%- when 'custom-html' -%}
+          {%- render 'page-block-custom-html', block: block -%}
+
+        {%- when 'background-image-text' -%}
+          {%- render 'page-block-background-image-text', block: block -%}
+
+        {%- when 'hero-video' -%}
+          {%- render 'page-block-hero-video', block: block -%}
+
+        {%- when 'image-hero' -%}
+          {%- render 'page-block-image-hero', block: block -%}
+
+        {%- when 'image-row' -%}
+          {%- render 'page-block-image-row', block: block -%}
+
+        {%- when 'rich-text'-%}
+          {%- render 'page-block-rich-text', block: block -%}
+        
+        {%- when 'text-and-image' -%}
+          {%- liquid
+            if request.page_type == 'product'
+              if block.settings.product_tag != blank
+                if product.tags contains block.settings.product_tag
+                  render 'page-block-text-and-image', block: block
+                endif
+              else
+                if block.settings.product_tag == blank and isTaggedTextAndImageBlockExists == false
+                  render 'page-block-text-and-image', block: block 
+                endif
+              endif
+            else
+              render 'page-block-text-and-image', block: block
+            endif  
+          -%}
+
+        {%- when 'text-columns' -%}
+          {%- render 'page-block-text-columns', block: block -%}
+
+        {%- when 'testimonials' -%}
+          {%- render 'page-block-testimonials', block: block -%}
+
+        {%- when 'map' -%}
+          {%- render 'page-block-map', block: block -%}
+
+        {%- when 'featured-collection' -%}
+          {%- render 'page-block-featured-collection', block: block -%}
+
+        {%- when 'video-template' -%}
+          {%- liquid 
+            if block.settings.product_tag != blank
+              if product.tags contains block.settings.product_tag
+                render 'video-template', section: block
+              endif 
+            else 
+              render 'video-template', section: block
+            endif   
+          -%}
+        
+        {%- when 'benefits-bar' -%}
+          {%- render 'page-block-benefits-bar', block: block -%}
+
+        {%- when 'collection-slider' -%}
+          {%- render 'collections-slider', section: block -%}
+          
+      {%- endcase -%}
+    </div>
+  {%- endfor -%}
+</div>

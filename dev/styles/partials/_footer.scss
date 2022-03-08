@@ -1,0 +1,100 @@
+footer {
+  text-align: left !important;
+  padding-top: 15px;
+
+  .footer-heading {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0px;
+  }
+
+  .toolbar {
+    display: block !important;
+    background: none;
+    margin: 15px 0 0 0;
+    padding: 0 0 15px 0;
+    border-bottom: 1px solid var(--colorFooterText);
+
+    .toolbar__content {
+      justify-content: flex-start;
+      margin-left: -5px;
+    }
+
+    .page-width {
+      padding: 0px;
+    }
+  }
+
+  .grid {
+    margin-top: 20px;
+  }
+
+  .footer__title {
+    font-size: calc(var(--typeBaseSize)*0.85);
+  }
+
+  .grid__item {
+    button, .footer__title {
+      text-align: left !important;
+      font-weight: bold;
+      letter-spacing: 0px;
+      font-family: var(--typeBasePrimary), var(--typeBaseFallback);
+    }
+  }
+
+  .copyright {
+    text-align: left;
+    text-transform: uppercase;
+    border-top: 1px solid var(--colorFooterText);
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+}
+
+.footer-promotions {
+  .btn--secondary {
+    text-decoration: underline;
+    font-size: calc(var(--typeBaseSize)*0.85);
+  }
+}
+
+div[data-testid="form-component"]{
+  padding: 10px !important;
+  button.needsclick{
+    background: #ffbe3c !important;
+    border: 1px solid #ffbe3c !important;
+    padding: 10px !important;
+    min-width: 260px !important;
+    color: #000!important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    line-height: 28px !important;
+    border-radius: 7px !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    .grid__item:after {
+      border-bottom: 1px solid var(--colorFooterText) !important;
+      opacity: 1 !important;
+    }
+
+    .grid {
+      margin-top: 0px;
+    }
+
+    .grid__item {
+      padding: 0 0 0 17px !important;
+
+      button {
+        margin-bottom: 0px;
+      }
+    }
+
+    .copyright {
+      margin-top: 0px;
+    }
+  }
+}

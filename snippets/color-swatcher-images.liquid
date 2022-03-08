@@ -1,0 +1,69 @@
+{% comment %}
+    Global variables
+    cluster_key: Prefix of our product tag we use to create cluster for example: cl:charlie (for sneaker charlie model)
+{% endcomment %}
+
+{%- assign cluster_key = 'cl:' -%}
+{%- assign cluster_available = false -%}
+
+{%- liquid 
+  assign current_cluster_tag = ''
+  for tag in product.tags
+    if tag contains cluster_key
+      assign cluster_available = true
+      assign current_cluster_tag = tag
+      break
+    endif
+  endfor
+-%}
+
+{% if cluster_available %}
+<div id="color-swatcher-images">
+  {% if current_cluster_tag != '' %}
+    {{ 'color-swatcher-images.js' | asset_url | script_tag }}
+    <script>
+      const currentClusterTag = '{{ current_cluster_tag }}';
+      const currentHandle = '{{ product.handle }}';
+    </script>
+  {%- endif -%}
+
+  {{ 'color-swatcher-images.css' | asset_url | stylesheet_tag }}
+  
+  <div class="color-swatcher-images__heading label" style="display: none;">
+    {{ 'products.general.available_color' | t }}
+  </div>
+  <div class="color-swatcher-images__wrapper">
+    <div class="color-swatcher-images__variants">
+      <div class="color-swatcher-images__variant active">
+        <a href="/products/{{ product.handle }}"
+          class="image"
+          style="background-image: url({{ product.images.last | img_url: '150x' }})"
+          title="{{ product.title }}"
+        >
+        </a>
+        <span class="color">
+          {%- liquid
+            assign color = ""
+            for tag in product.tags
+              if tag contains "color:"
+                assign color = tag | split: ":" | last
+              endif
+              if tag contains "swatch:"
+                assign color = tag | split: ":" | last
+              endif
+            endfor
+            if color == ""
+              assign color = product.title | split: " / " | last
+            endif
+          -%}
+          {{ color }}
+        </span>
+      </div>
+    </div>
+    <div class="color-swatcher-images__show-more small--hide">
+      <span>Show more</span>
+      <span style="display: none;">Show less</span>
+    </div>
+  </div>
+</div>
+{% endif %}

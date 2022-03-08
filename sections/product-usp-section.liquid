@@ -1,0 +1,42 @@
+{%- assign usp_blocks = section.blocks | where: 'type', 'usp_item' -%}
+{%- render 'product-usp', blocks: usp_blocks -%}
+
+{% schema %}
+  {
+    "name": "Product USP",
+    "settings": [
+    ],
+    "blocks":[
+      {
+        "name": "USP Item",
+        "type": "usp_item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "usp_image",
+            "label": "Icon Image"
+          },
+          {
+            "type": "text",
+            "id": "usp_title",
+            "label": "USP Title"
+          },
+          {
+            "type": "textarea",
+            "id": "usp_text",
+            "label": "USP Text"
+          },
+          {
+            "type": "header",
+            "content": "Apply block for product tag"
+          },
+          {
+            "type": "text",
+            "id": "product_tag",
+            "label": "Tag"
+          }
+        ]
+      }
+    ]    
+  }
+{% endschema %}

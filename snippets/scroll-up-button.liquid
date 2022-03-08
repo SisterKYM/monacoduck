@@ -1,0 +1,52 @@
+
+<img id="toTop" src="{{ "chevron-circle-up-solid.svg" | asset_url }}" onclick="scrollUp()" title="Go To Top">
+
+<script>
+
+// Scroll show/hide
+let t1 = 0;
+window.onscroll = showArrow;
+
+function showArrow() {
+  if (window.matchMedia("(max-width: 700px)").matches) {
+  let toTop = document.getElementById('toTop');
+  window.scrollY > 500 ? toTop.style.display = 'Block' : toTop.style.display = 'none';
+}}
+
+// Back to top function
+function scrollUp (){
+  if (window.matchMedia("(max-width: 700px)").matches) {
+  let y1 = window.scrollY;
+  y1 = y1 - 1000;
+  window.scrollTo(0, y1);
+  if (y1 > 0) {
+    t1 = setTimeout("abcd()", 100);
+  } else {
+    clearTimeout(t1);
+  }
+}
+}
+
+</script>
+
+{%- style -%}
+#toTop {
+  display: block;
+  position: fixed;
+  bottom: 85px;
+  right: 20px;
+  width: 50px;
+}
+#toTop {
+  transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  opacity: 0.5;
+  display: none;
+  cursor: pointer;
+}
+#toTop:hover {
+  opacity: 1;
+}
+{%- endstyle -%}

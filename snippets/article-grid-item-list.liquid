@@ -1,0 +1,60 @@
+{%- assign fixed_aspect_ratio = false -%}
+{% unless image_size == 'natural' %}
+  {%- assign fixed_aspect_ratio = true -%}
+{% endunless %}
+
+{%- capture modulo -%}
+  {{ index | modulo: 2 }} 
+{%- endcapture -%}
+
+{%- liquid
+  assign item_class = "item-full" 
+  if modulo == "0 "
+    assign item_class = "item-bg" 
+  endif 
+-%}
+
+<div class="{{ item_class }} grid__item {{ grid_item_width }}" data-aos="row-of-{{ per_row }}">
+  {%- if item_class == "item-full" -%}
+    <div class="article__grid-meta">
+      <a href="{{ article.url }}" class="article__title">{{ article.title }}</a>
+      <div class="grid__item--bottom">
+        <div class="rte article__excerpt">
+          {{ article.content | strip_html | truncatewords: 15 }}
+        </div>
+        <div class="article__readmore">
+          <a href="{{ article.url }}">weiterlesen <span></span></a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="grid__image-ratio grid__image-ratio--cover grid__image-ratio--{{ image_size }} lazyload"
+      data-bgset="{% render 'bgset', image: article.image %}"
+      data-sizes="auto">
+    </div>
+    <noscript>
+      <img class="lazyloaded" src="{{ article.image | img_url: '400x' }}" alt="{{ article.title | escape }}">
+    </noscript>
+  {%- else -%}
+    <div class="article__grid-meta">
+      <a href="{{ article.url }}" class="article__title">{{ article.title }}</a>
+      <div
+        class="grid__image-ratio grid__image-ratio--cover grid__image-ratio--{{ image_size }} lazyload"
+        data-bgset="{% render 'bgset', image: article.image %}"
+        data-sizes="auto">
+      </div>
+      <noscript>
+        <img class="lazyloaded" src="{{ article.image | img_url: '400x' }}" alt="{{ article.title | escape }}">
+      </noscript>
+      <div class="grid__item--bottom">
+        <div class="rte article__excerpt">
+          {{ article.content | strip_html | truncatewords: 15 }}
+        </div>
+        <div class="article__readmore">
+          <a href="{{ article.url }}">weiterlesen <span></span></a>
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
+</div>

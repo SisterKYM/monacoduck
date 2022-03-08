@@ -1,0 +1,22 @@
+<div id="modal__add-to-cart" style="display: none;">
+  <div class="modal__close close">
+      <svg class="close" viewBox="0 0 1 1" height="1" width="1" version="1.1" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="1" x2="1" y2="0" stroke="black" stroke-width="0.1" /><line x1="0" y1="0" x2="1" y2="1" stroke="black" stroke-width="0.1" /></svg>
+  </div>
+  <div class="modal__title"><span class="modal__body"></span> {{ 'cartModal.title' | t }}</div>
+  {%- comment -%}
+  <div class="modal__body"></div>
+  {%- endcomment -%}
+  <div class="modal__bottom">
+    <div class="d-flex">
+      <div class="link__cart btn btn--secondary">
+        <a href="/cart">{{ 'cartModal.btn_label' | t }}</a>
+      </div>
+      <div class="link__cart btn btn--primary" onClick="window.location.href = 'https://' + window.location.host + '/checkout';">
+        <a href="/checkout">{{ 'cartModal.checkout_label' | t }}</a>
+      </div> 
+    </div>
+    <div class="link__continue close">
+      <a href="#">{{ 'cartModal.continue_label' | t }}</a>
+    </div>
+  </div>
+</div>

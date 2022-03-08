@@ -1,0 +1,56 @@
+{%- comment -%}
+  Inputs:
+    section - block or section with parameters
+{%- endcomment -%}
+
+{%- assign img_url = section.settings.cover_img | img_url: '1x1' | replace: '_1x1.', '_1600x.' -%}
+{%- assign btn_img_url = section.settings.play_btn | img_url: '1x1' | replace: '_1x1.', '_100x.' -%}
+{% style %}
+    .hero--{{ section.id }} .hero__media-cover-image {
+        height: 100%;
+        background: url('{{img_url}}');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .slick-slider .hero__media-cover-image {
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding: 50px;
+    }
+    .hero--{{ section.id }} .hero__media-container iframe{
+        width: 100% !important;
+        height: 100%;
+    }
+    .hero--{{ section.id }} .hero__media-container .youtube-video-deferred{
+        width: 100%;
+        height: 100%;
+    }
+{% endstyle %}
+<div
+  data-section-id="{{ section.id }}"
+  data-section-type="video-section"
+  class="video-parent-section hero hero--{{ section.id }}"
+  data-aos="hero__animation" style="height: 600px;">
+
+  <div class="hero__media--{{ section.id }}" style="height: 100%">
+    <div class="hero__media-container hide">
+        {%- render 'video-div', section_id: section.id, url: section.settings.video_url, disable_autoplay: true -%}
+    </div>
+    <div class="hero__media-cover-image">
+        {% if section.settings.play_btn != blank %}
+          <a class="video_play_btn">
+            <img class="lazyload"
+              data-src="{{ btn_img_url }}"
+              data-widths="[180, 360, 540, 720, 900, 1080]"
+              data-sizes="auto"
+              style="width: 100px; height: 100px; border-radius: 100%; cursor: pointer;"
+            />
+          </a>
+        {% endif %}
+    </div>
+  </div>
+</div>

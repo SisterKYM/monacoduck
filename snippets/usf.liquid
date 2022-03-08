@@ -1,0 +1,21 @@
+<script>window._usfTheme={
+    id:116075856070,
+    name:"Impulse",
+    version:"3.6.0",
+    vendor:"Archetype Themes",
+    applied:1,
+    assetUrl:"{{ 'usf-boot.js' | asset_url | split: '?' | first }}"
+};
+window._usfCustomerTags = {{ customer.tags | json }};
+</script>
+<script src="{{ 'usf-boot.js' | asset_url | split: '?' | first }}" defer="defer"></script>
+
+{%- if request.page_type == 'collection' -%}
+<script>
+setTimeout(function() {
+    usf.event.add('sr_updated', function() {
+        window.initCollectionGridBanners();
+    });
+}, 500);
+</script>
+{%- endif -%}

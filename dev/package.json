@@ -1,0 +1,38 @@
+{
+  "name": "frontend-devkit",
+  "version": "1.0.2",
+  "description": "The shoplab frontend devkit. A quick starter to any existing theme modifications and keeping our workflow alive.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "(cd ../ && theme watch --allow-live) & gulp watch",
+    "build": "gulp build"
+  },
+  "author": "Mark Chang",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "babel-core": "^6.26.3",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.26.14",
+    "browserify": "^17.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-changed": "^3.2.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-env": "^0.4.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-scss-lint": "^1.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.1",
+    "gulp-util": "^3.0.8",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}

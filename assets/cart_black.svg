@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35.86" height="32.867" viewBox="0 0 35.86 32.867">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #1e001e;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="cart_black" transform="translate(1.5 1.5)">
+    <path id="Pfad_156" data-name="Pfad 156" class="cls-1" d="M3973.671,1905.044h-20.029l-6.416-19.793h32.86Z" transform="translate(-3947.227 -1875.177)"/>
+    <path id="Pfad_157" data-name="Pfad 157" class="cls-1" d="M4027.521,1769.609l9.979-9.979,9.979,9.979" transform="translate(-4021.082 -1759.63)"/>
+  </g>
+</svg>

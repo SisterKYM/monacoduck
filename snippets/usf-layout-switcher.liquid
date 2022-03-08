@@ -1,0 +1,79 @@
+{% style %}
+  #usf-layout-switcher svg {
+    width: 20px;
+    color: #333;
+    opacity: 0.5;
+  }
+  #usf-layout-switcher a.active svg {
+    opacity: 1;
+  }
+  #usf-layout-switcher {
+    float: right;
+    margin: 9px 0 0 5px;
+  }
+  @media (min-width: 767px) {
+    #usf-layout-switcher {
+      margin-bottom: -41px;
+      padding-top: 15px;
+    }
+  }
+
+  .layout-single .grid--view-items .grid__item {
+    width: 100% !important;
+  }
+  @media (min-width: 767px) {
+    .layout-single .grid--view-items .grid__item {
+      width: 50% !important;
+    }
+  }
+{% endstyle %}
+
+<div id="usf-layout-switcher">
+  <a href="javascript:void(0);" class="layout-single">
+    <svg role="presentation" viewBox="0 0 36 36"><rect fill="currentColor" width="36" height="36"></rect></svg>
+    <!-- 
+      <svg role="presentation" viewBox="0 0 36 36"><path fill="currentColor" d="M21 36V21h15v15H21zm0-36h15v15H21V0zM0 21h15v15H0V21zM0 0h15v15H0V0z"></path></svg>
+    -->
+  </a>
+  <a href="javascript:void(0);" class="layout-multiple">
+    <svg role="presentation" viewBox="0 0 36 36"><path fill="currentColor" d="M21 36V21h15v15H21zm0-36h15v15H21V0zM0 21h15v15H0V21zM0 0h15v15H0V0z"></path></svg>
+    <!--
+      <svg role="presentation" viewBox="0 0 36 36"><path fill="currentColor" d="M28 36v-8h8v8h-8zm0-22h8v8h-8v-8zm0-14h8v8h-8V0zM14 28h8v8h-8v-8zm0-14h8v8h-8v-8zm0-14h8v8h-8V0zM0 28h8v8H0v-8zm0-14h8v8H0v-8zM0 0h8v8H0V0z"></path></svg>
+    -->
+  </a>
+</div>
+
+<script>
+  const usfLayoutSwitcher = () => {
+    let container = document.querySelector("#usf-layout-switcher");
+    container.querySelectorAll("a").forEach(function(button) {
+      // Click event
+      button.addEventListener("click", function(e) {
+        let button = e.target.closest("a");
+        let layout = button.getAttribute("class");
+        container.querySelectorAll("a").forEach(function(a) {
+          // clear previous state
+          a.classList.remove("active");
+          container.parentElement.classList.remove(a.getAttribute("class"))
+        });
+        // active new layout
+        button.classList.add("active");
+        container.parentElement.classList.add(layout);
+        localStorage.setItem('usf-layout', layout);
+        return false;
+      });
+      // Get saved value
+      let layout_active = localStorage.getItem('usf-layout');
+      if(layout_active) {
+        container.parentElement.classList.add(layout_active);
+        container.querySelectorAll("a").forEach(function(a) {
+          let layout = a.getAttribute("class");
+          if(layout == layout_active) {
+            a.classList.add("active");
+          }
+        });
+      }
+    });
+  }
+  usfLayoutSwitcher();
+</script>

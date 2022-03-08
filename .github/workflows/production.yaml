@@ -1,0 +1,33 @@
+name: PRODUCTION DEPLOYMENT
+
+on:
+  workflow_dispatch:
+  release:
+    branches:
+      - master
+    types: [published]
+
+jobs:
+  Build-Theme:
+    name: Build & Deploy to (production) Theme
+    runs-on: [self-hosted, linux]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        working-directory: dev
+        run: yarn install
+
+      - name: Build & Compile
+        working-directory: dev
+        run: gulp build
+
+      - name: Generate Themekit Config
+        env:
+          SHOPIFY_PASSWORD: ${{ secrets.MD_PRODUCTION_PASSWORD }}
+          SHOPIFY_STORE_URL: ${{ secrets.MD_PRODUCTION_STORE }}
+          SHOPIFY_THEME_ID: ${{ secrets.MD_PRODUCTION_THEMEID }}
+        run: theme configure --password=$SHOPIFY_PASSWORD --store=$SHOPIFY_STORE_URL --themeid=$SHOPIFY_THEME_ID --ignores=themekit_ignores_production
+        
+      - name: Deploy Theme files
+        run: theme deploy --allow-live --nodelete

@@ -1,0 +1,168 @@
+
+<div id="upsell_products">	
+	{% assign upsell_products = "" %}
+	
+	{% if settings.upsell_product1 != "" %}
+		{% if upsell_products != "" %}
+			{% assign upsell_products = upsell_products | append: ", " %}
+		{% endif %}
+		{% assign upsell_products = upsell_products | append: settings.upsell_product1 %}
+	{% endif %}			
+	{% if settings.upsell_product2 != "" %}
+		{% if upsell_products != "" %}
+			{% assign upsell_products = upsell_products | append: ", " %}
+		{% endif %}
+		{% assign upsell_products = upsell_products | append: settings.upsell_product2 %}
+	{% endif %}			
+	{% if settings.upsell_product3 != "" %}
+		{% if upsell_products != "" %}
+			{% assign upsell_products = upsell_products | append: ", " %}
+		{% endif %}
+		{% assign upsell_products = upsell_products | append: settings.upsell_product3 %}
+	{% endif %}
+	
+	{% assign products = upsell_products | split: ", " %}
+
+	{%- liquid 
+		assign alreadyAddedInCart = ""
+		for item in cart.items
+			assign alreadyAddedInCart = alreadyAddedInCart | append: item.product.handle | append: " | "
+		endfor
+		assign alreadyAddedInCart = alreadyAddedInCart | split: " | "
+	-%}
+	{%- assign isSomeProductShowable = false -%}
+	{% for handle in products %}
+		{%- liquid
+			if alreadyAddedInCart contains handle 
+				continue
+			endif
+			assign isSomeProductShowable = true
+		-%}
+	{% endfor %}
+
+	{% if settings.upsell_products_heading != "" and isSomeProductShowable %}
+	<div class="upsell__products-message">
+		{{ settings.upsell_products_heading }}
+	</div>
+	{% endif %}
+	
+	{% for handle in products %}
+		{%- liquid
+			if alreadyAddedInCart contains handle 
+				continue
+			endif
+			assign product = all_products[handle]
+			assign current_variant = product.variants[0]
+			assign image = product | img_url: '90x'
+			assign productLink = "/products/" | append: handle
+			assign hasSize = false 
+			if product.options contains "Size" or product.options == "Size"
+				assign hasSize = true
+			endif	
+		-%}
+
+		<div class="cart__product">
+			<div class="cart__product-left">
+				<a href="{{ productLink }}"
+					class="cart__image lazyload"
+					data-bgset="{% render 'bgset', image: product.images[0] %}"
+				>
+				</a>
+			</div>
+			<div class="cart__product-right">
+				<div class="cart__product-top">
+					<div class="ajaxcart__product-name">
+						<a href="{{ productLink }}" class="h4 cart__product-name">{{ product.title }}</a>
+					</div>
+				</div>
+				<div class="cart__product-bottom">
+					<div class="ajaxcart__product-btn">
+						{%- if hasSize -%}
+						<a href="#" class="btn upsell-add btn--secondary btnSelectSize js-modal-open-ProductModal-{{ product.id }}" aria-expanded="false" data-product-id="{{ product.id }}">{{ 'cart.general.upsell_add_cart_label' | t }}</a>
+						{%- else -%}
+						<a href="javascript: void(0);" onClick="window.addUpsellProduct({{ product.variants[0].id }});" class="btn upsell-add">{{ 'cart.general.upsell_add_cart_label' | t }}</a>
+						{%- endif -%}
+					</div>
+					
+					<div class="ajaxcart__price-wrapper grid__right">
+					{%- assign hide_sale_price = true -%}
+						{% if product.compare_at_price_max > product.price %}
+						{% if current_variant.compare_at_price > current_variant.price %}
+							{%- assign hide_sale_price = false -%}
+						{% endif %}
+						<span class="cart__price">
+							{% if current_variant.compare_at_price > current_variant.price %}
+								{{ current_variant.compare_at_price | money }}
+							{% endif %}
+						</span>
+						{% endif %} 
+
+						<span class="cart__price"
+						itemprop="price"
+						content="{{ current_variant.price | divided_by: 100.00 }}">
+						{{ current_variant.price | money }}
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+</div>
+
+<style>
+	#Upsell__ProductModals-container .upsell-product__size-heading { 
+    color: #fff;
+    font-size: 21px;
+  }
+  #Upsell__ProductModals-container .upsell-product__size-buttons {
+    margin: 20px;
+  }
+  #Upsell__ProductModals-container .upsell-product__size-button {
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #D7C8B4;
+    box-shadow: 0 0 5px #777;
+    padding: 5px 10px;
+    font-size: 17px;
+    margin: 0 10px 10px 0;
+    display: inline-block;
+  }
+</style>
+
+<div id="Upsell__ProductModals-container">
+{% for handle in products %}
+{%- liquid
+	assign product = all_products[handle]
+	assign hasSize = false 
+	if product.options contains "Size" or product.options == "Size"
+		assign hasSize = true
+	endif	
+-%}
+	{%- if hasSize -%}
+	<div id="ProductModal-{{ product.id }}" class="modal modal--solid upsell-modal">
+		<div class="modal__inner">
+			<div class="modal__centered page-width text-center">
+				<div class="modal__centered-content">
+					<div class="upsell-product__size-heading">
+						{{ 'cart.general.upsell_choose_size_label' | t }}
+					</div>
+					<div class="upsell-product__size-buttons">
+					{%- for variant in product.variants -%}
+						{%- if variant.available -%}
+						<span class="upsell-product__size-button" data-variant-id="{{ variant.id }}">{{ variant.title }}</span>
+						{%- endif -%}
+					{%- endfor -%}
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<button type="button" class="modal__close js-modal-close text-link">
+			<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"/></svg>
+			<span class="icon__fallback-text">{{ 'general.accessibility.close_modal' | t | json }}</span>
+		</button>
+	</div>
+	
+	{%- endif -%}
+{%- endfor -%}
+</div>

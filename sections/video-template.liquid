@@ -1,0 +1,31 @@
+{%- render 'video-template', section: section -%}
+
+{% schema %}
+  {
+    "name": "Video Template",
+    "class": "index-section--hero",
+    "settings": [
+      {
+        "type": "text",
+        "id": "video_url",
+        "label": "Video link",
+        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "info": "Supports YouTube, .MP4 and Vimeo. Not all features supported by Vimeo. [Learn more](https://archetypethemes.co/blogs/impulse/how-do-i-add-background-videos)"
+      },
+      {
+          "type": "image_picker",
+          "id": "cover_img",
+          "label": "Background Image"
+      },
+      {
+          "type": "image_picker",
+          "id": "play_btn",
+          "label": "Play Button Image"
+      }
+    ],
+    "presets": [{
+      "name": "Video Template",
+      "category": "Video"
+    }]
+  }
+{% endschema %}

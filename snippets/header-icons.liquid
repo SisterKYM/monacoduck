@@ -1,0 +1,137 @@
+{%- liquid
+  assign main_menu = linklists[section.settings.main_menu_link_list]
+-%}
+<div class="site-nav">
+  <div class="site-nav__icons">
+
+    {%- for link in main_menu.links offset:3 -%}
+
+    {%- liquid
+      assign has_dropdown = false
+      assign is_megamenu = false
+      if link.links != blank
+        assign has_dropdown = true
+        if link.levels > 1
+          assign is_megamenu = true
+        endif
+      endif
+    -%}
+
+  <div class="{% if has_dropdown %} dropdown {% endif %}">
+    <a href="{{ link.url }}" class="header-nav__link{% if has_dropdown %} site-nav__link--has-dropdown{% endif %}">
+      {{ link.title }}
+      {% if has_dropdown %}
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+      {% endif %}
+    </a>
+    <div class="dropdown-content">
+      {%- if has_dropdown -%}
+      <ul class="test">
+        {%- for childlink in link.links -%}
+          <li>
+            <a href="{{ childlink.url }}">
+              {{ childlink.title | escape }}
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+    </div>
+  </div>
+  {%- endfor -%}
+
+    {% comment %}ly_switcher_factory_begin{% endcomment %}
+    {% render 'ly-switcher-factory' %}
+    {% comment %}ly_switcher_factory_end{% endcomment %}
+
+    <!--login-->
+    {%- if shop.customer_accounts_enabled -%}
+      <a class="site-nav__link site-nav__link--icon small--hide" href="{{ routes.account_url }}">
+        {%- if customer -%}
+
+          {%- else -%}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.437 33.423">
+            <g id="login_white" transform="translate(1.966 1.5)">
+              <ellipse id="Ellipse_16" data-name="Ellipse 16" class="cls-2" cx="7.51" cy="7.51" rx="7.51" ry="7.51" transform="translate(10.728)"/>
+              <path id="Pfad_158" data-name="Pfad 158" class="cls-2" d="M4913.832,1994.171a19.843,19.843,0,0,1,36.5-.124" transform="translate(-4913.832 -1964.214)"/>
+            </g>
+          </svg>
+          {%- endif -%}
+
+        <span class="icon__fallback-text">
+          {%- if customer -%}
+          <p> {{ 'layout.customer.account' | t }}</p>
+          {%- else -%}
+          <p> {{ 'layout.customer.log_in' | t }}</p>
+          {%- endif -%}
+        </span>
+      </a>
+    {%- endif -%}
+
+   <!--wishlist-->
+
+    {% if settings.wishlist_enable %}
+      <a style="color: #fff;" href="/pages/swym-wishlist" class="swym-wishlist site-nav__link site-nav__link--icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.8 32.861">
+          <g id="heart_white" transform="translate(1.5 1.5)">
+            <path id="Pfad_155" data-name="Pfad 155" class="cls-2" d="M3312.5,1765.905c0-3.156-3.319-6.275-7.076-6.275-5.957,0-9.312,5-9.312,10.072,0,13.639,16.419,19.789,16.419,19.789s16.381-6.15,16.381-19.765c0-4.372-2.9-10.1-9.335-10.1C3315.823,1759.63,3312.5,1762.75,3312.5,1765.905Z" transform="translate(-3296.112 -1759.63)"/>
+          </g>
+        </svg>
+      </a>    
+    {% endif %}
+
+    <a href="#" class="site-nav__link site-nav__link--icon search js-search-header">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="cls-2" viewBox="0 0 64 64"><path d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path></svg>
+      <span class="icon__fallback-text">{{ 'Search' | t }}</span>
+    </a>
+
+    {%- if section.settings.main_menu_alignment == 'left' or section.settings.main_menu_alignment == 'left-center' or section.settings.main_menu_alignment == 'left-drawer' -%}
+      <button
+        type="button"
+        class="site-nav__link site-nav__link--icon js-drawer-open-nav{% if section.settings.main_menu_alignment == 'left' or section.settings.main_menu_alignment == 'left-center' %} medium-up--hide{% endif %}"
+        aria-controls="NavDrawer">
+        <svg id="Warenkorb_empty" xmlns="http://www.w3.org/2000/svg" width="16.5" height="15.1"><defs><style>.cls-1{fill:#fff}</style></defs><g id="Gruppe_37" data-name="Gruppe 37" transform="translate(-66.3 -58)"><rect id="Rechteck_492" data-name="Rechteck 492" class="cls-1" width="15" height="2" rx="1" transform="translate(67 64)"/><rect id="Rechteck_493" data-name="Rechteck 493" class="cls-1" width="11" height="2" rx="1" transform="translate(69 71)"/><rect id="Rechteck_494" data-name="Rechteck 494" class="cls-1" width="9" height="2" rx="1" transform="rotate(-75 86.5 -14.9)"/><rect id="Rechteck_495" data-name="Rechteck 495" class="cls-1" width="9" height="2" rx="1" transform="rotate(-105 62.3 10.2)"/><rect id="Rechteck_496" data-name="Rechteck 496" class="cls-1" width="7" height="2" rx="1" transform="rotate(-60 90.6 -29)"/><rect id="Rechteck_497" data-name="Rechteck 497" class="cls-1" width="7" height="2" rx="1" transform="rotate(-120 57.2 10.3)"/></g></svg>       
+        <span class="icon__fallback-text">{{ 'general.drawers.navigation' | t }}</span>
+      </button>
+    {%- endif -%}
+
+      <!--cart-->
+
+    <a href="{{ routes.cart_url }}" class="site-nav__link site-nav__link--icon js-drawer-open-cart" aria-controls="CartDrawer" data-icon="{{ settings.cart_icon }}">
+      <span class="cart-link">
+        <!-- <svg id="Warenkorb_empty" xmlns="http://www.w3.org/2000/svg" width="16.5" height="15.1"><defs><style>.cls-1{fill:#fff}</style></defs><g id="Gruppe_37" data-name="Gruppe 37" transform="translate(-66.3 -58)"><rect id="Rechteck_492" data-name="Rechteck 492" class="cls-1" width="15" height="2" rx="1" transform="translate(67 64)"/><rect id="Rechteck_493" data-name="Rechteck 493" class="cls-1" width="11" height="2" rx="1" transform="translate(69 71)"/><rect id="Rechteck_494" data-name="Rechteck 494" class="cls-1" width="9" height="2" rx="1" transform="rotate(-75 86.5 -14.9)"/><rect id="Rechteck_495" data-name="Rechteck 495" class="cls-1" width="9" height="2" rx="1" transform="rotate(-105 62.3 10.2)"/><rect id="Rechteck_496" data-name="Rechteck 496" class="cls-1" width="7" height="2" rx="1" transform="rotate(-60 90.6 -29)"/><rect id="Rechteck_497" data-name="Rechteck 497" class="cls-1" width="7" height="2" rx="1" transform="rotate(-120 57.2 10.3)"/></g></svg> -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.86 32.867">
+          
+          <g id="cart_white" transform="translate(1.5 1.5)">
+            <path id="Pfad_156" data-name="Pfad 156" class="cls-2" d="M3973.671,1905.044h-20.029l-6.416-19.793h32.86Z" transform="translate(-3947.227 -1875.177)"/>
+            <path id="Pfad_157" data-name="Pfad 157" class="cls-2" d="M4027.521,1769.609l9.979-9.979,9.979,9.979" transform="translate(-4021.082 -1759.63)"/>
+          </g>
+        </svg>
+        <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
+        <span class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}">
+          <span id="cart-counter">{% if cart.item_count > 0 %}{{ cart.item_count }}{% endif %}</span>
+        </span>
+      </span>
+    </a>
+
+     
+<!--search-->
+    
+{%- if settings.search_enable -%}
+<a href="{{ routes.search_url }}" class="small--hide site-nav__link site-nav__link--icon js-search-header{% if section.settings.main_menu_alignment == 'center' or section.settings.main_menu_alignment == 'center-split' %} medium-up--hide{% endif %}">
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.581 33.581">
+    
+    <g id="search_white" transform="translate(1.5 1.5)">
+      <ellipse id="Ellipse_15" data-name="Ellipse 15" class="cls-1" cx="13.079" cy="13.079" rx="13.079" ry="13.079"/>
+      <line id="Linie_34" data-name="Linie 34" class="cls-2" x1="7.56" y1="7.56" transform="translate(22.4 22.4)"/>
+    </g>
+  </svg>
+    
+    <span class="icon__fallback-text">{{ 'general.search.title' | t }}</span>
+  
+  </a>
+{%- endif -%}
+  </div>
+</div>
+

@@ -1,0 +1,582 @@
+
+<!-- BEGIN USF -->
+{%- assign per_row = section.settings.per_row -%}
+{%- assign paginate_by = per_row | times: section.settings.rows_per_page -%}
+
+{%- if section.settings.collection_bg_color != null and section.settings.collection_bg_color != 'rgba(0,0,0,0)' -%}
+  {%- style -%}
+  #MainContent > .collection-content {
+    background: {{ section.settings.collection_bg_color }};
+  }
+  .usf-mobile .usf-zone .grid__item {
+    padding-left: 16px;
+  }
+  {%- endstyle -%}
+{%- endif -%}
+
+<!-- Banners -->
+{%- liquid 
+  assign banners = section.blocks | where: 'type', 'banner' 
+  for banner in banners 
+    if banner.settings.collection != collection.handle and banner.settings.collection != blank
+      continue
+    endif 
+    render 'collection-banner', banner: banner, collection: collection
+  endfor
+-%}
+
+{%- if banners.size > 0 -%}
+  {%- style -%}
+    @media (min-width: 769px) {
+      .layout-multiple .collection-banner {
+        max-height: 493.328px;
+      }
+      .layout-single .collection-banner {
+        max-height: 727px;
+      }
+    }
+    @media (max-width: 768px) {
+      .product-grid--collection {
+        margin-left: -17px;
+      }
+    }
+    .collection-banner {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .collection-banner .banner-wrapper {
+      position: relative;
+      flex: 1 1 auto;
+      min-height: 0px;
+    }
+    .grid .collection-banner .banner-wrapper .secondary-slide, 
+    .grid .collection-banner .banner-wrapper .product-image-main,
+    .grid .collection-banner .banner-wrapper .image-wrap,
+    .grid .collection-banner .banner-wrapper img {
+      height: 100% !important;
+      padding: 0px !important;
+      object-fit: cover;
+      object-position: center;
+    }
+    .collection-banner .banner-text {
+      position: absolute;
+      width: 100%;
+      left: 0px;
+      padding: 10px;
+      text-align: center;
+      line-height: 125%;
+      word-break: break-word;
+    }
+    .collection-banner img.lazyloaded {
+      opacity: 1 !important;
+      max-height: initial !important;
+    }
+    .collection-banner .banner-bottom {
+      padding: 20px;
+      text-align: center;
+      word-break: break-word;
+    }
+    .collection-banner .banner-usp {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+      max-width: 1760px;
+      width: 100%;
+      margin: 0 auto;
+
+    }
+    .collection-banner .usp-block {
+      flex: 0 0 25%;
+    }
+    .collection-banner .usp-block .usp-image img {
+      max-height: 50px !important;
+      object-fit: contain;
+    }
+
+    .collection-banner[data-type="hero_banner"] .image-wrap {
+      height: auto !important;
+      padding: 0px !important;
+    }
+
+    .collection-banner[data-type="hero_banner"] .banner-wrapper,
+    .collection-banner[data-type="hero_banner"] img {
+      object-fit: cover;
+      object-position: center center;
+    }
+
+    @media (min-width: 769px) {
+      .collection-banner .usp-block {
+        flex: 0 0 15%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .collection-banner-item {
+        width: 100% !important;
+      }
+      .collection-banner .usp-block {
+        font-size: 12px;
+      }
+    }
+  {%- endstyle -%}
+
+  <script>    
+    // init collection grid banners
+    window.initCollectionGridBanners = () => {
+      let banners = document.querySelectorAll(".collection-banner");
+      banners.forEach(function(banner) {
+        let type = banner.getAttribute("data-type");
+        if(type != "grid_item") return;
+        let grid = document.getElementById("usf_container").querySelector(".grid");
+        let items = grid.querySelectorAll(".grid__item");
+        let position = banner.getAttribute("data-position");
+        if(window.innerWidth < 769) {
+          position = banner.getAttribute("data-position-mobile");
+        }
+        let banner_wrapper = grid.querySelector(".grid__item").cloneNode();
+        banner_wrapper.innerHTML = "";
+        banner_wrapper.classList.add("collection-banner-item");
+        banner_wrapper.appendChild(banner);
+        items.forEach(function(item, k) {
+          if((k + 1) == position) {
+            grid.insertBefore(banner_wrapper, item);
+            banner.setAttribute("style", "");
+          }
+        });
+      });
+    }
+
+    // init collection hero banner 
+    const initCollectionHeroBanner = () => {
+      let banners = document.querySelectorAll(".collection-banner");
+      banners.forEach(function(banner) {
+        let type = banner.getAttribute("data-type");
+        if(type != "hero_banner") return;
+        let hero = document.getElementById("CollectionHeaderSection").querySelector(".collection-hero");
+        hero.parentElement.appendChild(banner);
+        hero.remove();
+        banner.setAttribute("style", "");
+      });
+    }
+    initCollectionHeroBanner();
+  </script>
+{%- endif -%}
+
+<div
+  id="CollectionSection"
+  data-section-id="{{ section.id }}"
+  data-section-type="collection-template">
+  
+  {%- if section.settings.description_position == 'top' -%}
+    <h2>{{ collection.title }}</h2>
+    {%- if collection.description != blank -%}
+      <div class="rte">
+        {{ collection.description }}
+      </div>
+      <hr class="hr--clear hr--small">
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- if section.settings.subcollection_style == 'above' -%}
+    {%- render 'subcollections', per_row: section.settings.subcollections_per_row -%}
+  {%- endif -%}
+  
+   {% case per_row %}
+    {% when 2 %}
+      {%- assign grid_item_width = 'medium-up--one-half' -%}
+    {% when 3 %}
+      {%- assign grid_item_width = 'small--one-half medium-up--one-third' -%}
+    {% when 4 %}
+      {%- assign grid_item_width = 'small--one-half medium-up--one-quarter' -%}
+    {% when 5 %}
+      {%- assign grid_item_width = 'small--one-half medium-up--one-fifth' -%}
+    {% endcase %}
+ {%- assign img_url = settings.trust_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+    {% capture globalSettings %}
+      {
+        quick_shop_enable: {{ settings.quick_shop_enable | json}},
+  			product_grid_image_size: {{ settings.product_grid_image_size | json }},
+  			product_hover_image: {{ settings.product_hover_image | json }},
+  			collection_color_swatches: {{ settings.collection_color_swatches | json }},
+  			type_product_style: {{ settings.type_product_style | json }},
+  			vendor_enable: {{ settings.vendor_enable | json }},
+  			product_zoom_enable: {{ settings.product_zoom_enable | json }},
+  			inventory_enable: {{ settings.inventory_enable | json }},
+  			inventory_transfers_enable: {{ settings.inventory_transfers_enable | json }},
+  			show_breadcrumbs: {{ settings.show_breadcrumbs | json }},
+  			enable_product_reviews: {{ settings.enable_product_reviews | json }},
+  			reviews_layout: {{ settings.reviews_layout | json }},
+  			sku_enable: {{ settings.sku_enable | json }},
+  			product_save_amount: {{ settings.product_save_amount | json }},
+  			product_save_type: {{ settings.product_save_type | json }},
+  			trust_image: {{ settings.trust_image | json }},
+  			trust_image_width: {{ settings.trust_image.width | json}},
+  			trust_image_aspect_ratio:{{ settings.trust_image.aspect_ratio | json}},
+  			trust_img_url: '{{img_url}}',
+  			trust_image_alt: {{ settings.trust_image.alt | json}},
+  			trust_image_src: '{{ settings.trust_image | img_url: '540x' }}',
+  			product_contact_title: {{ settings.product_contact_title | json }},
+  			product_contact: {{ settings.product_contact | json }},
+      }
+    {% endcapture %}
+  	{% capture sectionSettings %}
+         {
+            per_row: {{ section.settings.per_row | json}}
+         }
+    {% endcapture %}
+
+    <div class="product-grid--collection" style="display: flex; flex-wrap: wrap;">
+      {%- for product in collection.products -%}
+        {%- render 'product-grid-item', product: product, grid_item_width: grid_item_width -%}
+      {%- else -%}
+        <div class="grid__item">
+          <p>{{ 'collections.general.no_matches' | t }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+
+  {%- if section.settings.subcollection_style == 'below' -%}
+    {%- render 'subcollections', per_row: section.settings.subcollections_per_row -%}
+  {%- endif -%}
+
+  {%- if section.settings.description_position == 'bottom' -%}
+    {%- if collection.description != blank -%}
+      <div class="rte" style="clear:both;">
+        {{ collection.description }}
+      </div>
+      <hr class="hr--clear hr--small">
+    {%- endif -%}
+  {%- endif -%}
+
+</div>
+
+{% schema %}
+  {
+    "name": "Collection pages",
+    "settings": [
+      {
+        "type": "select",
+        "id": "description_position",
+        "label": "Collection description position",
+        "default": "top",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Subcollections"
+      },
+      {
+        "type": "paragraph",
+        "content": "Links to collections from your menu will appear here. [Learn more](https://archetypethemes.co/blogs/impulse/how-do-i-create-subcollections)"
+      },
+      {
+        "type": "select",
+        "id": "subcollection_style",
+        "label": "Subcollection style",
+        "default": "above",
+        "options": [
+          {
+            "value": "above",
+            "label": "Above products"
+          },
+          {
+            "value": "below",
+            "label": "Below products"
+          },
+          {
+            "value": "none",
+            "label": "None"
+          }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "subcollections_per_row",
+        "label": "Subcollections per row",
+        "default": 5,
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "type": "header",
+        "content": "Products"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_collection_count",
+        "label": "Enable collection count",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "per_row",
+        "label": "Products per row",
+        "default": 4,
+        "min": 2,
+        "max": 5,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "rows_per_page",
+        "label": "Rows per page",
+        "default": 7,
+        "min": 3,
+        "max": 20,
+        "step": 1
+      },
+      {
+        "type": "checkbox",
+        "id": "mobile_flush_grid",
+        "label": "Flush grid on mobile",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Finishing block"
+      },
+			{
+				"type": "image_picker",
+				"id": "finishing_image",
+				"label": "Image"
+			},
+			{
+				"type": "text",
+				"id": "finishing_heading",
+				"label": "Heading"
+			},
+			{
+				"type": "textarea",
+				"id": "finishing_text",
+				"label": "Text"
+      },
+      {
+        "type": "color",
+        "id": "finishing_bg",
+        "label": "Background"
+      },
+      {
+        "type": "header",
+        "content": "Collection background color"
+      },
+      {
+        "type": "color",
+        "id": "collection_bg_color",
+        "label": "Background color"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "banner",
+        "name": "Banner",
+        "settings": [
+          {
+            "type": "radio",
+            "id": "type",
+            "options": [
+              { "value": "hero_banner", "label": "Hero banner"},
+              { "value": "grid_item", "label": "Grid item"}
+            ],
+            "label": "Banner type",
+            "default": "grid_item"
+          },
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "Collection for assign banner to"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "range",
+            "id": "banner_height",
+            "min": 200,
+            "max": 1000,
+            "step": 10,
+            "unit": "px",
+            "label": "Banner height limit",
+            "default": 700
+          },
+          {
+            "type": "range",
+            "id": "banner_height_mobile",
+            "min": 100,
+            "max": 1000,
+            "step": 10,
+            "unit": "px",
+            "label": "Banner height limit (mobile)",
+            "default": 350
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+          },
+          {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text color",
+            "default": "#fff"
+          },
+          {
+            "type": "range",
+            "id": "text_size",
+            "min": 12,
+            "max": 90,
+            "step": 1,
+            "unit": "px",
+            "label": "Text font size",
+            "default": 50
+          },
+          {
+            "type": "range",
+            "id": "text_size_mobile",
+            "min": 12,
+            "max": 90,
+            "step": 1,
+            "unit": "px",
+            "label": "Text font size (mobile)",
+            "default": 35
+          },
+          {
+            "type": "select",
+            "id": "text_top",
+            "options": [
+               { "value": "0", "label": "Top center"},
+               { "value": "50", "label": "Middle center"},
+               { "value": "100", "label": "Bottom center"}
+            ],
+            "label": "Text position",
+            "default": "50"
+          },
+          {
+            "type": "textarea",
+            "id": "bottom_text",
+            "label": "Bottom text"
+          },
+          {
+            "type": "color",
+            "id": "bottom_text_color",
+            "label": "Bottom Text color",
+            "default": "#fff"
+          },
+          {
+            "type": "range",
+            "id": "bottom_text_size",
+            "min": 12,
+            "max": 90,
+            "step": 1,
+            "unit": "px",
+            "label": "Bottom Text font size",
+            "default": 16
+          },
+          {
+            "type": "range",
+            "id": "bottom_text_size_mobile",
+            "min": 10,
+            "max": 90,
+            "step": 1,
+            "unit": "px",
+            "label": "Bottom Text font size (mobile)",
+            "default": 13
+          },
+          {
+            "type": "color",
+            "id": "bottom_text_bg",
+            "label": "Bottom text Background"
+          },
+          {
+            "type": "range",
+            "id": "position",
+            "label": "Banner position (desktop)",
+            "default": 2,
+            "min": 1,
+            "max": 99,
+            "step": 1
+          },
+          {
+            "type": "range",
+            "id": "position_mobile",
+            "label": "Banner position (mobile)",
+            "default": 2,
+            "min": 1,
+            "max": 99,
+            "step": 1
+          },
+          {
+            "type": "header",
+            "content": "USP bar"
+          },
+          {
+            "type": "checkbox",
+            "id": "usp_enable",
+            "default": true,
+            "label": "Show USP Bar"
+          },
+          {
+            "type": "collection",
+            "id": "usp_collection",
+            "label": "Show USP Bar only on specific collection"
+          },
+          {
+            "type": "image_picker",
+            "id": "usp_image1",
+            "label": "Image 1"
+          },
+          {
+            "type": "text",
+            "id": "usp_text1",
+            "label": "Text 1"
+          },
+          {
+            "type": "image_picker",
+            "id": "usp_image2",
+            "label": "Image 2"
+          },
+          {
+            "type": "text",
+            "id": "usp_text2",
+            "label": "Text 2"
+          },
+          {
+            "type": "image_picker",
+            "id": "usp_image3",
+            "label": "Image 3"
+          },
+          {
+            "type": "text",
+            "id": "usp_text3",
+            "label": "Text 3"
+          },
+          {
+            "type": "image_picker",
+            "id": "usp_image4",
+            "label": "Image 4"
+          },
+          {
+            "type": "text",
+            "id": "usp_text4",
+            "label": "Text 4"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

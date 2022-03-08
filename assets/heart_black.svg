@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35.8" height="32.861" viewBox="0 0 35.8 32.861">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #1e001e;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="heart_black" transform="translate(1.5 1.5)">
+    <path id="Pfad_155" data-name="Pfad 155" class="cls-1" d="M3312.5,1765.905c0-3.156-3.319-6.275-7.076-6.275-5.957,0-9.312,5-9.312,10.072,0,13.639,16.419,19.789,16.419,19.789s16.381-6.15,16.381-19.765c0-4.372-2.9-10.1-9.335-10.1C3315.823,1759.63,3312.5,1762.75,3312.5,1765.905Z" transform="translate(-3296.112 -1759.63)"/>
+  </g>
+</svg>

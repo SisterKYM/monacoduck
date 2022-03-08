@@ -1,0 +1,157 @@
+{%- style -%}
+  .product_additional_content{
+    background: whitesmoke;
+    padding: 80px 0px 80px 60px;
+    margin: 20px 0;
+  }
+
+  .pdp-additional-tab .tab_image {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .pdp-additional-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+  }
+  
+  .pdp-additional-tabs label {
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: gray;
+    transition: background ease 0.3s;
+    padding-bottom: 10px;
+  }
+  
+  .pdp-additional-tabs .pdp-additional-tab{
+    order: 9;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    display: none;
+    padding: 1rem 0;
+  }
+
+  .pdp-additional-tabs .pdp-additional-tab .tab_content{
+    padding: 0px 50px 0px 0px;
+    margin: 0px !important; 
+    background: transparent;
+    max-width: 60%;
+  }
+
+  .pdp-additional-tabs .pdp-additional-tab .tab_content ul{
+    display: block
+  }
+
+  .pdp-additional-tabs .pdp-additional-tab .tab_image{
+    height: calc(100% + 150px);
+    margin-top: -115px;
+  }
+
+  {% comment %} .pdp-additional-tabs .pdp-additional-tab .tab_image img{
+    width: 100%;
+    height: 100%;
+  } {% endcomment %}
+  
+  .pdp-additional-tabs input[type="radio"] {
+    display: none;
+  }
+  
+  .pdp-additional-tabs input[type="radio"]:checked + label {
+    border-bottom: 1px solid;
+    color: black;
+  }
+  
+  .pdp-additional-tabs input[type="radio"]:checked + label + .pdp-additional-tab{
+    display: flex;
+  }
+
+  @media screen and (max-width:768px){
+    .product_additional_content{
+      padding: 40px 20px;
+    }
+    .pdp-additional-tabs .pdp-additional-tab .tab_content{
+      max-width: 100%;
+      padding: 0;
+    }
+    .pdp-additional-tabs .pdp-additional-tab .tab_image{
+      display: none;
+    }
+    .pdp-additional-tabs {
+      height: auto !important;
+    }
+    .product_additional_content {
+      padding-bottom: 0px !important;
+    }
+  }
+{%- endstyle -%}
+
+{% comment %} {%- liquid
+  if product
+    assign section_id = section_id | append: '-' | append: product.id
+  endif
+-%} {% endcomment %}
+<div class="page-width">
+  <div class="product_additional_content">
+    <div class="pdp-additional-tabs">
+    {% comment %} product description content tab {% endcomment %}
+      <input type="radio" name="tabs" id="tabDescritpion" checked="checked">
+      <label for="tabDescritpion">
+      {%- if product.metafields.custom_fields["tab_description_title"] != blank -%}
+        {{product.metafields.custom_fields["tab_description_title"]}}
+      {%- else -%}
+        {{ 'products.general.tab1_title' | t }}
+      {%- endif -%}
+      
+      </label>
+      <div class="pdp-additional-tab">
+        <div class="tab_content product-single__description rte">
+          {{ product.description }}
+        </div>
+        {% if product.metafields.custom_fields["tab_description_image"] != blank %}
+          <div class="tab_image"><img class="lazyload" width="600" src="{{ product.metafields.custom_fields['tab_description_image']}}" data-src="{{ product.metafields.custom_fields['tab_description_image']}}"></div>
+        {% endif %}
+      </div>
+    {% comment %} product metrial custom meta field   {% endcomment %}
+      {%- if product.metafields.custom_fields["tab_material_title"] != blank -%}
+        <input type="radio" name="tabs" id="tabMaterial">
+        <label for="tabMaterial">{{product.metafields.custom_fields["tab_material_title"]}}</label>
+        <div class="pdp-additional-tab">
+          {%- if product.metafields.custom_fields["tab_material_html"] != blank -%}
+            <div class="tab_content product-single__description rte">
+              {{product.metafields.custom_fields["tab_material_html"]}}
+            </div>
+          {%- endif -%}
+          {% if product.metafields.custom_fields["tab_material_image"] != blank %}
+            <div class="tab_image"><img class="lazyload" width="600" src="{{ product.metafields.custom_fields['tab_material_image']}}" data-src="{{ product.metafields.custom_fields['tab_material_image']}}"></div>
+          {% endif %}
+        </div>
+      {%- endif -%}
+    {% comment %} product pflege custom meta field {% endcomment %}
+      {%- if product.metafields.custom_fields["tab_pflege_title"] != blank -%}
+        <input type="radio" name="tabs" id="tabPflege">
+        <label for="tabPflege">{{product.metafields.custom_fields["tab_pflege_title"]}}</label>
+        <div class="pdp-additional-tab">
+          {%- if product.metafields.custom_fields["tab_pflege_html"] != blank -%}
+            <div class="tab_content product-single__description rte">
+              {{product.metafields.custom_fields["tab_pflege_html"]}}
+            </div>
+          {%- endif -%}
+          {% if product.metafields.custom_fields["tab_pflege_image"] != blank %}
+            <div class="tab_image"><img class="lazyload" width="600" src="{{ product.metafields.custom_fields['tab_pflege_image']}}" data-src="{{ product.metafields.custom_fields['tab_pflege_image']}}"></div>
+          {% endif %}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>

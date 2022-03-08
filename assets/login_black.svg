@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40.437" height="33.423" viewBox="0 0 40.437 33.423">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #1e001e;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="login_black" transform="translate(1.966 1.5)">
+    <ellipse id="Ellipse_16" data-name="Ellipse 16" class="cls-1" cx="7.51" cy="7.51" rx="7.51" ry="7.51" transform="translate(10.728)"/>
+    <path id="Pfad_158" data-name="Pfad 158" class="cls-1" d="M4913.832,1994.171a19.843,19.843,0,0,1,36.5-.124" transform="translate(-4913.832 -1964.214)"/>
+  </g>
+</svg>

@@ -1,0 +1,91 @@
+{%- liquid
+  assign show_section = true
+  if template contains 'page' and section.settings.hide_pages
+    assign show_section = false
+  endif
+  if template contains 'collection' and section.settings.hide_collections
+    assign show_section = false
+  endif
+  if template contains 'product' and section.settings.hide_products
+    assign show_section = false
+  endif
+  if template == 'index' and section.settings.hide_homepage
+    assign show_section = false
+  endif
+  if template == 'cart' and section.settings.hide_cart
+    assign show_section = false
+  endif
+-%}
+
+<style>
+  #shopify-section-instagram .section-header {
+    margin-top: 4rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    #shopify-section-instagram .section-header {
+      text-align: center;
+    }
+  }
+</style>
+
+{%- if show_section -%}
+    <div class="index-section">
+      <div class="page-width mobile-full">
+        {%- if section.settings.title != blank -%}
+          <div class="section-header">
+            <h2>{{ section.settings.title }}</h2>
+          </div>
+        {%- endif -%}
+      </div>
+      <div class="page-width mobile-full">
+        <div class="instagram">
+          {{ section.settings.instagram_code }}
+        </div>
+      </div> 
+    </div>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Instagram",
+    "class": "index-section--instagram",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading"
+      },
+      {
+        "type": "textarea",
+        "id": "instagram_code",
+        "label": "Instagram code"
+      },
+      {
+        "type": "checkbox",
+        "id": "hide_pages",
+        "label": "Do not show on Pages"
+      },
+      {
+        "type": "checkbox",
+        "id": "hide_collections",
+        "label": "Do not show on Collections pages"
+      },
+      {
+        "type": "checkbox",
+        "id": "hide_products",
+        "label": "Do not show on Products pages"
+      },
+      {
+        "type": "checkbox",
+        "id": "hide_homepage",
+        "label": "Do not show on home page"
+      },
+      {
+        "type": "checkbox",
+        "id": "hide_cart",
+        "label": "Do not show on cart page"
+      }
+    ]
+  }
+{% endschema %}

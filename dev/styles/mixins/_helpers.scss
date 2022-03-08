@@ -1,0 +1,88 @@
+// --------------------------------------------------
+// event wrapper
+
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+// --------------------------------------------------
+// contexts
+
+@mixin when-inside($selector) {
+  #{$selector} & {
+    @content;
+  }
+}
+
+// --------------------------------------------------
+// font size
+
+@function calculate-rem($size) {
+  $rem-size: $size / 16px;
+  @return $rem-size * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: calculate-rem($size);
+}
+
+// --------------------------------------------------
+// aspect ratio
+// e.g. @include aspect-ratio(16,9);
+// expects child to have class of `.content` (could be replaced with a wildcard `*`)
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+
+  &::before {
+    content: ''; 
+    display: block;
+    padding-top: ($height / $width) * 100%;
+    width: 100%;
+  }
+
+  > .content {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0; 
+    top: 0;
+  }
+}
+
+// ---------------------------------------------------
+// Mixin Media Query
+@mixin media-query($size) {
+  @if $size == mobile {
+    @media (max-width: 768px) { @content; }
+  } @else if $size == tablet-portrait-up {
+    @media (min-width: 769px) { @content; }
+  } @else if $size == tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+  } @else if $size == desktop {
+    @media (min-width: 1200px) { @content; }
+  } @else if $size == desktop-large {
+    @media (min-width: 1800px) { @content; }
+  }
+}
+
+// Calculation
+// Usage: @include calc( width, '100% - 2px')
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}

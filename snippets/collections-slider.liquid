@@ -1,0 +1,720 @@
+{%- comment -%}
+  Inputs:
+    section - section or block with settings
+{%- endcomment -%}
+
+{%- style -%}
+
+.collections-slider-section {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.collections-slider__item-price {
+  font-size: calc(var(--typeBaseSize) * .85);
+  font-weight: 700;
+}
+
+@media(max-width: 768px) {
+  .collections-slider-section {
+    padding: 0;
+  }
+  .collections-slider-section .page-width{
+    padding: 0 !important;
+  }
+}
+
+.collections-tabs__switcher {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 6px;
+  background: #F6F6F6;
+  font-size: 12px;
+  text-transform: uppercase;
+  box-shadow: 0 10px 14px #00000029;
+  padding: 2px;
+}
+
+.collection-tabs__item {
+  padding: 11px 18px 10px;
+}
+
+.collection-tabs__item.active {
+  background: #220923;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.collections-slider-section__slider .data-container {
+  white-space: initial;
+}
+
+.collections-slider-section__slider {
+  margin-top: 30px;
+  min-height: 200px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .collections-slider-section__slider {
+    padding-bottom: 10px;
+  }
+}
+
+.collections-slider__item-image {
+  position: relative;
+  width: 100%;
+  padding-top: 56%;
+  min-height: 200px;
+}
+
+.collections-slider__item-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collections-slider__item-title {
+  text-transform: uppercase;
+  font-size: 42px;
+  line-height: 44px;
+  margin-top: 20px;
+}
+
+@media(max-width: 768px) {
+  .collections-slider__item-title {
+    font-size: 24px;
+  }
+  
+.collections-slider__item-text {
+    font-size: 12px !important;
+  }
+}
+
+.collections-slider__item-text {
+  font-size: 14px;
+  margin: 10px auto 0;
+  text-align: center;
+}
+
+.collections-slider__item-text ul {
+  display: none;
+}
+
+.collections-slider__item-button {
+  margin-top: 40px !important;
+}
+
+.collections-slider__item-colors {
+  margin-top: 20px;
+  min-height: 50px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.collections-slider__item-color-variant {
+  margin: 0 7px 15px;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.collections-slider__item-color-variant img {
+  width: 60px;
+  max-height: 60px;
+}
+
+.collections-slider__item-color-variant.active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #220923;
+}
+
+.collections-slider__item > *:not(.collections-slider__item-image) {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.collections-slider__item.glide__slide--active > * {
+  opacity: 1;
+}
+
+.collections-slider__item.glide__slide--active .collections-slider__item-content {
+  position: relative;
+  z-index: 10;
+}
+
+.collections-slider__item-usp {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  grid-gap: 50px;
+}
+
+@media(max-width: 768px) {
+  .collections-slider__item-usp {
+    grid-gap: 15px 15%;
+  }
+}
+
+.collections-slider__item-usp-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 10px;
+  max-width: 130px;
+  font-size: 12px;
+  line-height: 15px;
+  word-wrap: break-word;
+}
+
+@media(max-width: 768px) {
+  .collections-slider__item-usp-block {
+    flex: 1 1 50%;
+    grid-gap: 2px;
+    font-size: 10px;
+    word-break: break-word;
+    display: flex;
+    flex-basis: calc(50%);
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: center;
+  }
+  
+.collections-slider__item-usp-block span {
+    flex: 0 0 80%;
+    text-align: left;
+    max-width: 100px;
+  }
+  
+.collections-slider__item-usp-block .usp-image-wrapper {
+    flex: 0 0 20%;
+  }
+}
+
+.glide__arrow {
+  position: absolute;
+  top: 18%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 10px 14px #00000029;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.glide__arrow--right {
+  right: 18%;
+}
+
+.glide__arrow--left {
+  left: 18%;
+}
+
+.glide__arrow span {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.glide__arrow--right span {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin-left: -3px;
+}
+
+.glide__arrow--left span {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  margin-right: -3px;
+}
+
+/* Mobile */
+@media(max-width: 768px) {
+  .glide__arrow {
+    top: 10%;
+  }
+
+  .glide__arrow--right {
+    right: 10%;
+  }
+
+  .glide__arrow--left {
+    left: 10%;
+  }
+  
+.collections-slider__item-content {
+    word-break: break-word;
+  }
+  
+.collections-slider__item-usp-block {
+    flex-direction: row;
+    word-break: initial;
+  }
+}
+/* Desktop */
+@media(min-width: 768px) {
+  .collections-slider__item-content {
+    max-width: 600px;
+    margin: 0 auto !important;
+    width: auto !important;
+  }
+}
+
+#collectionSliderStickyButton .btn {
+  flex: 1 1 auto;
+}
+
+{%- endstyle -%}
+
+<div class="collections-slider-section" id="section--{{ section.id }}">
+  <div class="page-width">
+    {%- if section.settings.section_heading != blank -%}
+    <h2 class="section-header__title">
+      {{ section.settings.section_heading }}
+    </h2>
+    {%- endif -%}
+    {%- liquid 
+      assign collections = ''
+      if section.settings.collection1 != blank
+        assign collections = collections | append: section.settings.collection1 | append: ","
+      endif
+      if section.settings.collection2 != blank
+        assign collections = collections | append: section.settings.collection2 | append: ","
+      endif
+      if section.settings.collection3 != blank
+        assign collections = collections | append: section.settings.collection3 | append: ","
+      endif
+      if section.settings.collection4 != blank
+        assign collections = collections | append: section.settings.collection4 | append: ","
+      endif
+    -%}
+    {%- if collections != blank -%}
+      {%- liquid 
+        assign collections = collections | split: ','
+        assign products_limit = section.settings.limit
+        if products_limit == blank
+          assign products_limit = 4
+        endif
+      -%}
+
+    <div class="collections-tabs">
+      <!-- tabs buttons -->
+      <div class="collections-tabs__switcher">
+        {%- for handle in collections -%}
+          {%- if handle == "" -%}
+            {%- continue -%}
+          {%- endif -%}
+        <div 
+          class="
+            collection-tabs__item
+            {% if forloop.index == 1 %}
+            active
+            {% endif %}
+          "
+          data-collection="{{ handle }}"
+        >
+          {{ handle }}
+        </div>
+        {%- endfor -%}
+      </div>
+
+      <!-- tabs content (slider) -->
+      <div class="collections-slider-section__slider glide loading">
+        <div class="glide__track" data-glide-el="track">
+          <div class="glide__slides data-container"></div>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><span></span></button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><span></span></button>
+        </div>
+      </div>
+    </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% comment %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css" integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js" integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ 'glide.core.min.css' | asset_url }}" />
+<script src="{{ 'glide.min.js' | asset_url }}" defer></script>
+
+<script>
+  document.addEventListener('page:loaded', function() {
+    let section = document.getElementById("section--{{ section.id }}");
+    if (section.querySelectorAll(".collection-tabs__item").length <= 1) {
+      section.querySelector(".collection-tabs__item").style.display = "none";
+    }
+    section.querySelectorAll(".collection-tabs__item").forEach(function(button) {
+      button.addEventListener("click", function() {
+        button.parentElement.querySelector(".active").classList.remove("active");
+        button.classList.add("active");
+        collectionsSlider.changeContent(button);
+      });
+    });
+
+    // initial loading for first category tab
+    section.querySelector(".collection-tabs__item").dispatchEvent(new Event('click'));
+  });
+
+  window.collectionsSlider = window.collectionsSlider || {};
+
+  /**
+   * Init Color Swatcher 
+  */
+  collectionsSlider.initColorSwatcher = (slider) => {
+    let slide = slider.querySelector(".glide__slide--active");
+    let container = slide.querySelector(".collections-slider__item-colors");
+    if(container.classList.contains("loaded")) {
+      container.classList.remove("loading");
+      return; // already initialized
+    }
+    
+    let clusterTag = slide.getAttribute("data-product-cluster");
+    let excludeProduct = slide.getAttribute("data-product-handle");
+    let appendTo = container;
+    if(clusterTag != "") {
+      collectionsSlider.fetchColorVariants(clusterTag, excludeProduct, appendTo);
+      container.classList.add("loaded");
+      setTimeout(function() {
+        container.classList.remove("loading");
+      }, 1000);
+    }
+    else {
+      container.remove();
+    }
+  };
+
+  /**
+   *  Change tab content 
+  */
+  collectionsSlider.changeContent = (button) => {
+    let collection = button.getAttribute("data-collection");
+    collection = encodeURIComponent(collection).replace(/[!'()*]/g, (c) => {
+      return '%' + c.charCodeAt(0).toString(16);
+    });
+    let container = button.closest(".collections-slider-section");
+    let tab_content = container.querySelector(".collections-slider-section__slider");
+    let tab_content_data = tab_content.querySelector(".data-container");
+    if(tab_content.classList.contains("glide--carousel")) {
+      window.slider__{{ section_id }}.destroy();
+      console.log("Old slider destroyed");
+    }
+    tab_content_data.innerHTML = "";
+    tab_content.classList.add("loading");
+
+    collectionsSlider.fetchCollection(collection).then(function(data) {
+      if(data.products.length == 0) return false;
+      let products = data.products;
+      let filtered = [];
+
+      // filter products for get unique (no colors)
+      let counter = 0;
+      products.forEach(function(product) {
+        if(counter == {{ products_limit }}) return;
+        let title = product.title.split(" / ")[0];
+        if(!filtered[title]) {
+          filtered[title] = product;
+          counter++; 
+        }
+      });
+      
+      // fill slider data
+      let content = '';
+      for (prop in filtered) {
+        let product = filtered[prop];
+        let image = product.images[product.images.length - 1].src;
+        let image_thumb = image.replace(".jpg", "_100x.jpg");
+            image_thumb = image_thumb.replace(".png", "_100x.png");
+        let image_full = image.replace(".jpg", "_1000x.jpg");
+            image_full = image_full.replace(".png", "_1000x.png");
+        let button_text = "{{ section.settings.button_text }}".replace("[item_title]", prop);
+        let clusterTag = '';
+        product.tags.forEach(function(tag) {
+          if(tag.includes("cl:")) {
+            clusterTag = tag;
+          }
+        }); 
+        let slider_item = `
+          <div class="collections-slider__item" data-product-price="${product.variants[0].price}" data-product-handle="${product.handle}" data-product-cluster="${clusterTag}">
+            <div class="collections-slider__item-image">
+              <a href="/products/${product.handle}">
+                <img class="lazyload" src="${image_thumb}" data-src="${image_full}" />
+              </a>
+            </div>  
+            <div class="collections-slider__item-content">
+              <div class="collections-slider__item-title">
+                <a href="/products/${product.handle}">
+                  ${prop}
+                </a>
+              </div>
+              <div class="collections-slider__item-colors"></div>
+              <div class="collections-slider__item-price">${theme.Currency.formatMoney(product.variants[0].price, theme.settings.moneyFormat).replace(".00", "")}</div>
+              <div class="collections-slider__item-text">
+                ${product.body_html}
+              </div>
+              <div class="collections-slider__item-usp">
+                {%- if section.settings.usp1_image != blank -%}
+                <div class="collections-slider__item-usp-block">
+                  <div class="usp-image-wrapper">
+                    <img src="{{ section.settings.usp1_image | img_url: 'x35' }}" height="25" />
+                  </div>
+                  {%- if section.settings.usp1_text != blank -%}
+                  <span>{{ section.settings.usp1_text }}</span>
+                  {%- endif -%}
+                </div>
+                {%- endif -%}
+
+                {%- if section.settings.usp2_image != blank -%}
+                <div class="collections-slider__item-usp-block">
+                  <div class="usp-image-wrapper">
+                    <img src="{{ section.settings.usp2_image | img_url: 'x35' }}" height="25" />
+                  </div>
+                  {%- if section.settings.usp2_text != blank -%}
+                  <span>{{ section.settings.usp2_text }}</span>
+                  {%- endif -%}
+                </div>
+                {%- endif -%}
+
+                {%- if section.settings.usp3_image != blank -%}
+                <div class="collections-slider__item-usp-block">
+                  <div class="usp-image-wrapper">
+                    <img src="{{ section.settings.usp3_image | img_url: 'x35' }}" height="25" />
+                  </div>
+                  {%- if section.settings.usp3_text != blank -%}
+                  <span>{{ section.settings.usp3_text }}</span>
+                  {%- endif -%}
+                </div>
+                {%- endif -%}
+
+                {%- if section.settings.usp4_image != blank -%}
+                <div class="collections-slider__item-usp-block">
+                  <div class="usp-image-wrapper">
+                    <img src="{{ section.settings.usp4_image | img_url: 'x35' }}" height="25" />
+                  </div>
+                  {%- if section.settings.usp4_text != blank -%}
+                  <span>{{ section.settings.usp4_text }}</span>
+                  {%- endif -%}
+                </div>
+                {%- endif -%}
+              </div>
+              <a href="/products/${product.handle}">
+              <div class="collections-slider__item-button btn cta">
+                ${button_text}
+              </div>
+              </a>            
+            </div>
+          </div>
+        `;
+        content += slider_item;
+      };
+
+      tab_content_data.innerHTML = content;
+
+      // init carousel slider
+      let peek = tab_content.offsetWidth / 5;
+      let peek_mobile = peek - 20;
+      tab_content.querySelectorAll(".collections-slider__item-content").forEach(function(el) {
+        el.setAttribute("style", `margin-left: -${peek-30}px; width: calc(100vw - ${peek_mobile}px);`); // fix content position for mobile
+      });
+      window.slider__{{ section_id }} = new Glide(tab_content, {
+        type: "carousel",
+        startAt: 1,
+        perView: 1,
+        gap: 0,
+        peek: {
+          before: peek,
+          after: peek
+        }
+      }).mount();
+      // init color swatcher for visible slide
+      window.slider__{{ section_id }}.on('move.after', function() {
+        collectionsSlider.initColorSwatcher(window.slider__{{ section_id }}.selector);
+      });
+      console.log("Glide slider initialized");
+
+      setTimeout(function() {
+        tab_content.classList.remove("loading");
+      }, 500);
+    });
+  }
+
+  /** 
+   * Fetch collection
+  */
+  collectionsSlider.fetchCollection = async (collection) => {
+    let productsLimit = 30; // no actual limit here, because need to get unique products then (not colors)
+    let productsOrdering = "manual";
+    let parameters = `direction=next&limit=${productsLimit}&order=${productsOrdering}`;
+    let url = `/collections/${collection}/products.json?${parameters}`;
+    return fetch(url, {
+      credentials: 'same-origin',
+      method: 'GET'
+    }).then(response => response.json());
+  }
+
+    /** 
+   * Fetch cluster products
+  */
+  collectionsSlider.fetchColorVariants = (clusterTag, excludeProduct, appendTo) => {
+    const query = clusterTag + '&resources[type]=product&resources[limit]=9&resources[options][fields]=tag';
+    fetch("/search/suggest.json?q=" + query)
+    .then(response => response.json())
+    .then(suggestions => {
+      // append current existing variant
+      let slide = appendTo.closest(".collections-slider__item");
+      let image = slide.querySelector(".collections-slider__item-image img");
+      let current_url = slide.querySelector(".collections-slider__item-button").parentElement.getAttribute("href");
+      if(image) {
+        let image_full = image.getAttribute("data-src");
+        let image_thumb = image_full.replace("_1000x", "_150x");
+        let price = slide.getAttribute("data-product-price");
+        let layout = `
+          <div 
+            class="collections-slider__item-color-variant active"
+            data-image="${image_full}"
+            data-product-url="${current_url}"
+            data-price="${price}"
+            onclick="collectionsSlider.changeMainImage(this)"
+          >
+            <img src="${image_thumb}" />
+          </div>
+        `;    
+        appendTo.innerHTML = appendTo.innerHTML + layout; 
+      }
+      // append all color variants
+      products = suggestions.resources.results.products;
+      products.forEach(function(productJson, k) {
+        fetch(`/products/${productJson.handle}.js`)
+        .then(res => res.json())
+        .then(product => {
+          if(product.handle == excludeProduct) return true;
+          let image_thumb = product.images[product.images.length - 1];
+              image_thumb = image_thumb.replace(".jpg", "_150x.jpg");
+              image_thumb = image_thumb.replace(".png", "_150x.png");
+          let image_full = product.images[product.images.length - 1];
+              image_full = image_full.replace(".jpg", "_1000x.jpg");
+              image_full = image_full.replace(".png", "_1000x.png");
+          let layout = `
+            <div 
+              class="collections-slider__item-color-variant"
+              data-image="${image_full}" 
+              data-product-url="${product.url}"
+              data-price="${product.price}"
+              onclick="collectionsSlider.changeMainImage(this)"
+            >
+              <img src="${image_thumb}" />
+            </div>
+          `;
+          appendTo.innerHTML = appendTo.innerHTML + layout;
+        });
+      });  
+    });
+  };
+
+  /**
+   * Change main slider image when click on color variant
+  */
+  collectionsSlider.changeMainImage = (color) => {
+    if(color.classList.contains("active")) return;
+    // get new image
+    let color_image = color.getAttribute("data-image");
+    let color_image_thumb = color.querySelector("img").src;
+
+    // enable new color
+    color.parentElement.querySelector(".active").classList.remove("active");
+    color.classList.add("active");
+    
+    // change image
+    let slide = color.closest(".collections-slider__item");
+    let image = slide.querySelector(".collections-slider__item-image img");
+    image.src = color_image_thumb;
+    image.setAttribute("data-src", color_image);
+    image.classList.remove("lazyloaded");
+    image.classList.add("lazyload");
+
+    // update product links
+    let new_url = color.getAttribute("data-product-url");
+    slide.querySelectorAll("a").forEach(function(link) {
+      link.setAttribute("href", new_url);
+    });
+
+    // update price
+    let price_value = slide.querySelector(".collections-slider__item-price");
+    let new_price = color.getAttribute("data-price");
+    price_value.innerHTML = theme.Currency.formatMoney(new_price, theme.settings.moneyFormat).replace(".00", "");
+  }
+
+  /**
+  * Sticky buttons
+  */
+  collectionsSlider.stickyButtons = () => {
+    document.dispatchEvent(new CustomEvent('scroll'));
+    document.addEventListener("scroll", function() {
+      setTimeout(function() {
+        let container = document.querySelector(".collections-slider-section__slider");
+        let slide = container.querySelector(".glide__slide--active");
+        if(!slide) return;
+        let button = slide.querySelector(".collections-slider__item-button");
+        let button_offset = button.getBoundingClientRect();
+        if(button_offset.top < 20) { // page scrolled to the bottom
+          if(document.getElementById("collectionSliderStickyButton")) {
+            document.getElementById("collectionSliderStickyButton").remove();
+          }
+          let sticky_button = document.createElement("div");
+          sticky_button.id = "collectionSliderStickyButton";
+          sticky_button.style = `
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            z-index: 100;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          `;
+          let extra_style = `
+            <style>
+              #collectionSliderStickyButton .cta {
+                max-width: 768px;
+              }
+            </style>
+          `;
+          sticky_button.innerHTML = button.parentElement.innerHTML + extra_style;
+          if(button.parentElement.tagName == "A") {
+            sticky_button.setAttribute("onclick", `window.location.href = '${button.parentElement.getAttribute("href")}'`);
+          }
+          document.body.appendChild(sticky_button);
+        }
+        else {
+          if(document.getElementById("collectionSliderStickyButton")) {
+            document.getElementById("collectionSliderStickyButton").remove();
+          }
+        }
+      }, 100);
+    });
+  };
+
+  {%- liquid 
+    assign isCollection = false 
+    if request.page_type == 'collection' or request.page_type == 'page' 
+      assign isCollection = true
+    endif
+  -%}
+  const isStickyButtons{{ section.id }} = {{ isCollection | json }};
+  if(isStickyButtons{{ section.id }}) {
+    collectionsSlider.stickyButtons();
+  }
+</script>

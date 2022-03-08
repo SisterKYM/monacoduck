@@ -1,0 +1,4414 @@
+{
+  "current": {
+    "youtube_defer": true,
+    "color_body_bg": "#ffffff",
+    "color_body_text": "#1e001e",
+    "color_price": "#1e001e",
+    "color_savings_text": "#d20f32",
+    "color_borders": "#d7c8b4",
+    "color_button": "#ff6720",
+    "color_button_text": "#ffffff",
+    "color_sale_tag": "#d20f32",
+    "color_cart_dot": "#ff6720",
+    "color_small_image_bg": "#ffffff",
+    "color_large_image_bg": "#d7c8b4",
+    "color_header": "#d7c8b4",
+    "color_header_text": "#1e001e",
+    "color_announcement": "#9f8c86",
+    "color_announcement_text": "#ffffff",
+    "color_footer": "#c1a686",
+    "color_footer_text": "#1e001e",
+    "color_drawer_background": "#d7c8b4",
+    "color_drawer_text": "#1e001e",
+    "color_drawer_border": "#ffffff",
+    "color_drawer_button": "#ffffff",
+    "color_drawer_button_text": "#1e001e",
+    "color_modal_overlays": "#e6e6e6",
+    "color_image_overlay": "#1e001e",
+    "color_image_overlay_text_shadow": 20,
+    "type_header_font_family": "montserrat_n4",
+    "type_header_spacing": "0",
+    "type_header_base_size": 36,
+    "type_header_line_height": 1,
+    "type_header_capitalize": false,
+    "type_headers_align_text": false,
+    "type_base_font_family": "montserrat_n4",
+    "type_base_spacing": "0",
+    "type_base_size": 16,
+    "type_base_line_height": 1.6,
+    "type_body_align_text": true,
+    "type_navigation_style": "heading",
+    "type_navigation_size": 16,
+    "type_navigation_capitalize": true,
+    "type_product_style": "body",
+    "type_product_capitalize": false,
+    "type_collection_font": "body",
+    "type_collection_size": 16,
+    "button_style": "square",
+    "icon_weight": "4px",
+    "icon_linecaps": "miter",
+    "product_save_type": "percent",
+    "vendor_enable": false,
+    "quick_shop_enable": false,
+    "quick_shop_text": "Quick view",
+    "product_grid_image_size": "natural",
+    "product_hover_image": true,
+    "sku_enable": false,
+    "quantity_enable": false,
+    "variant_type": "button",
+    "inventory_enable": true,
+    "product_zoom_enable": true,
+    "product_color_swatches": false,
+    "collection_color_swatches": false,
+    "product_content_1": "pflege-produktseite",
+    "product_content_collapse_1": true,
+    "product_content_2": "versand-und-retoure",
+    "product_content_collapse_2": true,
+    "product_content_3": "",
+    "product_content_collapse_3": false,
+    "product_contact": false,
+    "enable_product_reviews": true,
+    "wishlist_enable": true,
+    "collection_grid_style": "overlaid-box",
+    "collection_grid_shape": "square",
+    "collection_grid_image": "product",
+    "collection_grid_text_align": "center",
+    "collection_grid_tint": "#000000",
+    "collection_grid_opacity": 10,
+    "collection_grid_gutter": true,
+    "cart_type": "page",
+    "cart_additional_buttons": true,
+    "cart_notes_enable": false,
+    "cart_terms_conditions_enable": true,
+    "cart_terms_conditions_link": "shopify://policies/terms-of-service",
+    "cart_bottom_text1": "<p>Lieferfrist ca. 2-3 Werktage Versandkostenfrei in Deutschland</p>",
+    "cart_bottom_text2": "<p>Versicherter Versand</p>",
+    "cart_bottom_text3": "<p>30 Tage Rückgaberecht</p>",
+    "upsell_products_enabled": true,
+    "upsell_products_heading": "Dir könnte auch gefallen:",
+    "upsell_product1": "schuhspanner",
+    "upsell_product2": "fussbett-einlegesohle-fur-halbe-grossen",
+    "upsell_product3": "messenger-bag-dunkelgrun-schwarz",
+    "social_facebook_link": "https://www.facebook.com/monacoduck",
+    "social_pinterest_link": "https://www.pinterest.de/monacoduckmuenchen/_created/",
+    "social_instagram_link": "https://www.instagram.com/monacoducks/",
+    "social_linkedin_link": "https://www.linkedin.com/company/10947806/",
+    "social_youtube_link": "https://www.youtube.com/channel/UCaRzcUqPQO7TInqIRvppk6w",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "favicon": "shopify://shop_images/Monogram_s_black-white.png",
+    "search_enable": false,
+    "search_type": "product",
+    "predictive_search_enabled": false,
+    "show_breadcrumbs": true,
+    "show_breadcrumbs_collection_link": true,
+    "disable_animations": true,
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_accent_color": "#111111",
+    "checkout_button_color": "#111111",
+    "checkout_error_color": "#ff6d6d",
+    "breadcrumb": false,
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "1524770014057": {
+            "type": "logo",
+            "settings": {
+              "logo": "shopify://shop_images/Monogram_s_black-white.png",
+              "logo-inverted": "shopify://shop_images/Wordmark_Monogram_m_black_png.png",
+              "desktop_logo_width": 200,
+              "mobile_logo_width": 200
+            }
+          }
+        },
+        "block_order": ["1524770014057"],
+        "settings": {
+          "main_menu_link_list": "neu-hauptmenu",
+          "mega_menu_images": true,
+          "main_menu_alignment": "center-drawer",
+          "header_style": "sticky",
+          "sticky_index": true,
+          "sticky_collection": false,
+          "announcement_compact": true,
+          "announcement_above_header": false,
+          "toolbar_menu": "footer",
+          "toolbar_social": true,
+          "show_locale_selector": false,
+          "show_currency_selector": true,
+          "show_currency_flags": true
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "2182540d-d25e-48ca-8f62-f543fca10ea0": {
+            "type": "menu",
+            "settings": {
+              "show_footer_title": true,
+              "menu": "service",
+              "container_width": 25
+            }
+          },
+          "1494301487049": {
+            "type": "menu",
+            "settings": {
+              "show_footer_title": true,
+              "menu": "hilfe",
+              "container_width": 25
+            }
+          },
+          "62044db6-de3a-4903-becf-0735bf176512": {
+            "type": "menu",
+            "settings": {
+              "show_footer_title": true,
+              "menu": "damenschuhe",
+              "container_width": 25
+            }
+          },
+          "5edd5824-67fe-41e9-990c-2e39f2111997": {
+            "type": "menu",
+            "settings": {
+              "show_footer_title": true,
+              "menu": "herrenschuhe",
+              "container_width": 25
+            }
+          }
+        },
+        "block_order": [
+          "2182540d-d25e-48ca-8f62-f543fca10ea0",
+          "1494301487049",
+          "62044db6-de3a-4903-becf-0735bf176512",
+          "5edd5824-67fe-41e9-990c-2e39f2111997"
+        ],
+        "settings": {
+          "toolbar_social": true,
+          "show_locale_selector": true,
+          "show_currency_selector": true,
+          "show_currency_flags": true,
+          "show_payment_icons": true,
+          "show_copyright": true,
+          "copyright_text": "with ❤ from Germany"
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "description_position": "bottom",
+          "subcollection_style": "none",
+          "subcollections_per_row": 4,
+          "enable_collection_count": true,
+          "per_row": 3,
+          "rows_per_page": 17,
+          "mobile_flush_grid": true,
+          "finishing_heading": "tes",
+          "finishing_text": "",
+          "finishing_bg": "#c1a686",
+          "collection_bg_color": "#f9f4ef",
+          "collection_banner1": "shopify://shop_images/Silvio.jpg",
+          "collection_banner1_link": "shopify://pages/handarbeit-made-in-italy",
+          "collection_banner1_heading": "Banner promotion",
+          "collection_banner1_text": "Traditionsunternehmen",
+          "collection_banner1_label": "Shop now",
+          "collection_banner2": "shopify://shop_images/GreenFriday.png",
+          "collection_banner2_heading": "Banner promotion",
+          "collection_banner2_text": "",
+          "collection_banner2_label": "Shop now",
+          "collection_banners_off": false,
+          "collection_banner1_position": 6,
+          "collection_banner2_position": 12
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "blocks": {
+          "12e916ab-cf53-4424-8a46-c7130fd9afbc": {
+            "type": "product_type",
+            "settings": {
+              "type": "size:max",
+              "title": "Größentabelle",
+              "page": "grosstentabelle-max"
+            }
+          },
+          "c55e0720-a32f-4810-a254-a6603c61cce4": {
+            "type": "product_type",
+            "settings": {
+              "type": "size:charloufelix",
+              "title": "Größentabelle",
+              "page": "grosstentabelle-charlie"
+            }
+          }
+        },
+        "block_order": [
+          "12e916ab-cf53-4424-8a46-c7130fd9afbc",
+          "c55e0720-a32f-4810-a254-a6603c61cce4"
+        ],
+        "settings": {
+          "under_buttons_text": "<p>Lieferfrist ca. 2-3 Werktage</p><p>Versandkostenfrei in Deutschland</p>",
+          "under_buttons_text_preorder": "",
+          "description_style": "default",
+          "social_enable": true,
+          "image_position": "left",
+          "image_size": "medium",
+          "thumbnail_position": "below",
+          "thumbnail_arrows": true,
+          "enable_video_looping": true,
+          "product_video_style": "muted"
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "image_hero": true,
+          "blog_show_tags": true,
+          "blog_show_date": true,
+          "blog_show_comments": true,
+          "blog_show_author": false,
+          "social_sharing_blog": true
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "blog_show_tag_filter": false,
+          "blog_show_rss": false,
+          "blog_show_tags": false,
+          "blog_show_date": true,
+          "blog_show_comments": true,
+          "blog_show_author": false,
+          "blog_show_excerpt": false,
+          "blog_image_size": "landscape"
+        }
+      },
+      "product-sections-template": {
+        "type": "product-sections-template",
+        "blocks": {
+          "sections-1592408474529": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "",
+              "image_width": 500,
+              "subtitle": "Improved",
+              "button_label": "Optional button",
+              "button_link": "",
+              "layout": "right"
+            }
+          },
+          "sections-1592410313636": {
+            "type": "background-image-text",
+            "settings": {
+              "subtitle": "Why choose us?",
+              "title": "Explain your brand philosophy",
+              "text": "<p>Use this section to explain your company philosophy or standards. Showcase lifestyle photography for added emphasis. This content will appear on all products.</p>",
+              "button_label": "",
+              "button_link": "",
+              "image": "",
+              "alignment": "center",
+              "color_border": "#f4f4f4",
+              "layout": "right",
+              "height": 650,
+              "parallax": true
+            }
+          },
+          "sections-1592408476245": {
+            "type": "testimonials",
+            "settings": {
+              "title": "Testimonials",
+              "align_text": "center",
+              "round_images": false,
+              "testimonial_1": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.</p>",
+              "image_1": "",
+              "author_1": "Author's name",
+              "testimonial_2": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.</p>",
+              "image_2": "",
+              "author_2": "Author's name"
+            }
+          },
+          "sections-1592410272428": {
+            "type": "image-hero",
+            "settings": {
+              "parallax": true,
+              "title": "Two line\ntitle image",
+              "title_size": 80,
+              "subheading": "And optional subtext",
+              "link": "",
+              "link_text": "Optional button",
+              "link_2": "",
+              "link_text_2": "",
+              "color_accent": "#ffffff",
+              "text_align": "vertical-center horizontal-center",
+              "image": "",
+              "focal_point": "center center",
+              "section_height": "650px",
+              "mobile_height": "auto"
+            }
+          },
+          "sections-1592410318615": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "",
+              "image_width": 500,
+              "subtitle": "Improved",
+              "button_label": "Optional button",
+              "button_link": "",
+              "layout": "left"
+            }
+          }
+        },
+        "block_order": [
+          "sections-1592410313636",
+          "sections-1592408476245",
+          "sections-1592408474529",
+          "sections-1592410318615",
+          "sections-1592410272428"
+        ],
+        "settings": {}
+      },
+      "product-story-sections": {
+        "type": "product-story-sections",
+        "blocks": {
+          "1592410313636": {
+            "type": "background-image-text",
+            "settings": {
+              "subtitle": "About US",
+              "title": "MONACO DUCKS - DEINE SCHUHE",
+              "text": "<p>Wir sind die einzige Modemarke, die alle relevanten Aspekte vereint: stylisch sein, reflektiert sein, umweltbewusst sein.</p><p></p><p><strong>Damit ich beschwingt und unbeschwert durchs Leben gehen kann.</strong></p>",
+              "button_label": "",
+              "image": "shopify://shop_images/2020-08_Uni_Charlie_JoergMette_67_0078400d-9a1a-439d-8d0b-d7cb6412d371.jpg",
+              "alignment": "bottom",
+              "color_border": "#f4f4f4",
+              "layout": "right",
+              "height": 650,
+              "parallax": false
+            }
+          },
+          "86347403-2f16-437e-b92d-e12aa72e3ca9": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify://shop_images/2020-Produktion-Loden_158_714e3bf2-051d-400f-8eb7-87b54d0f4c2e.jpg",
+              "image_width": 500,
+              "subtitle": "Mit Leidenschaft zum besseren Schuh",
+              "title": "Echte Handarbeit",
+              "text": "<p>Unsere Schuhe werden in einer traditionsreichen, familiengeführten Manufaktur hergestellt, die seit vielen Jahren Schuhe entwickelt und produziert. Dieses Design und Entwicklungs-Knowhow spiegelt sich in jedem unserer Modelle wider.</p>",
+              "button_label": "ERFAHRE MEHR",
+              "button_link": "shopify://pages/handarbeit-made-in-italy",
+              "layout": "left"
+            }
+          },
+          "6726a32a-7af5-4085-a385-e629ebd3618b": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify://shop_images/2018_Leichtfried_Loden_Material_2_3f9fe02e-7471-4c73-88e7-82cb13380072.jpg",
+              "image_width": 500,
+              "subtitle": "Von der Natur gemacht",
+              "title": "Intelligentes Material",
+              "text": "<p>Unsere DUCKS Wool ist ein intelligentes Material. Natürliche Hightech Funktion trifft einzigartiges Design und Komfort. Wir produzieren unsere Wolle von bayerischen Schafen und in der ältesten Textilfabrik Deutschlands mit über 500 Jahren Tradition.</p>",
+              "button_label": "ERFAHRE MEHR",
+              "button_link": "shopify://pages/performance",
+              "layout": "right"
+            }
+          },
+          "71be9a6d-a15b-4359-8fa3-48ddb2986afe": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify://shop_images/2020-06_Uni_Sneaker_Charlie_Jorg_Mette_403.jpg",
+              "image_width": 500,
+              "subtitle": "Für uns eine Selbstverständlichkeit",
+              "title": "Transparente Nachhaltigkeit",
+              "text": "<p>Unser Fokus liegt auf Fairness für Mensch, Tier und Umwelt. So setzen wir auf kurze Transportwege, lokale Produktion, faire Arbeitsbedingungen und eine enge Zusammenarbeit mit unseren Partnern. Unsere Schafe kann sogar jeder selbst jederzeit besuchen.</p>",
+              "button_label": "ERFAHRE MEHR",
+              "button_link": "shopify://pages/nachhaltigkeit",
+              "layout": "left"
+            }
+          },
+          "1592408476245": {
+            "type": "testimonials",
+            "settings": {
+              "title": "DIE DUCKS - DAS SEID IHR!",
+              "align_text": "center",
+              "round_images": true,
+              "testimonial_1": "<p>Ich liebe Sneaker Charlie, da er wahnsinnig gut passt, sehr bequem ist und super ausschaut. Übrigens einer der wenigen Sneaker, die es in meinen Schrank geschafft haben!</p>",
+              "image_1": "shopify://shop_images/1_T.jpg",
+              "author_1": "Thea",
+              "testimonial_2": "<p>Tolle Verarbeitung, absolutes Wohlgefühl schon beim ersten Tragen! Freue mich auf weitere Modelle.</p>",
+              "image_2": "shopify://shop_images/1_T_d94ee1f1-0523-4004-95b7-b43084ec1a70.jpg",
+              "author_2": "Stephanie"
+            }
+          },
+          "c8f233e4-9a32-4879-9846-4f79ef36d112": {
+            "type": "hero-video",
+            "settings": {
+              "title": "",
+              "title_size": 80,
+              "subheading": "",
+              "link_text": "",
+              "text_align": "vertical-center horizontal-center",
+              "video_url": "https://www.youtube.com/watch?v=uTvfd3Hxxno",
+              "section_height": "650px",
+              "mobile_height": "auto"
+            }
+          }
+        },
+        "block_order": [
+          "1592410313636",
+          "86347403-2f16-437e-b92d-e12aa72e3ca9",
+          "6726a32a-7af5-4085-a385-e629ebd3618b",
+          "71be9a6d-a15b-4359-8fa3-48ddb2986afe",
+          "1592408476245",
+          "c8f233e4-9a32-4879-9846-4f79ef36d112"
+        ],
+        "settings": {}
+      },
+      "page-sections-template": {
+        "type": "page-sections-template",
+        "blocks": {
+          "9844eef9-53d1-4a45-b2ff-113f2b019c1a": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Pflege",
+              "text": "<p>Ob bayerischer Loden, pflanzlich gegerbtes Kalbsleder oder italienisches Rauleder, MONACO DUCKS ist stolz darauf, nur die besten Materialien zu verwenden. Auf diese Weise bieten wir dir Schuhe, die dich mit der richtigen Pflege und Aufmerksamkeit lange begleiten werden. </p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          },
+          "320876d6-05d6-4228-99b6-6ae69eb9f16f": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify://shop_images/2018_Leichtfried_Loden_Material_5_-_Kopie_0a259644-0d40-4d1a-b828-58bebc79b986.jpg",
+              "image_width": 500,
+              "subtitle": "",
+              "title": "",
+              "text": "<p>Loden ist von Natur aus durch Lanolin geschützt und deshalb äußerst pflegeleicht. Lanolin schützt die Wollfaser vor Regen, Schmutz und Gerüchen. Zusätzliches Imprägnieren ist bei deinen handgefertigten Schuhen nicht nötig, schadet aber auch nicht. Vor allem bei einer Materialkombination empfehlen wir dir die Schuhe zu imprägnieren. Regelmäßiges Lüften und Bürsten mit einer Naturhaar-Bürste erhält zudem die Qualität des Stoffes sehr gut.</p><p></p><p>Für eine zusätzliche Reinigung kannst du das Material mit leichtem Essigwasserbefeuchten und anschließend mit einer Kleider- oder Schuhbürste ausbürsten. Ränder und Flecken können mit einem feuchten Tuch und etwas Kernseife entfernt werden. </p>",
+              "button_label": "",
+              "layout": "left",
+              "block_bg": ""
+            }
+          },
+          "b953ca70-34db-4373-9ea6-f9fed6bec27b": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify://shop_images/2017_Schuhpflege_1.jpg",
+              "image_width": 500,
+              "subtitle": "",
+              "title": "",
+              "text": "<p>Und wie sieht es mit den anderen Bestandteilen deiner Schuhe, dem Leder und der Sohle, aus?</p><p>Rau-und Veloursleder ist recht offenporig. Die richtige Pflege beginnt mit dem regelmäßigen Ausbürsten der Schuhe. Bei Glattleder dient die Schuhpflege dazu, dem Leder verloren gegangene Öle und Fette zurückzuführen. Schuhcreme für das Oberleder eines Schuhs erhält die Elastizität, Geschmeidigkeit und den Glanz des Leders.</p><p>Bei einer Ledersohle musst du darauf achten, dass der Schuh möglichst trockenlagert. Gummisohlen sind pflegeleichter und können mit einem nassen Tuchgereinigt werden.</p>",
+              "button_label": "",
+              "layout": "right",
+              "block_bg": ""
+            }
+          },
+          "08901663-3a0f-4b24-abc4-c5ea98c05943": {
+            "type": "rich-text",
+            "settings": {
+              "title": "",
+              "text": "<p>Damit deine MONACO DUCKS Schuhe ihre Form behalten, gönne ihnen den Luxus eines Schuhspanners. Schuhspanner aus Holz glätten Gehfalten und leiten Feuchtigkeit ab. Auch empfehlenswert: Die Verwendung eines Schuhlöffels verhindert Schäden an der Ferse.</p><p>Loden ist unverwüstlich in seiner Struktur und unübertroffen in seinen Eigenschaften. Ein Stoff für’s Leben. Mit der richtigen Pflege wird dein Schuh immer ein Teil von dir bleiben, denn unser DUCKS Loden ist genau dafür entwickelt.</p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          }
+        },
+        "block_order": [
+          "9844eef9-53d1-4a45-b2ff-113f2b019c1a",
+          "320876d6-05d6-4228-99b6-6ae69eb9f16f",
+          "b953ca70-34db-4373-9ea6-f9fed6bec27b",
+          "08901663-3a0f-4b24-abc4-c5ea98c05943"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false
+        }
+      },
+      "newsletter-popup": {
+        "type": "newsletter-popup",
+        "settings": {
+          "mode": "disabled",
+          "popup_seconds": 30,
+          "popup_days": 30,
+          "popup_title": "Sign up and save",
+          "popup_text": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers. Include an image for extra impact.</p>",
+          "close_text": "No thanks",
+          "enable_newsletter": true,
+          "button_label": "Optional button",
+          "enable_button": false
+        }
+      },
+      "1524769873765": {
+        "type": "slideshow",
+        "blocks": {
+          "1524769873765-0": {
+            "type": "image",
+            "settings": {
+              "top_subheading": "",
+              "title": "DESIGN OHNE KOMPROMISSE",
+              "title_size": 64,
+              "subheading": "Die besten Sneaker der Welt.",
+              "link": "shopify://collections/unisex-sneakers",
+              "link_text": "JETZT ENTDECKEN",
+              "link_text_2": "",
+              "color_accent": "#ffffff",
+              "text_align": "vertical-bottom horizontal-center",
+              "image": "shopify://shop_images/70A9510.jpg",
+              "image_mobile": "shopify://shop_images/70A9188.jpg",
+              "focal_point": "bottom center"
+            }
+          }
+        },
+        "block_order": ["1524769873765-0"],
+        "settings": {
+          "section_height": "750px",
+          "mobile_height": "auto",
+          "parallax": false,
+          "style": "bars",
+          "autoplay": false,
+          "autoplay_speed": 7
+        }
+      },
+      "collection-header": {
+        "type": "collection-header",
+        "settings": {
+          "enable": true,
+          "collection_image_enable": true,
+          "parallax": false
+        }
+      },
+      "collection-sidebar": {
+        "type": "collection-sidebar",
+        "blocks": {
+          "1524772785241": {
+            "type": "subcollections",
+            "settings": {
+              "enable_subsubcollections": true,
+              "enable_count": false,
+              "collapsed": false
+            }
+          },
+          "1524772580942": {
+            "type": "tags_all",
+            "settings": {
+              "title": "Tags",
+              "collapsed": false
+            }
+          }
+        },
+        "block_order": ["1524772785241", "1524772580942"],
+        "settings": {
+          "enable_sidebar": false,
+          "filter_style": "sidebar",
+          "tags_combine": false,
+          "enable_sort": false
+        }
+      },
+      "collection-promotions": {
+        "type": "collection-promotions",
+        "settings": {
+          "gutter_size": 20
+        }
+      },
+      "footer-promotions": {
+        "type": "footer-promotions",
+        "blocks": {
+          "footer-promotions-0": {
+            "type": "promotion",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify://shop_images/15_ef4e70a6-6857-446d-b079-0ae3676cd43a.jpg",
+              "title": "Entdecke unsere Neuheiten",
+              "text": "<p>Die warmen Tage des Jahres stehen vor der Tür - neue Farben, frische Linien und das unverwechselbare MONACO DUCKS Design.</p>",
+              "button_label": "Zur neuen Kollektion",
+              "button_link": "shopify://collections/neu"
+            }
+          },
+          "footer-promotions-1": {
+            "type": "promotion",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify://shop_images/10_7b5ed2cc-cb62-43fb-b1ac-9ea694a4596e.jpg",
+              "title": "Erfahre mehr über Nachhaltigkeit",
+              "text": "<p>Wir stehen für echte Nachhaltigkeit und das zeigt sich auch in unseren Produkten. Was das für uns bedeutet, erklären wir dir!</p>",
+              "button_label": "ZU Nachhaltigkeit",
+              "button_link": "shopify://pages/nachhaltigkeit"
+            }
+          },
+          "footer-promotions-2": {
+            "type": "promotion",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify://shop_images/6.jpg",
+              "title": "It's all GOOD",
+              "text": "<p>Lerne die MONACO DUCKS Community und was sie bewegt kennen - Klick dich in unser DUCKS Magazin und werde Teil von uns.</p>",
+              "button_label": "ZUM MAGAZIN",
+              "button_link": "shopify://blogs/news"
+            }
+          }
+        },
+        "block_order": [
+          "footer-promotions-0",
+          "footer-promotions-1",
+          "footer-promotions-2"
+        ],
+        "settings": {
+          "background_color": "#c1a686",
+          "hide_homepage": true,
+          "hide_cart": true,
+          "image_size": "square"
+        }
+      },
+      "1606662194add4feb5": {
+        "type": "featured-collection",
+        "settings": {
+          "title": "Bestseller",
+          "home_featured_products": "bestseller",
+          "per_row": 4,
+          "rows": 2,
+          "mobile_scrollable": true,
+          "view_all": true,
+          "divider": false,
+          "background_color": "#c1a686"
+        }
+      },
+      "160666640460022a7f": {
+        "type": "promo-grid",
+        "blocks": {
+          "03013f8d-c3de-40c6-91fe-9285baf166b7": {
+            "type": "advanced",
+            "settings": {
+              "subheading": "OHNE KOMPROMISSE",
+              "heading": "DEIN DESIGN SCHUH",
+              "textarea": "Damit du beschwingt und unbeschwert durchs Leben gehen kannst. Erfahre was uns ausmacht.",
+              "cta_text1": "ZUR PHILOSOPHIE",
+              "cta_text2": "",
+              "image": "shopify://shop_images/2020-Produktion-Loden_162.jpg",
+              "video_url": "",
+              "width": "33",
+              "height": 600,
+              "text_size": 110,
+              "text_align": "vertical-bottom horizontal-center",
+              "focal_point": "center",
+              "focal_point_mobile": "center center",
+              "color_accent": "rgba(0,0,0,0)",
+              "boxed": false,
+              "framed": false,
+              "background_color": "rgba(0,0,0,0)",
+              "text_color": "#ffffff"
+            }
+          },
+          "9f6d0f5e-d2fb-4d25-a5fa-526c5fd15aca": {
+            "type": "advanced",
+            "settings": {
+              "subheading": "NATUR PUR",
+              "heading": "DER DUCKS LODEN",
+              "textarea": "Wir haben uns auf die Suche nach einer innovativen Lösung gemacht und sind auf das älteste Outdoormaterial der Welt gestoßen.",
+              "cta_text1": "ZUM MATERIAL",
+              "cta_link1": "shopify://pages/performance",
+              "cta_text2": "",
+              "image": "shopify://shop_images/2018_Leichtfried_Loden_Material_2_d905e9d0-ca01-45be-bc9b-086f9b2b0e3a.jpg",
+              "video_url": "",
+              "width": "33",
+              "height": 600,
+              "text_size": 110,
+              "text_align": "vertical-bottom horizontal-center",
+              "focal_point": "center",
+              "focal_point_mobile": "center center",
+              "color_accent": "rgba(0,0,0,0)",
+              "boxed": false,
+              "framed": false,
+              "background_color": "#c1a686",
+              "text_color": "#ffffff"
+            }
+          },
+          "d881ae23-d5d5-43f5-9b92-b9624febd1a2": {
+            "type": "advanced",
+            "settings": {
+              "subheading": "Transparente und echte",
+              "heading": "Nachhaltigkeit",
+              "textarea": "Wir sind transparent und wollen mit MONACO DUCK einen Beitrag zum Umweltschutz leisten.",
+              "cta_text1": "ZU NACHHALTIGKEIT",
+              "cta_link1": "shopify://pages/nachhaltigkeit",
+              "cta_text2": "",
+              "image": "shopify://shop_images/2020-06_Uni_Sneaker_Charlie_Jorg_Mette_393.jpg",
+              "video_url": "",
+              "width": "33",
+              "height": 600,
+              "text_size": 110,
+              "text_align": "vertical-bottom horizontal-center",
+              "focal_point": "center",
+              "focal_point_mobile": "center center",
+              "color_accent": "rgba(0,0,0,0)",
+              "boxed": false,
+              "framed": false,
+              "background_color": "rgba(0,0,0,0)",
+              "text_color": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "03013f8d-c3de-40c6-91fe-9285baf166b7",
+          "9f6d0f5e-d2fb-4d25-a5fa-526c5fd15aca",
+          "d881ae23-d5d5-43f5-9b92-b9624febd1a2"
+        ],
+        "settings": {
+          "full_width": false,
+          "full_width_mobile": true,
+          "gutter_size": 0,
+          "space_above": false,
+          "space_below": false
+        }
+      },
+      "1606666430f48bba59": {
+        "type": "blog-posts",
+        "settings": {
+          "title": "Das große DUCKs Magazin",
+          "blog": "news",
+          "post_limit": 3,
+          "blog_show_tags": false,
+          "blog_show_date": true,
+          "blog_show_comments": false,
+          "blog_show_author": true,
+          "view_all": true,
+          "blog_image_size": "square",
+          "divider": false,
+          "background_color": "#c1a686"
+        }
+      },
+      "1606667720e3facbab": {
+        "type": "promo-grid",
+        "blocks": {
+          "eaca4339-8829-408a-85ae-2f2037f9a5e3": {
+            "type": "advanced",
+            "settings": {
+              "subheading": "",
+              "heading": "Casual wie Charlie.",
+              "textarea": "Entdecke unsere Unisex Sneaker mit denen du beschwingt durchs Leben gehst. Schritt für Schritt.",
+              "cta_text1": "JETZT ENTDECKEN",
+              "cta_link1": "shopify://collections/unisex-sneakers",
+              "cta_text2": "",
+              "image": "shopify://shop_images/2020-06_Uni_Sneaker_Charlie_Jorg_Mette_299_595bf8a3-b0ad-4615-b37e-b26bc84feef1.jpg",
+              "video_url": "https://youtu.be/2b4UPFrjSQU",
+              "width": "100",
+              "height": 720,
+              "text_size": 110,
+              "text_align": "vertical-bottom horizontal-center",
+              "focal_point": "center",
+              "focal_point_mobile": "center center",
+              "color_accent": "rgba(0,0,0,0)",
+              "boxed": false,
+              "framed": false,
+              "background_color": "",
+              "text_color": "#ffffff"
+            }
+          }
+        },
+        "block_order": ["eaca4339-8829-408a-85ae-2f2037f9a5e3"],
+        "settings": {
+          "full_width": false,
+          "full_width_mobile": true,
+          "gutter_size": 0,
+          "space_above": true,
+          "space_below": true
+        }
+      },
+      "1606667970c69b727f": {
+        "type": "promo-grid",
+        "blocks": {
+          "a69a0b95-f87b-434b-9754-4ddc5a3cfd6b": {
+            "type": "advanced",
+            "settings": {
+              "subheading": "",
+              "heading": "Herrenschuhe",
+              "textarea": "Formvollendete Kreationen voller Liebe zum Detail - eine Welt verschiedener Nuancen, Materialien und Konturen",
+              "cta_text1": "JETZT ENTDECKEN",
+              "cta_link1": "shopify://collections/herrenschuhe",
+              "cta_text2": "",
+              "image": "shopify://shop_images/70A9252_2.jpg",
+              "video_url": "",
+              "width": "33",
+              "height": 460,
+              "text_size": 110,
+              "text_align": "vertical-bottom horizontal-center",
+              "focal_point": "center",
+              "focal_point_mobile": "center center",
+              "color_accent": "rgba(0,0,0,0)",
+              "boxed": false,
+              "framed": false,
+              "background_color": "rgba(0,0,0,0)",
+              "text_color": "#ffffff"
+            }
+          },
+          "365a9b6d-2978-4a56-80a9-162821d32ab8": {
+            "type": "advanced",
+            "settings": {
+              "subheading": "",
+              "heading": "Damenschuhe",
+              "textarea": "Linien, Muster und Formen fügen sich zusammen, ein Spiel mit Details, Farben und Materialien.",
+              "cta_text1": "JETZT ENTDECKEN",
+              "cta_link1": "shopify://collections/damenschuhe",
+              "cta_text2": "",
+              "image": "shopify://shop_images/70A9367_-_Kopie.jpg",
+              "video_url": "",
+              "width": "33",
+              "height": 600,
+              "text_size": 110,
+              "text_align": "vertical-bottom horizontal-center",
+              "focal_point": "bottom",
+              "focal_point_mobile": "center center",
+              "color_accent": "rgba(0,0,0,0)",
+              "boxed": false,
+              "framed": false,
+              "background_color": "#c1a686",
+              "text_color": "#ffffff"
+            }
+          },
+          "e827ffc0-494c-4312-bbd7-a997f5bdee0f": {
+            "type": "advanced",
+            "settings": {
+              "subheading": "",
+              "heading": "Unisex Sneaker",
+              "textarea": "Farbharmonie und Materialerforschung verweben sich zu einer Neuinterpretation von Design und Nachhaltigkeit.",
+              "cta_text1": "JETZT ENTDECKEN",
+              "cta_link1": "shopify://collections/unisex-sneakers",
+              "cta_text2": "",
+              "image": "shopify://shop_images/70A9188.jpg",
+              "video_url": "",
+              "width": "33",
+              "height": 600,
+              "text_size": 110,
+              "text_align": "vertical-bottom horizontal-center",
+              "focal_point": "80% 50%",
+              "focal_point_mobile": "center center",
+              "color_accent": "rgba(0,0,0,0)",
+              "boxed": false,
+              "framed": false,
+              "background_color": "rgba(0,0,0,0)",
+              "text_color": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "a69a0b95-f87b-434b-9754-4ddc5a3cfd6b",
+          "365a9b6d-2978-4a56-80a9-162821d32ab8",
+          "e827ffc0-494c-4312-bbd7-a997f5bdee0f"
+        ],
+        "settings": {
+          "full_width": false,
+          "full_width_mobile": true,
+          "gutter_size": 0,
+          "space_above": false,
+          "space_below": false
+        }
+      },
+      "1606668791ba80be6b": {
+        "type": "logo-list",
+        "blocks": {
+          "1606668791ba80be6b-2": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify://shop_images/Lodenfrey_f_ea7421dd-0946-47e3-8221-14a579eed040.png"
+            }
+          },
+          "c0f04fd1-720f-4305-b99c-5dd6e78d704b": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify://shop_images/fasson_f_e33f2811-86e1-406f-892f-071eb372cfd2.png"
+            }
+          },
+          "5d4297bb-c819-4ce2-b543-b1e94814bd0f": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify://shop_images/engelhorn_f_b2e8f42c-637b-446d-ac11-64b3a3dc00be.png"
+            }
+          },
+          "1e40f383-930f-4d67-823f-87afb7ccbf43": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify://shop_images/raich_f_38608af6-a363-4211-8a4a-e1fab1f3cc36.png"
+            }
+          },
+          "cb28b5ea-6c7b-44d3-9bad-992f9cb0eae4": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify://shop_images/style_in_progress_f_2673741d-eb4c-4309-938c-1f571cbe6a36.png"
+            }
+          },
+          "fe7ce974-9e45-444b-947c-abd82806b112": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify://shop_images/FalkKlein.png"
+            }
+          },
+          "252c6be6-a68d-49b0-9bb8-1e52f98fcc25": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify://shop_images/StylusKlein.png"
+            }
+          }
+        },
+        "block_order": [
+          "1606668791ba80be6b-2",
+          "c0f04fd1-720f-4305-b99c-5dd6e78d704b",
+          "5d4297bb-c819-4ce2-b543-b1e94814bd0f",
+          "1e40f383-930f-4d67-823f-87afb7ccbf43",
+          "cb28b5ea-6c7b-44d3-9bad-992f9cb0eae4",
+          "fe7ce974-9e45-444b-947c-abd82806b112",
+          "252c6be6-a68d-49b0-9bb8-1e52f98fcc25"
+        ],
+        "settings": {
+          "title": "Gesehen in",
+          "logo_opacity": 76,
+          "divider": false
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "product_recommendations_heading": "You may also like",
+          "related_count": 5,
+          "background_color": ""
+        }
+      },
+      "recently-viewed": {
+        "type": "recently-viewed",
+        "settings": {
+          "show_section": true,
+          "recent_count": 5
+        }
+      },
+      "1608609352a804f754": {
+        "type": "benefits",
+        "blocks": {
+          "329b8a25-5b5a-43ba-aba2-279f16d97447": {
+            "type": "Benefit",
+            "settings": {
+              "image": "shopify://shop_images/IconSchafSchwarz.png",
+              "text": "100% LODEN"
+            }
+          },
+          "d2f134ce-45f1-4e56-9b3d-fb56a4eae837": {
+            "type": "Benefit",
+            "settings": {
+              "image": "shopify://shop_images/IconNadelSchwarz.png",
+              "text": "ECHTE HANDARBEIT"
+            }
+          },
+          "82ffe0d2-3f03-4601-a17c-78aa5dcc560f": {
+            "type": "Benefit",
+            "settings": {
+              "image": "shopify://shop_images/IconCharlieBlattSchwarz.png",
+              "text": "KLIMANEUTRAL"
+            }
+          },
+          "5acaea7f-4de2-45e8-b654-6b34f519de86": {
+            "type": "Benefit",
+            "settings": {
+              "image": "shopify://shop_images/IconItalienSchwarz.png",
+              "text": "MADE IN ITALY"
+            }
+          }
+        },
+        "block_order": [
+          "329b8a25-5b5a-43ba-aba2-279f16d97447",
+          "d2f134ce-45f1-4e56-9b3d-fb56a4eae837",
+          "82ffe0d2-3f03-4601-a17c-78aa5dcc560f",
+          "5acaea7f-4de2-45e8-b654-6b34f519de86"
+        ],
+        "settings": {}
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "title_enable": true,
+          "display_type": "all",
+          "sort": "alphabetical",
+          "grid": "3"
+        }
+      },
+      "page-faq-template": {
+        "type": "page-faq-template",
+        "blocks": {
+          "page-faq-template-0": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Produkt",
+              "text": "",
+              "align_text": "left"
+            }
+          },
+          "page-faq-template-1": {
+            "type": "question",
+            "settings": {
+              "title": "Wie stellt ihr eure Qualität sicher?",
+              "text": "<p>Wir suchen sorgfältig die besten Materialien und die besten Hersteller für unsere handgefertigten Schuhe aus. Unsere Partner haben bereits für große Designer gearbeitet und sind Experten in dem, was sie tun. Außerdem konzentrieren wir uns auf kleine Betriebe und ein enges persönliches Verhältnis mit den Inhabern, so dass wir jederzeit jeden Schritt in der Produktion beeinflussen können. Wenn du trotzdem jemals ein fehlerhaftes Produkt bekommen solltest, schreibe uns bitte an <a href=\"mailto:hello@monacoduck.com\">hello@monacoduck.com</a> und wir helfen dir mit einem Ersatz oder der Rückerstattung.</p>"
+            }
+          },
+          "702c3274-d734-43b5-b04e-c86bc1c24026": {
+            "type": "question",
+            "settings": {
+              "title": "Welche Größe habe ich?",
+              "text": "<p>Online-Shopping kann schwer sein, wir versuchen zu helfen. Bei jedem Schuh schreiben wir, wie die Größe ausfällt. Du kannst uns auch gerne eine Mail schicken an <a href=\"mailto:hello@monacoduck.com\">hello@monacoduck.com</a> mit deinem Wunschprodukt, deiner normalen Schuhgröße (z.B. bei Nike) oder der Länge und Breite deines Fußes. Grundsätzlich fallen unsere Sneaker und Herren Loafer eine halbe Nummer größer aus, die Damen Slipper etwas kleiner und der Jackboot bis zu einer ganzen Nummer größer. Alle anderen Modelle haben eine normale Passform. Wir helfen dir gerne, die richtige Größe für deinen neuen Sneaker, Loafer oder Stiefel aus München handgefertigt in Italien zu finden.</p>"
+            }
+          },
+          "fecb3e88-45ae-4480-869d-5ef4d4a25b67": {
+            "type": "question",
+            "settings": {
+              "title": "Was kann ich tun, wenn mein Produkt fehlerhaft ist?",
+              "text": "<p>Das kommt hoffentlich nie vor. Wenn du doch ein fehlerhaftes Produkt erhalten solltest, schreibe uns bitte eine Mail an <a href=\"mailto:hello@monacoduck.com\" target=\"_blank\">hello@monacoduck.com</a> mit deiner Bestell-Nummer und der Beschreibung des Fehlers (am besten mit Bild). Wir kümmern uns darum.</p>"
+            }
+          },
+          "e086139a-9bfd-4fb3-be7d-a4b24a23e5ea": {
+            "type": "question",
+            "settings": {
+              "title": "Kann man die Sohlen aus den Schuhen herausnehmen?",
+              "text": "<p>Bei allen unseren Sneakern Charlie, Lou, Max und Felix kann man die Sohle aus dem Schuh nehmen und bei Bedarf eine eigene Einlage in den Schuh legen.</p>"
+            }
+          },
+          "page-faq-template-2": {
+            "type": "question",
+            "settings": {
+              "title": "Mein Schuh quietscht. Warum?",
+              "text": "<p>Unsere Schuhe sind fast ausschließlich aus natürlichen Materialien gefertigt. Das Innenleder ist natürlich gegerbtes Kalbsleder und kann durch die Fußwärme in der Tat mal quietschen. Was hilft ist den Schuh innen sowie die Innensohle mit Babypuder zu bepudern. Das Puder macht das Leder geschmeidig und färbt auch nicht, keine Sorge.</p>"
+            }
+          },
+          "d1436389-9567-47d4-aa33-dcc047381599": {
+            "type": "question",
+            "settings": {
+              "title": "Kann ich eure Produkte auch in anderen Farben oder Größen bekommen?",
+              "text": "<p>Alle unsere handgefertigten nachhaltigen Schuhe können customized in genau deiner Wunschfarbe hergestellt werden. Zudem können wir auch manche unserer Modell in größeren Schuhgrößen in Italien anfertigen lassen. Bei beiden Möglichkeiten handelt es sich somit um Sonderanfertigungen von Schuhen. Kontaktiert uns hierfür direkt über info@monacoduck.com.</p>"
+            }
+          },
+          "dd327673-2611-4eb2-b1a6-55cceb21bd85": {
+            "type": "question",
+            "settings": {
+              "title": "Wie nachhaltig sind eure Produkte?",
+              "text": "<p>Unsere Vision: Ein CO2-neutraler Schuh. Seit über 1.000 Jahren ist unser Loden das älteste Outdoormaterial der Welt und das nicht nur wegen den herausragenden Funktionen des Materials, sondern wegen seiner extremen Nachhaltigkeit. Loden ist ein nachwachsender Rohstoff, der unbegrenzt vorhanden ist und für den keine Tiere sterben müssen. Zudem wird bei der Verarbeitung von Wolle und der Fertigung von Loden wesentlich weniger CO2 ausgestoßen als bei der Ernte und Verarbeitung von Baumwolle. Wie alle anderen Slow-Fashion-Labels produzieren auch wir lokal und bieten unseren Kunden keine schnelllebige Massenware.</p>"
+            }
+          },
+          "07ac57e2-d978-42bd-8bc2-8f1c07636497": {
+            "type": "question",
+            "settings": {
+              "title": "Wie werden eure Produkte gefertigt?",
+              "text": "<p>Jeder einzelne Schuh von MONACO DUCK wird in Handarbeit gefertigt: in der italienischen Region „Le Marche“. Hier sind die besten Schuh-Manufakturen der Welt zu Hause – denn hier ist echte Handwerkskunst Familientradition.</p>"
+            }
+          },
+          "page-faq-template-3": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Material",
+              "text": "",
+              "align_text": "left"
+            }
+          },
+          "page-faq-template-4": {
+            "type": "question",
+            "settings": {
+              "title": "Was ist das besondere an Loden?",
+              "text": "<p>Loden ist der wahrscheinlich älteste Outdoorstoff der Welt. Wir lassen ihn in Bayern und Österreich fertigen und speziell mit Teflon veredeln. Dadurch ist er besser für unsere handgefertigten Schuhe geeignet als Wildleder. Unser Teflon-Loden ist langlebiger, wasser- und ölabweisend und Schmutz kann einfach raus gebürstet werden. Dazu ist Loden besonders atmungsaktiv und bequem und außerdem entstehen so höchst nachhaltige Schuhe aus lokaler Produktion. Nicht umsonst wird Loden seit Jahrhunderten in der Jagd verwendet, für besonders strapazierte Produkte oder gar als Brandschutz.</p>"
+            }
+          },
+          "2c40131f-e5e7-4d14-a67a-88b1ad9dcfba": {
+            "type": "question",
+            "settings": {
+              "title": "Was muss ich bei der Pflege von Loden beachten?",
+              "text": "<p>Loden ist sehr pflegeleicht. Eine Reinigung ist sehr gut möglich, wenn auch häufig nicht nötig. Loden aus 100% reiner Wolle ist durch die natürlichen Eigenschaften selbstreinigend, besonders in Verbindung mit Sauerstoff. Ein paar Stunden an die frische Luft, anschließend feucht abwischen, trocknen lassen und ggf. noch mit einer weichen Bürste behandeln sind als Schuhpflege deiner MONACO DUCKs völlig ausreichend - stundenlanges Schuheputzen adieu. <a href=\"https://www.monacoduck.com/pages/schuhpflege\" target=\"_blank\">Weitere Infos zur Pflege findest du hier.</a></p>"
+            }
+          },
+          "7e3c5a71-07ee-4c66-ac5c-a6832872b976": {
+            "type": "question",
+            "settings": {
+              "title": "Kann ich Schuhe aus Loden auch bei Regen tragen?",
+              "text": "<p>Durch die aufwendige Verarbeitung der Schurwolle, dem Walken, wird der Loden nicht nur widerstandsfähiger und wärmender, sondern auch wasserabweisend. MONACO DUCK Schuhe sind wasserabweisend und du kannst sie natürlich auch bei Regen tragen.</p>"
+            }
+          },
+          "15bdd3f1-0a80-4735-9174-c04a54ada30f": {
+            "type": "question",
+            "settings": {
+              "title": "Sind die Schuhe auch für warme Temperaturen geeignet?",
+              "text": "<p>Loden ist atmungsaktiv, wärmt also im Winter, kühlt aber auch im Sommer. Das Innenfutter aus Leder ist perforiert und unterstützt die Funktion des Lodens. Zudem nehmen wir für unsere Sommerkollektionen einen besonders feinen Sommerloden.</p>"
+            }
+          },
+          "f683dd2e-2286-4b85-b215-daaf83f30fbd": {
+            "type": "question",
+            "settings": {
+              "title": "Woher stammt der Loden und die Wolle für eure Schuhe?",
+              "text": "<p>Unseren Loden beziehen wir aus Bayern und der Steiermark in Österreich aus traditionellen Betrieben, die seit über 500 Jahre natürliche Tücher herstellen. Der Großteil der Schafswolle stammt aus Neuseeland. Dort ist Mulesing verboten und wird streng bestraft. Auch arbeiten wir seit unserem ersten Jahr mit Wolle aus Österreich und möchten dies auch noch weiter ausbauen.</p>"
+            }
+          },
+          "9189cae4-b19b-4cef-bc81-b7fb8d96f65b": {
+            "type": "question",
+            "settings": {
+              "title": "Woher stammt das Leder der Schuhe?",
+              "text": "<p>Leder ist das meist verwendete Material für Schuhe und bekannt für seine langlebigen Eigenschaften als hochwertiger Naturstoff. Es kommt jedoch darauf  an, auf die richtige Herkunft des Leders zu achten sowie auf dessen Verarbeitung. Wir legen allerhöchsten Wert auf Bio-Leder, welches pflanzlich gegerbt ist. Unser Leder für unsere hochwertigen und handgefertigten Schuhe aus München stammt aus Italien.</p>"
+            }
+          },
+          "f7fcecf7-ac76-444c-9b58-442545b24937": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Store",
+              "text": "",
+              "align_text": "left"
+            }
+          },
+          "ccb08bf3-6183-45de-a922-5f84adc7a32c": {
+            "type": "question",
+            "settings": {
+              "title": "Habt ihr einen eigenen Store neben eurem Onlineshop?",
+              "text": "<p>Leider haben wir momentan noch keinen eigenen Store, dafür aber einen Showroom. In unserem Showroom kannst du probieren welche Größe in Sneaker Charlie, Max oder Felix für dich die richtige ist und diese dann direkt vor Ort bestellen.Mach doch bitte über <a href=\"mailto:hello@monacoduck.com\" target=\"_blank\">hello@monacoduck.com</a> oder via Telefon 089/30707489 einen Termin aus, dass du nicht vor verschlossenen Türen stehst.Du findest unseren Showroom hier:<br/>MONACO DUCK / Bavaria Ventures<br/>Gollierstraße 70Haus C - 4. OG<br/>80339 München<br/>Nächste U-Haltestelle: HeimeranplatzFalls du nicht aus der Münchner Gegend kommst und du dich beim Onlineshopping unwohl fühlst, kontaktiere uns einfach. Wir verraten dir den nächsten Store, der unsere exklusiven handgefertigten Schuhe führt.</p>"
+            }
+          },
+          "6376c35a-c95f-457d-8f5c-1f102f10f2b8": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Marke",
+              "text": "",
+              "align_text": "left"
+            }
+          },
+          "52aec01a-5a32-4403-b676-0c534790c581": {
+            "type": "question",
+            "settings": {
+              "title": "Was ist die Design-Philosophie?",
+              "text": "<p>MONACO DUCK steht für moderne Klassiker mit einem individuellen Twist. Exklusive Qualität durch beste Materialien und hochwertige Verarbeitung für unsere nachhaltigen Schuhe aus München. Wir fertigen ausschließlich in Deutschland und Italien. Also kein Fast Fashion, die alle zwei Monate ausgetauscht wird. Sondern exklusive klassische Schuhe, die du über Jahre hinweg tragen kannst - Fair Fashion: Nachhaltige Schuhe aus München.</p>"
+            }
+          },
+          "55a2c8bc-a5d5-4b68-9250-1c3119dd7a5c": {
+            "type": "question",
+            "settings": {
+              "title": "Wer seid ihr?",
+              "text": "<p>Wir sind drei Freunde, die MONACO DUCK gegründet haben und ein kleines Team an tollen Mitarbeitern. Mit der Marke wollen wir das tun, was uns Spaß macht. Neue Dinge schaffen und dabei neue Wege gehen. Wir wollen hochwertige und vor allem nachhaltige Schuhe schaffen, mit denen wir uns selbst und du dich voll identifizieren kannst. Und vielleicht nebenbei die Mode-Welt herausfordern und verbessern.</p>"
+            }
+          },
+          "6e9870f0-4196-4a80-86f6-22068536dfc6": {
+            "type": "question",
+            "settings": {
+              "title": "Woher kommt der Name MONACO DUCK?",
+              "text": "<p>Die Marke steht für das lockere und entspannte München. Wir leben in München. Wir sind aus München. Wir lieben das Münchner Lebensgefühl und den Mix aus Großstadt und Freizeit. Wir sind schnell in Italien oder Österreich in den Bergen. Für die Italiener ist München das &quot;Monaco di Baviera&quot;, das Monaco Bayerns. Unser Logo, die Ente mit Hut und Gamsbart zeigt wo wir herkommen, macht entspannt was sie will und nimmt sich selbst nicht immer so ernst. Daher der Name MONACO DUCK. Eine Hommage an München und an Menschen, die das Leben genießen und wissen, was sie wollen. Sustainable Luxury - Nur das Beste für dich aus München.</p>"
+            }
+          },
+          "fdd2fc41-1540-486d-af26-8089a649353e": {
+            "type": "question",
+            "settings": {
+              "title": "Versand und Bestellung",
+              "text": "<p>Alle Informationen rund um deine Bestellung, den Versand, Bezahlungsarten und Retouren<a href=\"https://www.monacoduck.com/pages/versandinformationen\" target=\"_blank\"> findest du hier.</a></p>"
+            }
+          }
+        },
+        "block_order": [
+          "page-faq-template-0",
+          "page-faq-template-1",
+          "702c3274-d734-43b5-b04e-c86bc1c24026",
+          "fecb3e88-45ae-4480-869d-5ef4d4a25b67",
+          "e086139a-9bfd-4fb3-be7d-a4b24a23e5ea",
+          "page-faq-template-2",
+          "d1436389-9567-47d4-aa33-dcc047381599",
+          "dd327673-2611-4eb2-b1a6-55cceb21bd85",
+          "07ac57e2-d978-42bd-8bc2-8f1c07636497",
+          "page-faq-template-3",
+          "page-faq-template-4",
+          "2c40131f-e5e7-4d14-a67a-88b1ad9dcfba",
+          "7e3c5a71-07ee-4c66-ac5c-a6832872b976",
+          "15bdd3f1-0a80-4735-9174-c04a54ada30f",
+          "f683dd2e-2286-4b85-b215-daaf83f30fbd",
+          "9189cae4-b19b-4cef-bc81-b7fb8d96f65b",
+          "f7fcecf7-ac76-444c-9b58-442545b24937",
+          "ccb08bf3-6183-45de-a922-5f84adc7a32c",
+          "6376c35a-c95f-457d-8f5c-1f102f10f2b8",
+          "52aec01a-5a32-4403-b676-0c534790c581",
+          "55a2c8bc-a5d5-4b68-9250-1c3119dd7a5c",
+          "6e9870f0-4196-4a80-86f6-22068536dfc6",
+          "fdd2fc41-1540-486d-af26-8089a649353e"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false
+        }
+      },
+      "product-story-sections-1": {
+        "type": "product-story-sections-1",
+        "settings": {
+          "tag_to_apply": ""
+        }
+      },
+      "product-story-sections-2": {
+        "type": "product-story-sections-2",
+        "settings": {
+          "tag_to_apply": ""
+        }
+      },
+      "product-story-sections-3": {
+        "type": "product-story-sections-3",
+        "settings": {
+          "tag_to_apply": ""
+        }
+      },
+      "product-story-sections-4": {
+        "type": "product-story-sections-4",
+        "settings": {
+          "tag_to_apply": ""
+        }
+      },
+      "product-story-sections-5": {
+        "type": "product-story-sections-5",
+        "settings": {
+          "tag_to_apply": ""
+        }
+      },
+      "product-story-sections-6": {
+        "type": "product-story-sections-6",
+        "settings": {
+          "tag_to_apply": ""
+        }
+      },
+      "page-sections-karriere": {
+        "type": "page-sections-karriere",
+        "blocks": {
+          "3816a492-4e9e-47d5-9ef3-32258d4b9248": {
+            "type": "background-image-text",
+            "settings": {
+              "subtitle": "Join us for the journey",
+              "title": "Karriere",
+              "text": "<p>Wir suchen Macher. Kreative. Mädels und Jungs. </p>",
+              "button_label": "",
+              "image": "shopify://shop_images/2020_Team_7_-_Kopie.jpg",
+              "alignment": "center",
+              "color_border": "#f4f4f4",
+              "layout": "left",
+              "height": 550,
+              "parallax": true
+            }
+          },
+          "367ac8cf-163b-4eb9-8caf-84f75ad15eba": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Aktuell offene Positionen",
+              "text": "<p>Wir suchen für folgende Positionen neugierige Personen, die sich mit unserer Marke identifizieren und mit uns gemeinsam die Produkte und das Unternehmen weiterentwickeln. Für Details zu den unterschiedlichen Positionen wendet euch gerne jederzeit an <a href=\"mailto:hello@monacoduck.com\"><strong>hello@monacoduck.com</strong></a>. Bei Interesse einfach die Bewerbungsunterlagen per E-Mail an uns senden und wir melden uns in Kürze.</p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          },
+          "4e656df9-cc8c-4dbf-892e-429fbe0614f7": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Praktikum",
+              "text": "<p>Du suchst ein spannendes <strong>Praktikum</strong> in einem jungen <strong>Fashion Startup</strong>?</p><p><strong>Wer wir sind</strong></p><p>Wir sind ein junges Schuh-Label aus München. In einem kleinen Team arbeiten wir in unserem MONACO DUCK Showroom &amp; Office im Herzen Münchens.</p><p><strong>Was Dich erwartet</strong></p><p>Flexible Arbeitszeiten in einem kreativen Umfeld<br/>Startup Atmosphäre und ein junges Team<br/>Aufstiegsmöglichkeiten und wertvolle Erfahrungen</p><p><strong>Wen wir suchen</strong></p><p>Teamfähigkeit &amp; Motivation<br/>Starke Persönlichkeit &amp; Offenheit<br/>Eigenständiges Arbeiten &amp; Verantwortungsbewusstsein</p><p><strong>Was Du machst</strong></p><p>Als junges Team gibt es bei uns sehr flache Hierarchien und offene Aufgabenteilung. Als Team teilen wir die Aufgaben nach Bedarf, Können und Interesse auf. Du kannst Dich auf ein Thema fokussieren oder mehrere Themen angehen. Diese könnten u.a. sein:</p><p><strong>Strategisches Marketing</strong> (Marktrecherche, Wettbewerbsanalysen, Branding Strategie, …)<br/><strong>Operatives Marketing</strong> (Content Marketing, Online Marketing, Design von Marketing- und Vertriebsmaterial, Photoshop, Organisation von Shootings, PR, …)<br/><strong>IT</strong> (Website, Graphic Design, UX/UI Design, Performance as a Sales Tool, Analysen von Kundenverhalten, …)<br/><strong>Logistik &amp; Warehouse Management</strong> (Fulfillment, Inbound &amp; Outbound Logistik, Retouren Management, Kundenservice)<br/><strong>Vertrieb</strong> (Vertriebsstrategie, Übersetzungen von Vertriebsunterlagen, aktiver Vertrieb, ...)</p><p> </p><p>Bewirb Dich und schicke uns Deinen Lebenslauf und Anschreiben an <a href=\"mailto:hello@monacoduck.com\">hello@monacoduck.com</a></p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          }
+        },
+        "block_order": [
+          "3816a492-4e9e-47d5-9ef3-32258d4b9248",
+          "367ac8cf-163b-4eb9-8caf-84f75ad15eba",
+          "4e656df9-cc8c-4dbf-892e-429fbe0614f7"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false
+        }
+      },
+      "page-sections-smart-wool": {
+        "type": "page-sections-smart-wool",
+        "blocks": {
+          "61f1a920-0c2e-4b17-b985-c4072d9fac21": {
+            "type": "image-hero",
+            "settings": {
+              "parallax": true,
+              "title": "Von der Natur inspiriert.",
+              "title_size": 80,
+              "subheading": "Smart Wool",
+              "link_text": "",
+              "link_text_2": "",
+              "color_accent": "rgba(0,0,0,0)",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify://shop_images/2020-Produktion-Loden_158_-_Kopie.jpg",
+              "focal_point": "center center",
+              "section_height": "650px",
+              "mobile_height": "auto"
+            }
+          },
+          "4d6741a2-543a-4281-bfba-31e936fa9b2e": {
+            "type": "rich-text",
+            "settings": {
+              "title": "",
+              "text": "<p>Formvollendete Kreationen voller Liebe zum Detail - eine Welt verschiedener Nuancen, Materialien und Konturen. Farbharmonie und Materialerforschung verweben sich zu einer Neuinterpretation von Design und Nachhaltigkeit.  Wir von MONACO DUCKS lassen uns von der Natur inspirieren und suchen bewusst nach den besten Materialien und Herstellern. Für uns bedeutet das, dass synthetische Materialien so weit wie möglich umgangen werden. Stattdessen verwenden wir Loden aus 100 % Wolle, unsere echte DUCKS Wool.</p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          },
+          "8e781db7-7fad-4590-b2ff-0380303af558": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify://shop_images/2020-Produktion-Loden_69_-_Kopie.jpg",
+              "image_width": 500,
+              "subtitle": "",
+              "title": "",
+              "text": "<p>Gemeinsam mit Experten haben wir den klassischen Loden-Stoff zu unserem DUCKS Loden weiterentwickelt. Anders als herkömmliche Merinowolle ist unsere DUCKS Wool eine besondere Schafschurwolle, die sehr aufwendig verarbeitet und anschließend in einem speziellen Verfahren wetterfestaufgerüstet wird. 100% natürlich.</p><p>Unsere DUCKS Wool ist ein intelligentes Material. Natürliche Hightech Funktion trifft einzigartiges Design und Komfort.</p>",
+              "button_label": "",
+              "layout": "left",
+              "block_bg": ""
+            }
+          },
+          "c83b693c-0f41-4ad6-a85c-dd984287b04e": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify://shop_images/2020-Produktion-Loden_169_-_Kopie.jpg",
+              "image_width": 500,
+              "subtitle": "",
+              "title": "",
+              "text": "<p>Kaum jemand weiß, dass sich die Schur für unsere Schäfer in Bayern kaum mehr lohnt. Genau deshalb engagieren wir uns gemeinsam mit Mähdusa für die Verwendung von bayerischer Wolle. Wir produzieren unsere Wolle von bayerischen Schafen und in der ältesten Textilfabrik Deutschlands mit über 500 Jahren Tradition.</p>",
+              "button_label": "",
+              "layout": "right",
+              "block_bg": ""
+            }
+          },
+          "e424caa0-5a86-462f-b99b-aab591145abd": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify://shop_images/2020-06_Uni_Sneaker_Charlie_Jorg_Mette_398_-_Kopie.jpg",
+              "image_width": 500,
+              "subtitle": "",
+              "title": "",
+              "text": "<p>Wir bekommen nicht nur fantastische Wolle von über 200 000 Schafen aus Bayern, sondern tun direkt auch noch etwas für die Umwelt. Schafe dienen als natürliche Rasenmäher und hinterlassen die Weiden besser als wir sie vorgefunden haben.  Wir stehen für artgerechte Haltung und heimatverbundenes Wirtschaften bei dem Menschen, Tiere und die Natur in den Fokus rücken. Unsere Schafe kann sogar jeder selbst jederzeit besuchen.</p>",
+              "button_label": "",
+              "layout": "left",
+              "block_bg": ""
+            }
+          },
+          "cffc8c28-96a1-4239-94cf-a818b9200e8f": {
+            "type": "background-image-text",
+            "settings": {
+              "subtitle": "",
+              "title": "",
+              "text": "<p>Loden ist das älteste Outdoormaterial der Welt und die vielen Vorteile von diesem Material sind wie geschaffen für Schuhe und Taschen – Natural Hightech.</p>",
+              "button_label": "",
+              "image": "shopify://shop_images/2020-Produktion-Loden_29_-_Kopie_2a1d4639-f440-4168-a206-11fd2cd381d7.jpg",
+              "alignment": "center",
+              "color_border": "#f4f4f4",
+              "layout": "left",
+              "height": 550,
+              "parallax": true
+            }
+          },
+          "7ebd74a4-05b7-4908-a9b7-af5ab1b8048d": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Atmungsaktiv & Temperaturausgleichend",
+              "text": "<p>Loden kühlt im Sommer und wärmt im Winter. Durch die einzigartige Faserstruktur der DUCKS Wool gelingt es uns, Millionen von kleinen Luftkammern in den Stoff zu integrieren. Diese Kammern wirken wie eine natürliche Dämmung und erzeugen ein perfektes Wohlfühlklima auf der Haut. Wolle und die besondere Faserstruktur lässt die Füße besonders gut atmen.</p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          },
+          "d870bd49-931b-4bb6-a5ef-75c5edbf399f": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Wasserabweisend",
+              "text": "<p>Durch die aufwendige Verarbeitung der Schurwolle, dem Walken, wird der Loden nicht nur widerstandsfähiger und wärmender, sondern auch wasserabweisend.</p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          },
+          "3b834be9-3147-4570-9178-271e3956900e": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Nachhaltig",
+              "text": "<p>Anders als Baumwolle ist unsere DUCKS Wool ein natürlicher und nachwachsender Rohstoff. Die Wolle wird hierbei von Hand von Schafen geschoren. Dies verbraucht deutlich weniger Energie als die Herstellung von synthetischen Materialien.   </p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          },
+          "7f7c242e-63d0-4753-aaee-ef5a6138a4da": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Haltbar",
+              "text": "<p>Die komplexe zelluläre Struktur der Wolle macht sie sehrbelastbar und flexibel gegen Risse oder Brüche. Loden kann über 30.000 Malgebogen werden, ohne beschädigt zu werden. </p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          },
+          "b77354db-7c23-4add-8f79-47ee8a2f7d7d": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Komfort",
+              "text": "<p>Loden ist ein besonders leichter Stoff, der angenehm auf der Haut zu tragen ist. Loden schmeichelt sich von der ersten Minute an. Somit verleiht es dem Schuh eine optimale Passform. </p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          },
+          "82d36ff0-4350-44c6-a941-2c28a5502d87": {
+            "type": "hero-video",
+            "settings": {
+              "title": "SO ENTSTEHT UNSERE DUCKS WOOL",
+              "title_size": 80,
+              "subheading": "",
+              "link_text": "ERFAHRE MEHR ZUR FERTIGUNG",
+              "link": "shopify://blogs/news/lodenherstellung-so-wird-aus-schafswolle-das-material-unserer-schuhe",
+              "text_align": "vertical-center horizontal-center",
+              "video_url": "https://www.youtube.com/watch?v=OV9f71XX48c",
+              "section_height": "650px",
+              "mobile_height": "auto"
+            }
+          }
+        },
+        "block_order": [
+          "61f1a920-0c2e-4b17-b985-c4072d9fac21",
+          "4d6741a2-543a-4281-bfba-31e936fa9b2e",
+          "8e781db7-7fad-4590-b2ff-0380303af558",
+          "c83b693c-0f41-4ad6-a85c-dd984287b04e",
+          "e424caa0-5a86-462f-b99b-aab591145abd",
+          "cffc8c28-96a1-4239-94cf-a818b9200e8f",
+          "7ebd74a4-05b7-4908-a9b7-af5ab1b8048d",
+          "d870bd49-931b-4bb6-a5ef-75c5edbf399f",
+          "3b834be9-3147-4570-9178-271e3956900e",
+          "7f7c242e-63d0-4753-aaee-ef5a6138a4da",
+          "b77354db-7c23-4add-8f79-47ee8a2f7d7d",
+          "82d36ff0-4350-44c6-a941-2c28a5502d87"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false
+        }
+      },
+      "page-sections-craftmanship": {
+        "type": "page-sections-craftmanship",
+        "blocks": {
+          "a942e294-f5a9-453f-800b-bd8a784b5301": {
+            "type": "image-hero",
+            "settings": {
+              "parallax": true,
+              "title": "In der Entstehung",
+              "title_size": 80,
+              "subheading": "Craftmanship",
+              "link_text": "",
+              "link_text_2": "",
+              "color_accent": "rgba(0,0,0,0)",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify://shop_images/2019-04_Schuhproduktion_Italien_7_-_Kopie.jpg",
+              "focal_point": "center center",
+              "section_height": "650px",
+              "mobile_height": "auto"
+            }
+          },
+          "4000ad54-690a-422b-8533-39d7a2a1ccdf": {
+            "type": "rich-text",
+            "settings": {
+              "title": "",
+              "text": "<p>Design ohne Kompromisse bedeutet für uns auch Qualität ohne Kompromisse. 52 aufwendige Schritte echter Handarbeit – Wir bieten dir die allerbeste Qualität. Deshalb wird jeder einzelne Schuh von MONACO DUCKS in Handarbeit geschaffen.</p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          },
+          "9a38d67a-2016-4e7e-b17e-c93a0e2ed8ba": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify://shop_images/2019-04_Schuhproduktion_Italien_28_-_Kopie.jpg",
+              "image_width": 500,
+              "subtitle": "",
+              "title": "",
+              "text": "<p>Alle unsere Schuhe werden in Italien gefertigt und das nicht nur, weil wir Pasta und das italienische Lebensgefühl lieben! Sondern in erster Linie weil wir dort die besten Schuhmacher der Welt finden konnten: in der italienischen Region „Le Marche“ in einer traditionsreichen, familiengeführten Manufaktur, die seit vielen Jahren Schuhe für Formel 1 Rennfahrerentwickelt und produziert. </p>",
+              "button_label": "",
+              "layout": "left",
+              "block_bg": ""
+            }
+          },
+          "03ca7295-2014-4403-8d25-f938ecc975ae": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify://shop_images/IMG_3288_-_Kopie.jpg",
+              "image_width": 500,
+              "subtitle": "",
+              "title": "",
+              "text": "<p>Handwerkliches Können, das Wissen um die Anatomie des Fußes sowie um die Verarbeitung unserer speziellen DUCKS Wool liegen uns sehr am Herzen. Dieses Design und Entwicklungs-Knowhow spiegelt sich in jedem unserer Modelle wider – nicht zuletzt durch die ursprüngliche Herkunft unserer Manufaktur aus dem Extremsport. Denn höher können die Anforderungen an Qualität und Widerstandsfähigkeit nicht sein als im Motorsport.</p>",
+              "button_label": "",
+              "layout": "right",
+              "block_bg": ""
+            }
+          },
+          "e640ae97-3eb7-4411-b18a-6bda64f35958": {
+            "type": "background-image-text",
+            "settings": {
+              "subtitle": "",
+              "title": "",
+              "text": "<p>Jedes Element unserer Schuhe wird von Hand gefertigt. Der Loden und das Leder werden sorgfältig ausgewählt, um dir die höchste Qualität zu gewährleisten.</p>",
+              "button_label": "",
+              "image": "shopify://shop_images/IMG_3429_-_Kopie.jpg",
+              "alignment": "center",
+              "color_border": "#f4f4f4",
+              "layout": "left",
+              "height": 550,
+              "parallax": true
+            }
+          },
+          "a6f74628-3713-4b7c-ac22-5c3f1ea14894": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify://shop_images/IMG_3387_-_Kopie.jpg",
+              "image_width": 500,
+              "subtitle": "",
+              "title": "",
+              "text": "<p>Die Leisten bilden die Grundlage für jedes Paar Schuhe. Sie bilden den Fuß nach, berücksichtigen Größe und Schuhmodell und sind mitverantwortlich für den Tragekomfort. Jeder Schuh, so auch unsere, bestehen aus zwei wesentlichen Teilen, dem oberen Teil (Schaft) und dem Boden (Sohle).</p><p>Der Herstellungsprozess all unserer Schuhe beginnt mit der Herstellung eines Prototyps für jedes neue Modell, das wir gründlich im Team testen. Diese erste Design- und Entwicklungsphase ist essenziell dafür, dass die Passform und der ganze Schuh perfekt sind, wenn sie unsere Manufaktur verlassen.</p>",
+              "button_label": "",
+              "layout": "left",
+              "block_bg": ""
+            }
+          },
+          "325c829f-cd9a-4877-91e4-7d6384456287": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify://shop_images/IMG_3346_-_Kopie_ddcf81e3-7183-45dd-9405-68d476e5977f.jpg",
+              "image_width": 500,
+              "subtitle": "",
+              "title": "",
+              "text": "<p>Clicking ist die erste Produktionsstufe, in der das Obermaterial des Schuhs zugeschnitten wird. Der Name &quot;Clicking&quot; leitet sich von dem &quot;Klick&quot;-Geräusch ab, das entsteht, wenn die Klinge nach dem Schneiden um das Muster herum aus dem Leder entfernt wird.</p><p>Im nächsten Produktionsschritt werden die feinen Details unserer Schuhe geschaffen, die jeden Stil individuell machen. Dazu gehört das Stanzen von Löchern und das Zusammennähen der geschnittenen Schaftteile.</p>",
+              "button_label": "",
+              "layout": "right",
+              "block_bg": ""
+            }
+          },
+          "7325b645-3fb3-4dd7-af30-5810c5149c1b": {
+            "type": "background-image-text",
+            "settings": {
+              "subtitle": "",
+              "title": "",
+              "text": "<p>Der Prozess des Zwickens ist der Moment, an dem der Schuh beginnt, Form anzunehmen. Der Schaft wird mit einer Zange über den Leisten gespannt, geformt und mit der Sohle verbunden (gezwickt) und zum Schluss vernäht.</p>",
+              "button_label": "",
+              "image": "shopify://shop_images/IMG_3420_-_Kopie.jpg",
+              "alignment": "center",
+              "color_border": "#f4f4f4",
+              "layout": "left",
+              "height": 550,
+              "parallax": true
+            }
+          },
+          "f42f2595-e718-4ff0-92af-84de57de612d": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Qualität ohne Kompromisse. Design ohne Kompromisse.",
+              "text": "",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          }
+        },
+        "block_order": [
+          "a942e294-f5a9-453f-800b-bd8a784b5301",
+          "4000ad54-690a-422b-8533-39d7a2a1ccdf",
+          "9a38d67a-2016-4e7e-b17e-c93a0e2ed8ba",
+          "03ca7295-2014-4403-8d25-f938ecc975ae",
+          "e640ae97-3eb7-4411-b18a-6bda64f35958",
+          "a6f74628-3713-4b7c-ac22-5c3f1ea14894",
+          "325c829f-cd9a-4877-91e4-7d6384456287",
+          "7325b645-3fb3-4dd7-af30-5810c5149c1b",
+          "f42f2595-e718-4ff0-92af-84de57de612d"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false
+        }
+      },
+      "page-sections-sustainability": {
+        "type": "page-sections-sustainability",
+        "blocks": {
+          "d990009b-0f05-427e-b0d1-32437794a6cf": {
+            "type": "image-hero",
+            "settings": {
+              "parallax": true,
+              "title": "Design ohne Kompromisse.",
+              "title_size": 80,
+              "subheading": "Sustainability",
+              "link_text": "",
+              "link_text_2": "",
+              "color_accent": "rgba(0,0,0,0)",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify://shop_images/2019-06_unisex_Sneaker_Charlie_25_-_Kopie_bac032d7-081a-4853-8e33-696f3b8a0ba1.jpg",
+              "focal_point": "center center",
+              "section_height": "650px",
+              "mobile_height": "auto"
+            }
+          },
+          "e471cb10-decd-41e5-9b27-f39677275807": {
+            "type": "rich-text",
+            "settings": {
+              "title": "",
+              "text": "<p>Zu Beginn war es für uns eine Selbstverständlichkeit, etwas das wir gar nicht kommuniziert haben – doch heute spricht jeder davon: Fair Fashion, Green Fashion, Slow Fashion, … Alles, wonach wir streben, ist, dich bei jedem Schritt zum Lächeln zu bringen. Du sollst alle unsere Produkte mit der Gewissheit kaufen können, dass wir unsere Arbeit gut gemacht haben.</p><p>Natürliche Materialien, 100 % Made in Italy, traditionelles Handwerk und eine auf Vertrauen basierende Beziehung zu unseren Manufakturen –Unser Fokus liegt auf Fairness für Mensch, Tier und Umwelt. Wir sind transparent und wollen mit MONACO DUCKS einen Beitrag zum Umweltschutz leisten: Bei uns sind nicht nur unsere Produkte 100% klimaneutral, sondern auch unsere ganze Firma. Mode und Design ist unsere Passion, macht uns Spaß und das soll es auch für alle Beteiligten.</p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          },
+          "2b88383f-353a-4319-aa59-b842ef426367": {
+            "type": "background-image-text",
+            "settings": {
+              "subtitle": "Wir von MONACO DUCKS lassen uns von der Natur inspirierenund suchen bewusst nach den besten Materialien und Herstellern.",
+              "title": "",
+              "text": "<p>Wir setzen uns dafür ein, die Natur zu schützen und so zu erhalten, wie wir sie kennen. Für uns bedeutet das, dass synthetische Materialien so weit wie möglich umgangen werden. Stattdessen verwenden wir Loden aus 100 % Wolle, unsere echte DUCKS Wool, und pflanzlich gegerbtes Leder.</p>",
+              "button_label": "",
+              "image": "shopify://shop_images/2018_Leichtfried_Loden_Material_2_-_Kopie.jpg",
+              "alignment": "center",
+              "color_border": "#f4f4f4",
+              "layout": "left",
+              "height": 550,
+              "parallax": true
+            }
+          },
+          "675c15e3-0aa3-4132-aa7a-9025f0cc9247": {
+            "type": "text-columns",
+            "settings": {
+              "title": "",
+              "align_text": "center",
+              "enable_image_1": true,
+              "image_1": "shopify://shop_images/IconKlimaneutralSchwarz.png",
+              "image_width_1": 650,
+              "title_1": "",
+              "text_1": "<p>Der Klimawandel ist aktuell eine der größten Herausforderungen. Alle Produkte, die du bei uns bestellst, sowie unser ganzes Unternehmen sind klimaneutral.  Somit leisten wir zusammen einen wichtigen Beitrag zum Klimaschutz und fördern die soziale und wirtschaftliche Situation der Menschen vor Ort. </p>",
+              "button_label_1": "",
+              "enable_image_2": true,
+              "image_2": "shopify://shop_images/IconWolleSchwarz.png",
+              "image_width_2": 650,
+              "title_2": "",
+              "text_2": "<p>Gemeinsam mit Mähdusa engagieren wir uns außerdem für die Verwendung von bayerischer Wolle. Somit stehen wir für artgerechte Haltung und heimatverbundenes Wirtschaften bei dem Menschen, Tiere und die Natur in den Fokus rücken. Unsere Schafe kann sogar jeder selbst jederzeit besuchen.</p>",
+              "button_label_2": "",
+              "enable_image_3": true,
+              "image_3": "shopify://shop_images/FairnessSchwarz.png",
+              "image_width_3": 650,
+              "title_3": "",
+              "text_3": "<p>Seit der Herstellung unseres ersten Musters haben wir eine starke Verbindung zu unseren Manufakturen in Italien aufgebaut. Wir legen großen Wert auf faire Arbeitsbedingungen und eine angemessene Bezahlung. Den Großteil der Materialien beziehen wir von benachbarten Lieferanten und garantieren so die kürzesten Transportwege, die möglich sind.</p>",
+              "button_label_3": ""
+            }
+          },
+          "c1be94ee-5789-4a9e-9c85-bf906157bc2a": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Damit du beschwingt und unbeschwert durchs Leben gehen kannst.",
+              "text": "<p>MONACO DUCKS ist sich der aktuellen Umweltauswirkungen der Modeindustrie bewusst und hinterfragt jeden Teil des Produktionsprozesses. Mitnachwachsenden Rohstoffen, erstklassigen Materialien und ausgezeichneten Produktionen schaffen wir eine neue Perspektive in der Modewelt. </p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          }
+        },
+        "block_order": [
+          "d990009b-0f05-427e-b0d1-32437794a6cf",
+          "e471cb10-decd-41e5-9b27-f39677275807",
+          "2b88383f-353a-4319-aa59-b842ef426367",
+          "675c15e3-0aa3-4132-aa7a-9025f0cc9247",
+          "c1be94ee-5789-4a9e-9c85-bf906157bc2a"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false
+        }
+      },
+      "page-sections-versand": {
+        "type": "page-sections-versand",
+        "blocks": {
+          "fc3ae51c-474c-41ba-bac8-83d181a61f08": {
+            "type": "image-hero",
+            "settings": {
+              "parallax": true,
+              "title": "Versand und Bestellung",
+              "title_size": 80,
+              "subheading": "",
+              "link_text": "",
+              "link_text_2": "",
+              "color_accent": "rgba(0,0,0,0)",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify://shop_images/2019_Carl_7_-_Kopie.jpg",
+              "focal_point": "center center",
+              "section_height": "650px",
+              "mobile_height": "auto"
+            }
+          },
+          "451858b5-0f6c-4cb2-ba0e-ad2ba11dcaaa": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Bestellung aufgeben",
+              "text": "<p>Du kannst einfach eine Bestellung auf monacoduck.com aufgeben. Wähle hierzu ein Produkt deiner Wahl und die gewünschte Größe aus und lege das Produkt in den Warenkorb. Im Warenkorb werden deine Produkte solange gespeichert bis du die Bestellung abgeschlossen hast. </p><p>Sofern du weiter einkaufen möchtest, klicke auf das Kreuz und führe deinen Einkauf in der Online Boutique fort. Sofern du den Kauf abschließen möchtest, klicke &quot;Zur Kasse&quot; an. </p><p>Anschließend führt dich unser Bestellprozess Schritt für Schritt durch die Anmeldung und Zahlungsformalitäten. Folge hierzu einfach den Anweisungen, die  im Browserfenster angezeigt werden. </p><p>Bevor du die Bestellung abschließt, kannst du dir deine Auswahl jederzeit im Warenkorb anzeigen lassen. Klicke hierzu einfach auf das Symbol des Warenkorbs in der Menüleiste rechts oben auf unserer Homepage. </p><p>Nach Abschluss der Bestellung wirst du umgehend über den weiteren Versandprozess informiert. Du erhältst zunächst eine E-Mail an die von dir hinterlegte E-Mail Adresse, dass die Bestellung bei uns eingegangen ist. Sobald deine Bestellung von uns bearbeitet wurde und wir deinen Einkauf an DHL übergeben haben, erhältst du eine weitere Benachrichtigung per E-Mail. Sämtliche E-Mails enthalten deine Bestellnummer.</p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          },
+          "711fd5e9-1442-4430-9e32-7b04647188e1": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Versandkosten",
+              "text": "<p>Bestellungen innerhalb von Deutschland, Österreich und der Schweiz sind <strong>kostenfrei. </strong>﻿</p><p>Alle anderen Versandkosten werden von uns je nach Land beim Check-Out automatisch berechnet. </p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          },
+          "b71df67f-45ab-40ba-ab33-3052ca27714c": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Versandart",
+              "text": "<p><strong>Auslieferung durch DHL<br/></strong>Wir arbeiten mit unserem Logistikpartner DHL zusammen, der deine Bestellung an die von dir gewünschte Lieferadresse bringt. Auch eine Lieferung an eine DHL Packstation ist möglich. Sofern du dich über die Leistungen von DHL tiefergehend informieren möchtest, findest du sämtliche Informationen in den Geschäftsbedingungen von DHL.</p><p><strong>Sendungsverfolgung<br/></strong>Sobald deine Lieferung unser Haus verlassen hat, erhältst du eine Benachrichtigung an die von dir hinterlegte E-Mail Adresse. Diese Benachrichtigung enthält die DHL Sendungsnummer und den Link zur Sendungsverfolgung. </p><p><strong>Versicherung<br/></strong>Deine Lieferung ist ab dem Zeitpunkt des Versands mit einem Wert von bis zu 500€ versichert. Sofern du eine Bestellung mit einem wesentlich höheren Warenwert aufgegeben hast, passen wir die Versicherungssumme entsprechend an. Wir versichern jede Sendung gegen Beschädigung oder Diebstahl und übernehmen in diesem Fall die entstehenden Kosten.</p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          },
+          "d3d8471c-21f7-40ff-a83e-33a45cd68012": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Zahlungsart",
+              "text": "<p>Um die ausgewählte Ware zu bezahlen, kannst du zwischen der Bezahlung mit Paypal, Amazonpay, Google Pay, Apple Pay, Klarna Sofort und  Kreditkarte (VISA, Master Card, American Express, Maestro) wählen. Wir arbeiten ständig, weitere Zahlungsarten zu ermöglichen, so dass sich dein Einkaufserlebnis noch stärker an deinen individuellen Wünschen und Präferenzen orientiert.</p><p><strong>Kreditkarte<br/></strong>Bei der Zahlung mit Kreditkarte wird der Betrag direkt abgebucht. Zu diesem Zweck verwenden wir die Sicherheitssoftware SSL (Secure Socket Layer). Diese asymmetrische Verschlüsselungsmethode schützt den Anwender davor, dass Dritte auf die Kreditkarteninformationen während der Übertragung zugreifen können. Gleichermaßen können auch wir selbst die von dir angegeben Kreditkarteninformationen nicht im Zuge einer Gutschrift einsehen. Aus diesem Grund ist es uns nicht möglich die Gutschrift auf eine andere als eben diese Kreditkarte durchzuführen. </p><p><strong>Paypal<br/></strong>Sofern du Paypal als Zahlungsart gewählt hast, wirst du automatisch zu Paypal weitergeleitet. Folge hier den Anweisungen, die in deinem Browserfenster angezeigt werden. Um den Bezahlvorgang abzuschließen, gib deinen Benutzernamen und das zugehörige Kennwort ein. Solltest du noch kein Paypal-Konto besitzen, kannst du ein Konto erstellen und den Bezahlvorgang im Anschluss daran abschließen. </p><p><strong>Zahlung per Sofortüberweisung<br/></strong>Sofern du dich für eine Zahlung per Sofortüberweisung entscheidest, wirst du zu den offiziellen Seiten unseres  Dienstleister https://www.sofort.com/ weitergeleitet. Hier wird für dich die Überweisung von deinem Konto abgewickelt. Folge hierzu den Angaben in dem Fenster. </p><p>Der Zahlbetrag wird von dem Konto überwiesen, welches du angegeben hast. Sobald die Bezahlung bei uns eingegangen ist, bearbeiten wir deine Bestellung. </p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          },
+          "8446f3d9-ad0d-48da-8f5d-102d098d979b": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Rückgaberecht",
+              "text": "<p>Sofern ein Produkt einmal nicht deinen Vorstellungen entspricht, kannst du es jederzeit innerhalb von 30 Tagen zurückgeben. Wie du deine Schuhe retournierst und dir selbst ein Retourenlabel ausstellen kannst, <a href=\"https://www.monacoduck.com/pages/retoure\" target=\"_blank\">erfährst du hier</a>. </p><p>Der Umtausch sowie die Retoure gegen eine andere Größe oder Farbe ist innerhalb Deutschlands kostenfrei. Wir schicken dir das neue Produkt zu, sobald Deine Retoure bei uns angekommen ist. </p><p>Für den reibungslosen Ablauf der Rückgabe muss das Produkt ungetragen und unbeschädigt sein. Achte daher bitte besonders darauf, dass du die Schuhe nur auf einem Teppichboden oder einer weichen Unterlage anprobierst, sodass die Sohle nicht verkratzt. Sämtliche von Gesetzes wegen zustehenden Rechte gelten unabhängig und werden durch unser Angebot nicht eingeschränkt. </p><p><strong>Du erhältst dein Geld zurück</strong></p><p>Nachdem wir die Ware erhalten und geprüft haben, erstatten wir dir dein Geld umgehend zurück. Die Gutschrift erfolgt stets über die Zahlungsart, die du bei der initialen Bezahlung des Kaufpreises gewählt hast. Wir bemühen uns um eine schnelle Abwicklung deines Anliegens. Gleichwohl können zwischen dem Zeitpunkt, zu dem die Ware bei uns eintrifft, und der Rückerstattung des Kaufpreises 10-14 Tage liegen. Wir haben auf diese Dauer keinen Einfluss. Vielmehr hängt dies von Deinem Kreditkarteninstitut ab. </p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          },
+          "b03e851e-84ee-4035-9da6-16e8ae3bbc49": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Beschädigte Artikel und Fehllieferungen",
+              "text": "<p>Wir und unser Versandpartner DHL sind stets um einen reibungslosen Ablauf einer Bestellung bemüht. Dennoch kann es in äußerst seltenen Fällen vorkommen, dass du beschädigte oder eine andere als bestellte Ware erhältst. In diesen Fällen möchten wir dich dazu auffordern dich gerne umgehend an einen unserer Servicemitarbeiter zu wenden. Selbstverständlich nehmen wir den Artikel zurück und erstatten dir den Kaufpreis oder veranlassen, sofern du magst, einen Umtausch. Schreibe  uns hierzu einfach eine Nachricht an <a href=\"mailto:hello@monacoduck.com\">hello@monacoduck.com</a></p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          }
+        },
+        "block_order": [
+          "fc3ae51c-474c-41ba-bac8-83d181a61f08",
+          "451858b5-0f6c-4cb2-ba0e-ad2ba11dcaaa",
+          "711fd5e9-1442-4430-9e32-7b04647188e1",
+          "b71df67f-45ab-40ba-ab33-3052ca27714c",
+          "d3d8471c-21f7-40ff-a83e-33a45cd68012",
+          "8446f3d9-ad0d-48da-8f5d-102d098d979b",
+          "b03e851e-84ee-4035-9da6-16e8ae3bbc49"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false
+        }
+      },
+      "instagram": {
+        "type": "instagram",
+        "settings": {
+          "title": "Folge uns auf Instagram",
+          "instagram_code": "<script src=\"//foursixty.com/media/scripts/fs.embed.v2.5.js\" data-feed-id=\"monacoduck_1\" data-theme=\"sizes_v2_5\" data-open-links-in-same-page=\"true\" data-page-size=\"28\"></script><style>.fs-has-links::after { padding:10px 15px; border:2px solid #ffffff; color:#ffffff; content:\"Jetzt shoppen\" } .fs-has-links:hover:after { background-color:#ffffff; color:rgba(0, 0, 0, 0.8) } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title { font-family:Times New Roman, serif; font-style:normal; font-weight:normal; font-size:12px } div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text { font-family:Helvetica Neue, Helvetica, Arial, sans-serif; font-style:normal; font-weight:bold; font-size:12px } .fs-wrapper div.fs-text-container * { color:#ffffff } .fs-wrapper div.fs-text-container { background-color:rgba(0, 0, 0, 0.8); margin:0px } div.fs-entry-date { display:none } div.fs-entry-title { display:none } .fs-wrapper div.fs-timeline-entry { margin:5px } </style>",
+          "hide_pages": true,
+          "hide_collections": false,
+          "hide_products": false,
+          "hide_homepage": false,
+          "hide_cart": true
+        }
+      },
+      "page-sections-retoure": {
+        "type": "page-sections-retoure",
+        "blocks": {
+          "45dcdd24-07db-48ed-b5a5-76a7b4a0b8a7": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Du möchtest Deine Schuhe zurückgeben?",
+              "text": "<p><strong>Das geht bei uns jetzt ganz einfach und unkompliziert!</strong></p><p>Versand und Retouren sind in Deutschland für dich kostenfrei. Versand nach Österreich und in die Schweiz ist ebenfalls kostenfrei. Retouren aus dem Ausland können wir leider noch nicht übernehmen. Wir bitten um dein Verständnis.</p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          },
+          "942ee1e4-5f04-49ac-a68a-eb6bc404500c": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Retouren innerhalb von Deutschland",
+              "text": "<p>1. Klicke einfach auf den <a href=\"https://amsel.dpwn.net/abholportal/gw/lp/portal/bavariaventures/customer/RpOrder.action?delivery=RetourenLager01&amp;ADDR_SEND_LANG=&amp;locale=DE&amp;lang=DE&amp;\" target=\"_blank\">Link</a>! Hierdurch gelangst du zum DHL Retourenportal.</p><p>2. Fülle das Retourenformular bei DHL online mit deiner Absender-Adresse aus.</p><p>3. Erstelle dir dein Retourenlabel ganz einfach als PDF.</p><p>4. Nun kannst du das Retourenlabel ausdrucken und auf dein Paket aufkleben.</p><p>5. Die im Paket beiliegende Retourenkarte einfach ausfüllen und der Sendung beilegen.</p><p>6. Schicke uns das Paket zu.</p><p>7. Unsere Retouren werden einmal pro Woche bearbeitet. Sobald dein Paket bei uns eingetroffen ist, bekommst du innerhalb von 5-7 Werktagen dein Geld zurückerstattet.</p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          },
+          "e0ab104e-4b56-4b28-a5a4-3f646fc23543": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Retouren aus dem Ausland",
+              "text": "<p>Retouren aus dem Ausland können wir leider noch nicht übernehmen. Wir bitten um dein Verständnis. Sämtliche von Gesetzes wegen zustehenden Rechte gelten unabhängig und werden durch unser Angebot nicht eingeschränkt. Schicke uns aus dem Ausland einfach selbst dein Paket an folgende Adresse:</p><p>MONACO DUCK<br/>c/o Hatico Mode GmbH<br/>Abt. Versand<br/>Falkenberger Str. 7<br/>95643 Tirschenreuth<br/>Deutschland</p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          },
+          "2537cc00-e799-40ec-b05d-cef63e4af21e": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Warum wir kein Retourenlabel direkt beilegen?",
+              "text": "<p>Deutschland liegt beim mengenmäßigen Gesamt-Papierverbrauch auf Platz vier der Weltrangliste. Nur China, die USA und Japan verbrauchen mehr Papier als Deutschland. Angesichts diesen großen Papierverbrauchs in Deutschland ist das Einsparen<strong> </strong>von Papier ein wichtiger Beitrag zum Umweltschutz und selbst wenn es nur ein nicht beigelegtes Retourenlabel ist, jeder kann einen kleinen Beitrag leisten!</p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          },
+          "3d4a8732-2d9a-4d7e-917a-f88c0c02bdee": {
+            "type": "rich-text",
+            "settings": {
+              "title": "Bei weiteren Fragen melde dich gerne jederzeit bei uns!",
+              "text": "<p><a href=\"mailto:hello@monacoduck.com\">hello@monacoduck.com</a><br/>+49 (0) 89 / 30 707 489</p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          }
+        },
+        "block_order": [
+          "45dcdd24-07db-48ed-b5a5-76a7b4a0b8a7",
+          "942ee1e4-5f04-49ac-a68a-eb6bc404500c",
+          "e0ab104e-4b56-4b28-a5a4-3f646fc23543",
+          "2537cc00-e799-40ec-b05d-cef63e4af21e",
+          "3d4a8732-2d9a-4d7e-917a-f88c0c02bdee"
+        ],
+        "settings": {
+          "page_title_enable": true,
+          "page_content_enable": false
+        }
+      },
+      "page-sections-about-us": {
+        "type": "page-sections-about-us",
+        "blocks": {
+          "a3ab1e39-79d2-48fc-895d-117131186277": {
+            "type": "image-hero",
+            "settings": {
+              "parallax": true,
+              "title": "MONACO DUCKS\nDesign ohne Kompromisse.",
+              "title_size": 80,
+              "subheading": "ABOUT US",
+              "link_text": "",
+              "link_text_2": "",
+              "color_accent": "rgba(0,0,0,0)",
+              "text_align": "vertical-center horizontal-center",
+              "image": "shopify://shop_images/2020_Team_7_-_Kopie_a040c287-7816-464d-b502-e75fa107ce54.jpg",
+              "focal_point": "center center",
+              "section_height": "650px",
+              "mobile_height": "auto"
+            }
+          },
+          "bf16eac0-cccb-475d-899a-fb74597398fd": {
+            "type": "rich-text",
+            "settings": {
+              "title": "",
+              "text": "<p>Wir von MONACO DUCKS stehen auf Design, schätzen frische Ideen und lieben was wir tun. Wir sind die einzige Modemarke, die alle relevanten Aspekte vereint: stylisch sein, reflektiert sein, umweltbewusst sein. Der Spaß am Leben und die Freude an dem was wir tun, zeigt sich in der Leichtigkeit und Ästhetik unserer Produkte, in unserer Arbeit und unserer Identität.</p>",
+              "align_text": "center",
+              "narrow_column": true,
+              "enlarge_text": false
+            }
+          },
+          "557efa4a-c5aa-44ff-87f4-905c5905eb7c": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify://shop_images/2020-Produktion-Loden_69_-_Kopie.jpg",
+              "image_width": 500,
+              "subtitle": "",
+              "title": "Inspiriert von den Besten.",
+              "text": "<p>Formvollendete Kreationen voller Liebe zum Detail - eine Welt verschiedener Nuancen, Materialien und Konturen. Farbharmonie und Materialerforschung verweben sich zu einer Neuinterpretation von Design und Nachhaltigkeit.  Wir haben uns auf die Suche nach einer innovativen Lösung, den besten Materialien und Herstellern, gemacht. Für uns bedeutet das, dass synthetische Materialien so weit wie möglich umgangen werden. Stattdessen verwenden wir Loden aus 100 % Wolle ,unsere echte DUCKS Wool.</p>",
+              "button_label": "ERFAHRE MEHR",
+              "button_link": "shopify://pages/performance",
+              "layout": "left"
+            }
+          },
+          "42545cc2-cd6a-44a3-b55c-58be1ff3544f": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify://shop_images/2018_Leichtfried_Loden_Material_3_-_Kopie.jpg",
+              "image_width": 500,
+              "subtitle": "",
+              "title": "Design ohne Kompromisse.",
+              "text": "<p>Zu Beginn war es für uns eine Selbstverständlichkeit, etwas das wir gar nicht kommuniziert haben – doch heute spricht jeder davon: Fair Fashion, Green Fashion, Slow Fashion, … Alles, wonach wir streben, ist, dich bei jedem Schritt zum Lächeln zu bringen. Du sollst alle unsere Produkte mit der Gewissheit kaufen können, dass wir unsere Arbeit gut gemacht haben. Natürliche Materialien, 100 % Made in Italy, traditionelles Handwerk und eine auf Vertrauen basierende Beziehung zu unseren Manufakturen – Unser Fokus liegt auf Fairness für Mensch, Tier und Umwelt. Wir sind transparent und wollen mit MONACO DUCKS einen Beitrag zum Umweltschutz leisten.</p>",
+              "button_label": "ERFAHRE MEHR",
+              "button_link": "shopify://pages/nachhaltigkeit",
+              "layout": "right"
+            }
+          },
+          "7b0099fb-2ff5-47a9-b662-37c3c14660e0": {
+            "type": "text-and-image",
+            "settings": {
+              "image": "shopify://shop_images/2019-04_Schuhproduktion_Italien_7.jpg",
+              "image_width": 500,
+              "subtitle": "",
+              "title": "In der Entstehung.",
+              "text": "<p>Design ohne Kompromisse bedeutet für uns auch Qualität ohne Kompromisse. 52 aufwendige Schritte echter Handarbeit – Wir bieten dir die allerbeste Qualität. Deshalb wird jeder einzelne Schuh von MONACO DUCKS in Handarbeit in Italien geschaffen und das nicht nur, weil wir Pasta und das italienische Lebensgefühl lieben! Sondern in erster Linie weil wir dort die besten Schuhmacher der Welt finden konnten: in der italienischen Region „Le Marche“ in einer traditionsreichen, familiengeführten Manufaktur, die seitvielen Jahren Schuhe entwickelt und produziert. </p>",
+              "button_label": "ERFAHRE MEHR",
+              "button_link": "shopify://pages/handarbeit-made-in-italy",
+              "layout": "left"
+            }
+          }
+        },
+        "block_order": [
+          "a3ab1e39-79d2-48fc-895d-117131186277",
+          "bf16eac0-cccb-475d-899a-fb74597398fd",
+          "557efa4a-c5aa-44ff-87f4-905c5905eb7c",
+          "42545cc2-cd6a-44a3-b55c-58be1ff3544f",
+          "7b0099fb-2ff5-47a9-b662-37c3c14660e0"
+        ],
+        "settings": {
+          "page_title_enable": false,
+          "page_content_enable": false
+        }
+      }
+    },
+    "content_for_index": [
+      "1524769873765",
+      "1608609352a804f754",
+      "1606667970c69b727f",
+      "1606662194add4feb5",
+      "160666640460022a7f",
+      "1606668791ba80be6b",
+      "1606667720e3facbab",
+      "1606666430f48bba59"
+    ]
+  },
+  "presets": {
+    "Modern": {
+      "breadcrumb": false,
+      "button_style": "square",
+      "cart_notes_enable": false,
+      "cart_terms_conditions_enable": false,
+      "cart_type": "drawer",
+      "checkout_accent_color": "#111111",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_button_color": "#111111",
+      "checkout_error_color": "#ff6d6d",
+      "checkout_input_background_color_mode": "white",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_sidebar_background_color": "#fafafa",
+      "collection_color_swatches": false,
+      "collection_grid_gutter": true,
+      "collection_grid_image": "product",
+      "collection_grid_opacity": 10,
+      "collection_grid_shape": "square",
+      "collection_grid_style": "overlaid-box",
+      "collection_grid_text_align": "center",
+      "collection_grid_tint": "#000000",
+      "color_announcement": "#0f0f0f",
+      "color_announcement_text": "#ffffff",
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#000000",
+      "color_borders": "#e8e8e1",
+      "color_button": "#111111",
+      "color_button_text": "#ffffff",
+      "color_cart_dot": "#ff4f33",
+      "color_drawer_background": "#ffffff",
+      "color_drawer_border": "#e8e8e1",
+      "color_drawer_button": "#111111",
+      "color_drawer_button_text": "#ffffff",
+      "color_drawer_text": "#000000",
+      "color_footer": "#ffffff",
+      "color_footer_text": "#000000",
+      "color_header": "#ffffff",
+      "color_header_text": "#000000",
+      "color_image_overlay": "#000000",
+      "color_image_overlay_text_shadow": 20,
+      "color_large_image_bg": "#0f0f0f",
+      "color_modal_overlays": "#e6e6e6",
+      "color_price": "#1c1d1d",
+      "color_savings_text": "#C20000",
+      "color_small_image_bg": "#ffffff",
+      "icon_linecaps": "miter",
+      "icon_weight": "2px",
+      "inventory_enable": true,
+      "product_color_swatches": false,
+      "product_contact": false,
+      "product_grid_image_size": "natural",
+      "product_hover_image": false,
+      "quantity_enable": false,
+      "quick_shop_text": "Quick view",
+      "share_facebook": true,
+      "share_pinterest": true,
+      "share_twitter": true,
+      "sku_enable": false,
+      "social_facebook_link": "https://www.facebook.com/shopify",
+      "social_instagram_link": "https://instagram.com/shopify",
+      "social_pinterest_link": "https://www.pinterest.com/shopify",
+      "type_base_font_family": "futura_n4",
+      "type_base_line_height": 1.6,
+      "type_base_size": 16,
+      "type_base_spacing": "25",
+      "type_body_align_text": true,
+      "type_collection_font": "body",
+      "type_collection_size": 18,
+      "type_header_base_size": 38,
+      "type_header_capitalize": true,
+      "type_header_font_family": "tiemann_n4",
+      "type_header_line_height": 1,
+      "type_header_spacing": "0",
+      "type_headers_align_text": true,
+      "type_navigation_capitalize": true,
+      "type_navigation_size": 13,
+      "type_navigation_style": "body",
+      "type_product_style": "body",
+      "variant_type": "button",
+      "vendor_enable": false,
+      "sections": {
+        "header": {
+          "type": "header",
+          "blocks": {
+            "1524770014057": {
+              "type": "logo",
+              "settings": {
+                "desktop_logo_width": 140,
+                "mobile_logo_width": 110
+              }
+            },
+            "1524770292306": {
+              "type": "announcement",
+              "settings": {
+                "text": "Free shipping",
+                "link_text": "On all orders over $100"
+              }
+            },
+            "1524770296206": {
+              "type": "announcement",
+              "settings": {
+                "text": "Hassle-free returns",
+                "link_text": "30-day postage paid returns"
+              }
+            }
+          },
+          "block_order": ["1524770014057", "1524770292306", "1524770296206"],
+          "settings": {
+            "main_menu_link_list": "main-menu",
+            "main_menu_alignment": "center-split",
+            "header_style": "sticky",
+            "sticky_index": false,
+            "sticky_collection": false,
+            "announcement_compact": true,
+            "toolbar_menu": "top",
+            "toolbar_social": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1494301487048": {
+              "type": "logo_social",
+              "settings": {
+                "container_width": 95
+              }
+            },
+            "1494301487049": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer",
+                "container_width": 25
+              }
+            },
+            "1494292487693": {
+              "type": "newsletter",
+              "settings": {
+                "container_width": 33
+              }
+            }
+          },
+          "block_order": ["1494301487049", "1494292487693", "1494301487048"],
+          "settings": {
+            "show_payment_icons": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "subcollection_style": "above",
+            "subcollections_per_row": 5,
+            "per_row": 4
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "social_enable": true,
+            "image_position": "left",
+            "image_size": "large"
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "social_sharing_blog": true
+          }
+        },
+        "1498163293234": {
+          "type": "featured-content",
+          "settings": {
+            "align_text": "center",
+            "narrow_column": true,
+            "enlarge_text": true,
+            "divider": false
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "blog_show_tag_filter": true,
+            "blog_show_rss": false,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "blog_image_size": "wide"
+          }
+        },
+        "1499789718857": {
+          "type": "featured-collections",
+          "blocks": {
+            "1499789718857-0": {
+              "type": "collection",
+              "settings": {}
+            },
+            "1499789718857-1": {
+              "type": "collection",
+              "settings": {}
+            },
+            "1499789718857-2": {
+              "type": "collection",
+              "settings": {}
+            },
+            "1499789718857-3": {
+              "type": "collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1499789718857-0",
+            "1499789718857-1",
+            "1499789718857-2",
+            "1499789718857-3"
+          ],
+          "settings": {
+            "title": "Shop by category",
+            "divider": false,
+            "per_row": 4,
+            "enable_gutter": true
+          }
+        },
+        "1499790633921": {
+          "type": "background-image-text",
+          "settings": {
+            "button_link": "shopify://collections/all",
+            "focal_point": "80% 0",
+            "color_border": "#cdb8ac",
+            "layout": "left",
+            "height": 750,
+            "framed": false,
+            "parallax": true
+          }
+        },
+        "product-sections-template": {
+          "type": "product-sections-template",
+          "blocks": {
+            "sections-1592408474529": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "right"
+              }
+            },
+            "sections-1592410313636": {
+              "type": "background-image-text",
+              "settings": {
+                "subtitle": "Why choose us?",
+                "title": "Explain your brand philosophy",
+                "text": "<p>Use this section to explain your company philosophy or standards. Showcase lifestyle photography for added emphasis. This content will appear on all products.</p>",
+                "button_label": "",
+                "button_link": "",
+                "image": "",
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 650,
+                "parallax": true
+              }
+            },
+            "sections-1592408476245": {
+              "type": "testimonials",
+              "settings": {
+                "title": "Testimonials",
+                "align_text": "center",
+                "round_images": false,
+                "testimonial_1": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.</p>",
+                "image_1": "",
+                "author_1": "Author's name",
+                "testimonial_2": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.</p>",
+                "image_2": "",
+                "author_2": "Author's name"
+              }
+            },
+            "sections-1592410272428": {
+              "type": "image-hero",
+              "settings": {
+                "parallax": true,
+                "title": "Two line\ntitle image",
+                "title_size": 80,
+                "subheading": "And optional subtext",
+                "link": "",
+                "link_text": "Optional button",
+                "link_2": "",
+                "link_text_2": "",
+                "color_accent": "#ffffff",
+                "text_align": "vertical-center horizontal-center",
+                "image": "",
+                "focal_point": "center center",
+                "section_height": "650px",
+                "mobile_height": "auto"
+              }
+            },
+            "sections-1592410318615": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "left"
+              }
+            }
+          },
+          "block_order": [
+            "sections-1592410313636",
+            "sections-1592408476245",
+            "sections-1592408474529",
+            "sections-1592410318615",
+            "sections-1592410272428"
+          ],
+          "settings": {}
+        },
+        "product-story-sections": {
+          "type": "product-story-sections",
+          "blocks": {
+            "1592408474529": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "right"
+              }
+            },
+            "1592410313636": {
+              "type": "background-image-text",
+              "settings": {
+                "subtitle": "Why choose us?",
+                "title": "Explain your brand philosophy",
+                "text": "<p>Use this section to explain your company philosophy or standards. Showcase lifestyle photography for added emphasis. This content will appear on all products.</p>",
+                "button_label": "",
+                "button_link": "",
+                "image": "",
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 650,
+                "parallax": true
+              }
+            },
+            "1592408476245": {
+              "type": "testimonials",
+              "settings": {
+                "title": "Testimonials",
+                "align_text": "center",
+                "round_images": false,
+                "testimonial_1": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.</p>",
+                "image_1": "",
+                "author_1": "Author's name",
+                "testimonial_2": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.</p>",
+                "image_2": "",
+                "author_2": "Author's name"
+              }
+            },
+            "1592410272428": {
+              "type": "image-hero",
+              "settings": {
+                "parallax": true,
+                "title": "Two line\ntitle image",
+                "title_size": 80,
+                "subheading": "And optional subtext",
+                "link": "",
+                "link_text": "Optional button",
+                "link_2": "",
+                "link_text_2": "",
+                "color_accent": "#ffffff",
+                "text_align": "vertical-center horizontal-center",
+                "image": "",
+                "focal_point": "center center",
+                "section_height": "650px",
+                "mobile_height": "auto"
+              }
+            },
+            "1592410318615": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "left"
+              }
+            }
+          },
+          "block_order": [
+            "1592410313636",
+            "1592408476245",
+            "1592408474529",
+            "1592410318615",
+            "1592410272428"
+          ],
+          "settings": {}
+        },
+        "page-sections-template": {
+          "type": "page-sections-template",
+          "blocks": {
+            "page-image-hero": {
+              "type": "image-hero",
+              "settings": {}
+            },
+            "page-rich-text": {
+              "type": "rich-text",
+              "settings": {
+                "align_text": "center",
+                "narrow_column": true,
+                "enlarge_text": true
+              }
+            },
+            "page-text-columns": {
+              "type": "text-columns",
+              "settings": {}
+            },
+            "page-background-image-text": {
+              "type": "background-image-text",
+              "settings": {
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 550
+              }
+            },
+            "page-featured-collection": {
+              "type": "featured-collection",
+              "settings": {
+                "title": "Featured collection",
+                "per_row": 4,
+                "rows": 1,
+                "view_all": true
+              }
+            }
+          },
+          "block_order": [
+            "page-image-hero",
+            "page-rich-text",
+            "page-text-columns",
+            "page-background-image-text",
+            "page-featured-collection"
+          ],
+          "settings": {
+            "page_title_enable": false,
+            "page_content_enable": false
+          }
+        },
+        "newsletter-popup": {
+          "type": "newsletter-popup",
+          "settings": {}
+        },
+        "1524769873765": {
+          "type": "slideshow",
+          "blocks": {
+            "1524769873765-0": {
+              "type": "image",
+              "settings": {
+                "title_size": 80,
+                "link": "shopify://collections/all",
+                "link_text": "Shop this",
+                "link_2": "shopify://collections/all",
+                "link_text_2": "Shop all",
+                "color_accent": "#000000",
+                "text_align": "vertical-center horizontal-center",
+                "focal_point": "top center"
+              }
+            },
+            "1524769873765-1": {
+              "type": "image",
+              "settings": {
+                "title_size": 80,
+                "link": "shopify://collections/all",
+                "link_text": "Shop all",
+                "link_2": "shopify://collections/all",
+                "link_text_2": "Shop all",
+                "color_accent": "#000000",
+                "text_align": "vertical-bottom horizontal-left",
+                "focal_point": "top center"
+              }
+            }
+          },
+          "block_order": ["1524769873765-0", "1524769873765-1"],
+          "settings": {
+            "section_height": "750px",
+            "mobile_height": "auto",
+            "parallax": true,
+            "style": "bars",
+            "autoplay": true,
+            "autoplay_speed": 7
+          }
+        },
+        "collection-header": {
+          "type": "collection-header",
+          "settings": {
+            "enable": true,
+            "collection_image_enable": true,
+            "parallax": true
+          }
+        },
+        "collection-sidebar": {
+          "type": "collection-sidebar",
+          "blocks": {
+            "1524772785241": {
+              "type": "subcollections",
+              "settings": {}
+            },
+            "1524772580942": {
+              "type": "tags_all",
+              "settings": {}
+            }
+          },
+          "block_order": ["1524772785241", "1524772580942"],
+          "settings": {
+            "enable_sidebar": true,
+            "filter_style": "sidebar",
+            "tags_combine": false,
+            "enable_sort": true
+          }
+        },
+        "1525115199973": {
+          "type": "blog-posts",
+          "settings": {
+            "title": "From the journal",
+            "blog": "news",
+            "post_limit": 3,
+            "blog_show_tags": false,
+            "blog_show_date": true,
+            "blog_show_comments": false,
+            "blog_show_author": false,
+            "view_all": true,
+            "blog_image_size": "wide",
+            "divider": false
+          }
+        },
+        "1525118065355": {
+          "type": "map",
+          "settings": {}
+        },
+        "1525295772132": {
+          "type": "featured-collection",
+          "settings": {
+            "per_row": 4,
+            "rows": 1,
+            "view_all": true,
+            "divider": false
+          }
+        },
+        "1525886124958": {
+          "type": "promo-grid",
+          "blocks": {
+            "1525886482727": {
+              "type": "advanced",
+              "settings": {
+                "cta_link1": "shopify://collections/all",
+                "width": "100",
+                "height": 720,
+                "text_size": 120,
+                "focal_point": "80% 50%",
+                "boxed": false,
+                "framed": false
+              }
+            },
+            "1525886854810": {
+              "type": "sale_collection",
+              "settings": {
+                "width": "50",
+                "boxed": false,
+                "framed": true
+              }
+            },
+            "1525911710924": {
+              "type": "sale_collection",
+              "settings": {
+                "width": "50",
+                "boxed": false,
+                "framed": true
+              }
+            }
+          },
+          "block_order": ["1525886482727", "1525886854810", "1525911710924"],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 20,
+            "space_above": false,
+            "space_below": false
+          }
+        },
+        "1525912530555": {
+          "type": "promo-grid",
+          "blocks": {
+            "1525912530555-0": {
+              "type": "advanced",
+              "settings": {
+                "cta_link1": "shopify://collections/all",
+                "width": "50",
+                "height": 800,
+                "text_size": 100,
+                "text_align": "vertical-center horizontal-center",
+                "focal_point": "center",
+                "boxed": false,
+                "framed": true
+              }
+            },
+            "1525912530555-1": {
+              "type": "advanced",
+              "settings": {
+                "cta_link1": "shopify://collections/all",
+                "width": "50",
+                "height": 500,
+                "text_size": 100,
+                "text_align": "vertical-bottom horizontal-center",
+                "focal_point": "80% 50%",
+                "boxed": true,
+                "framed": false
+              }
+            }
+          },
+          "block_order": ["1525912530555-0", "1525912530555-1"],
+          "settings": {
+            "full_width": true,
+            "gutter_size": 20,
+            "space_above": false,
+            "space_below": false
+          }
+        },
+        "collection-promotions": {
+          "type": "collection-promotions",
+          "blocks": {
+            "1526403837307": {
+              "type": "banner",
+              "settings": {
+                "link": "shopify://collections/all",
+                "label": "Shop now",
+                "color_tint": "#e95454",
+                "color_tint_opacity": 10,
+                "framed": false
+              }
+            },
+            "1526496043079": {
+              "type": "advanced",
+              "settings": {
+                "cta_link1": "shopify://collections/all",
+                "width": "100",
+                "height": 500,
+                "text_size": 120,
+                "text_align": "vertical-center horizontal-center",
+                "focal_point": "center",
+                "boxed": false,
+                "framed": true
+              }
+            }
+          },
+          "block_order": ["1526403837307", "1526496043079"],
+          "settings": {
+            "gutter_size": 20
+          }
+        }
+      },
+      "content_for_index": [
+        "1524769873765",
+        "1498163293234",
+        "1525912530555",
+        "1499789718857",
+        "1525886124958",
+        "1525295772132",
+        "1499790633921",
+        "1525115199973",
+        "1525118065355"
+      ]
+    },
+    "Clean": {
+      "show_breadcrumbs": true,
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#000000",
+      "color_price": "#1c1d1d",
+      "color_savings_text": "#ff4e4e",
+      "color_borders": "#e8e8e1",
+      "color_button": "#111111",
+      "color_button_text": "#ffffff",
+      "color_cart_dot": "#ff4f33",
+      "color_small_image_bg": "#e5e5e5",
+      "color_large_image_bg": "#0f0f0f",
+      "color_header": "#ffffff",
+      "color_header_text": "#000000",
+      "color_announcement": "#0f0f0f",
+      "color_announcement_text": "#ffffff",
+      "color_footer": "#ffffff",
+      "color_footer_text": "#000000",
+      "color_drawer_background": "#ffffff",
+      "color_drawer_text": "#000000",
+      "color_drawer_border": "#e8e8e1",
+      "color_drawer_button": "#111111",
+      "color_drawer_button_text": "#ffffff",
+      "color_modal_overlays": "#e6e6e6",
+      "color_image_overlay_opacity": 0,
+      "color_image_overlay_text_shadow": 24,
+      "type_header_font_family": "basic_commercial_n7",
+      "type_header_spacing": "25",
+      "type_header_base_size": 38,
+      "type_header_line_height": 1,
+      "type_header_capitalize": false,
+      "type_headers_align_text": false,
+      "type_base_font_family": "basic_commercial_n4",
+      "type_base_spacing": "25",
+      "type_base_size": 16,
+      "type_base_line_height": 1.6,
+      "type_body_align_text": false,
+      "type_navigation_style": "body",
+      "type_navigation_size": 18,
+      "type_navigation_capitalize": false,
+      "type_product_style": "heading",
+      "type_product_capitalize": false,
+      "type_collection_font": "body",
+      "type_collection_size": 24,
+      "button_style": "square",
+      "icon_weight": "4px",
+      "icon_linecaps": "miter",
+      "vendor_enable": false,
+      "sku_enable": false,
+      "quantity_enable": false,
+      "variant_type": "button",
+      "inventory_enable": false,
+      "quick_shop_text": "Quick view",
+      "product_grid_image_size": "square",
+      "product_hover_image": true,
+      "product_color_swatches": false,
+      "collection_color_swatches": false,
+      "product_contact": true,
+      "collection_grid_style": "overlaid",
+      "collection_grid_shape": "square",
+      "collection_grid_image": "collection",
+      "collection_grid_text_align": "center",
+      "collection_grid_tint": "#000000",
+      "collection_grid_opacity": 20,
+      "collection_grid_gutter": true,
+      "cart_type": "drawer",
+      "cart_notes_enable": false,
+      "cart_terms_conditions_enable": false,
+      "social_facebook_link": "https://www.facebook.com/shopify",
+      "social_twitter_link": "https://twitter.com/shopify",
+      "social_instagram_link": "https://instagram.com/shopify",
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#f5f5f5",
+      "checkout_accent_color": "#682d2d",
+      "checkout_button_color": "#682d2d",
+      "checkout_error_color": "#ff6d6d",
+      "product_fixed_image_height": false,
+      "sections": {
+        "header": {
+          "type": "header",
+          "blocks": {
+            "1520882467782": {
+              "type": "logo",
+              "settings": {
+                "logo": "",
+                "logo-inverted": "",
+                "desktop_logo_width": 200,
+                "mobile_logo_width": 140
+              }
+            },
+            "1521051841065": {
+              "type": "announcement",
+              "settings": {
+                "text": "Free shipping",
+                "link_text": "On all orders over $100",
+                "link": "shopify://collections/all"
+              }
+            },
+            "1520888647304": {
+              "type": "announcement",
+              "settings": {
+                "text": "Hassle-free returns",
+                "link_text": "30-day postage paid returns",
+                "link": "shopify://collections/all"
+              }
+            }
+          },
+          "block_order": ["1520882467782", "1521051841065", "1520888647304"],
+          "settings": {
+            "main_menu_link_list": "main-menu",
+            "mega_menu_images": true,
+            "main_menu_alignment": "left-center",
+            "header_style": "sticky",
+            "sticky_index": true,
+            "sticky_collection": true,
+            "announcement_compact": true,
+            "announcement_above_header": true,
+            "toolbar_menu": "",
+            "toolbar_social": true,
+            "show_locale_selector": true,
+            "show_currency_selector": true,
+            "show_currency_flags": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1494301487049": {
+              "type": "menu",
+              "settings": {
+                "show_footer_title": false,
+                "menu": "footer",
+                "container_width": 25
+              }
+            },
+            "1494292487693": {
+              "type": "newsletter",
+              "settings": {
+                "show_footer_title": true,
+                "title": "Sign up and save",
+                "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>",
+                "container_width": 30
+              }
+            },
+            "1494301487048": {
+              "type": "logo_social",
+              "settings": {
+                "logo": "",
+                "desktop_logo_height": 50,
+                "container_width": 95
+              }
+            }
+          },
+          "block_order": ["1494301487049", "1494292487693", "1494301487048"],
+          "settings": {
+            "show_locale_selector": true,
+            "show_currency_selector": true,
+            "show_currency_flags": true,
+            "show_payment_icons": false,
+            "show_copyright": false,
+            "copyright_text": ""
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "description_position": "top",
+            "subcollection_style": "above",
+            "subcollections_per_row": 3,
+            "enable_collection_count": true,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "description_style": "default",
+            "social_enable": true,
+            "image_position": "left",
+            "image_size": "large",
+            "thumbnail_position": "below",
+            "thumbnail_arrows": false,
+            "enable_video_looping": true,
+            "product_video_style": "muted"
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "image_hero": false,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "social_sharing_blog": true
+          }
+        },
+        "1498163293234": {
+          "type": "featured-content",
+          "settings": {
+            "title": "",
+            "text": "<p>A sentence or two introducing your brand, what you sell, and what makes your brand compelling to customers.</p>",
+            "align_text": "center",
+            "narrow_column": true,
+            "enlarge_text": true,
+            "divider": false
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "blog_show_tag_filter": true,
+            "blog_show_rss": false,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "blog_show_excerpt": false,
+            "blog_image_size": "wide"
+          }
+        },
+        "product-sections-template": {
+          "type": "product-sections-template",
+          "blocks": {
+            "sections-1592408474529": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "right"
+              }
+            },
+            "sections-1592410313636": {
+              "type": "background-image-text",
+              "settings": {
+                "subtitle": "Why choose us?",
+                "title": "Explain your brand philosophy",
+                "text": "<p>Use this section to explain your company philosophy or standards. Showcase lifestyle photography for added emphasis. This content will appear on all products.</p>",
+                "button_label": "",
+                "button_link": "",
+                "image": "",
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 650,
+                "parallax": true
+              }
+            },
+            "sections-1592408476245": {
+              "type": "testimonials",
+              "settings": {
+                "title": "Testimonials",
+                "align_text": "center",
+                "round_images": false,
+                "testimonial_1": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.</p>",
+                "image_1": "",
+                "author_1": "Author's name",
+                "testimonial_2": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.</p>",
+                "image_2": "",
+                "author_2": "Author's name"
+              }
+            },
+            "sections-1592410272428": {
+              "type": "image-hero",
+              "settings": {
+                "parallax": true,
+                "title": "Two line\ntitle image",
+                "title_size": 80,
+                "subheading": "And optional subtext",
+                "link": "",
+                "link_text": "Optional button",
+                "link_2": "",
+                "link_text_2": "",
+                "color_accent": "#ffffff",
+                "text_align": "vertical-center horizontal-center",
+                "image": "",
+                "focal_point": "center center",
+                "section_height": "650px",
+                "mobile_height": "auto"
+              }
+            },
+            "sections-1592410318615": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "left"
+              }
+            }
+          },
+          "block_order": [
+            "sections-1592410313636",
+            "sections-1592408476245",
+            "sections-1592408474529",
+            "sections-1592410318615",
+            "sections-1592410272428"
+          ],
+          "settings": {}
+        },
+        "product-story-sections": {
+          "type": "product-story-sections",
+          "blocks": {
+            "1592408474529": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "right"
+              }
+            },
+            "1592410313636": {
+              "type": "background-image-text",
+              "settings": {
+                "subtitle": "Why choose us?",
+                "title": "Explain your brand philosophy",
+                "text": "<p>Use this section to explain your company philosophy or standards. Showcase lifestyle photography for added emphasis. This content will appear on all products.</p>",
+                "button_label": "",
+                "button_link": "",
+                "image": "",
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 650,
+                "parallax": true
+              }
+            },
+            "1592408476245": {
+              "type": "testimonials",
+              "settings": {
+                "title": "Testimonials",
+                "align_text": "center",
+                "round_images": false,
+                "testimonial_1": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.</p>",
+                "image_1": "",
+                "author_1": "Author's name",
+                "testimonial_2": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.</p>",
+                "image_2": "",
+                "author_2": "Author's name"
+              }
+            },
+            "1592410272428": {
+              "type": "image-hero",
+              "settings": {
+                "parallax": true,
+                "title": "Two line\ntitle image",
+                "title_size": 80,
+                "subheading": "And optional subtext",
+                "link": "",
+                "link_text": "Optional button",
+                "link_2": "",
+                "link_text_2": "",
+                "color_accent": "#ffffff",
+                "text_align": "vertical-center horizontal-center",
+                "image": "",
+                "focal_point": "center center",
+                "section_height": "650px",
+                "mobile_height": "auto"
+              }
+            },
+            "1592410318615": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "left"
+              }
+            }
+          },
+          "block_order": [
+            "1592410313636",
+            "1592408476245",
+            "1592408474529",
+            "1592410318615",
+            "1592410272428"
+          ],
+          "settings": {}
+        },
+        "page-sections-template": {
+          "type": "page-sections-template",
+          "blocks": {
+            "page-rich-text": {
+              "type": "rich-text",
+              "settings": {
+                "title": "Rich text block",
+                "text": "<p>Use this section for any descriptive text you need to fill out your pages or to add introductory headings between other blocks.</p>",
+                "align_text": "center",
+                "narrow_column": true,
+                "enlarge_text": true
+              }
+            },
+            "page-text-columns": {
+              "type": "text-columns",
+              "settings": {
+                "title": "",
+                "align_text": "center",
+                "enable_image_1": true,
+                "image_1": "",
+                "image_width_1": 650,
+                "title_1": "Example title",
+                "text_1": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>",
+                "button_label_1": "",
+                "button_link_1": "",
+                "enable_image_2": true,
+                "image_2": "",
+                "image_width_2": 650,
+                "title_2": "Example title",
+                "text_2": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>",
+                "button_label_2": "",
+                "button_link_2": "",
+                "enable_image_3": true,
+                "image_3": "",
+                "image_width_3": 650,
+                "title_3": "Example title",
+                "text_3": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>",
+                "button_label_3": "",
+                "button_link_3": ""
+              }
+            },
+            "page-background-image-text": {
+              "type": "background-image-text",
+              "settings": {
+                "subtitle": "Impressive",
+                "title": "Large image with text box",
+                "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.</p>",
+                "button_label": "",
+                "button_link": "",
+                "image": "",
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 550,
+                "parallax": true
+              }
+            },
+            "page-featured-collection": {
+              "type": "featured-collection",
+              "settings": {
+                "title": "Featured collection",
+                "collection": "",
+                "per_row": 4,
+                "rows": 1,
+                "mobile_scrollable": true,
+                "view_all": true
+              }
+            }
+          },
+          "block_order": [
+            "page-rich-text",
+            "page-text-columns",
+            "page-background-image-text",
+            "page-featured-collection"
+          ],
+          "settings": {
+            "page_title_enable": false,
+            "page_content_enable": false
+          }
+        },
+        "newsletter-popup": {
+          "type": "newsletter-popup",
+          "settings": {
+            "mode": "disabled",
+            "popup_seconds": 5,
+            "popup_days": 30,
+            "popup_title": "Sign up and save",
+            "popup_image": "",
+            "popup_text": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers. Include an image for extra impact.</p>",
+            "close_text": "No thanks",
+            "enable_newsletter": true,
+            "button_label": "Optional button",
+            "button_link": "",
+            "enable_button": false
+          }
+        },
+        "collection-header": {
+          "type": "collection-header",
+          "settings": {
+            "enable": true,
+            "collection_image_enable": true,
+            "parallax": true
+          }
+        },
+        "collection-sidebar": {
+          "type": "collection-sidebar",
+          "blocks": {
+            "1524772785241": {
+              "type": "subcollections",
+              "settings": {
+                "enable_subsubcollections": true,
+                "enable_count": false,
+                "collapsed": false
+              }
+            },
+            "1524772580942": {
+              "type": "tags_all",
+              "settings": {
+                "title": "Filter",
+                "collapsed": false
+              }
+            }
+          },
+          "block_order": ["1524772785241", "1524772580942"],
+          "settings": {
+            "enable_sidebar": true,
+            "filter_style": "sidebar",
+            "tags_combine": false,
+            "enable_sort": true
+          }
+        },
+        "1523298253705": {
+          "type": "slideshow",
+          "blocks": {
+            "1523298253705-0": {
+              "type": "image",
+              "settings": {
+                "top_subheading": "Optional headline",
+                "title": "Two line\ntitle slide.",
+                "title_size": 80,
+                "subheading": "",
+                "link": "",
+                "link_text": "Shop this",
+                "link_2": "",
+                "link_text_2": "Shop all",
+                "color_accent": "#ffffff",
+                "text_align": "vertical-bottom horizontal-left",
+                "image": "",
+                "focal_point": "center center"
+              }
+            },
+            "1523298253705-1": {
+              "type": "image",
+              "settings": {
+                "top_subheading": "",
+                "title": "Two line\ntitle slide.",
+                "title_size": 80,
+                "subheading": "Optional descriptive text",
+                "link": "",
+                "link_text": "Shop this",
+                "link_2": "",
+                "link_text_2": "Shop all",
+                "color_accent": "#ffffff",
+                "text_align": "vertical-center horizontal-center",
+                "image": "",
+                "focal_point": "center center"
+              }
+            }
+          },
+          "block_order": ["1523298253705-0", "1523298253705-1"],
+          "settings": {
+            "section_height": "100vh",
+            "mobile_height": "500px",
+            "parallax": true,
+            "style": "bars",
+            "autoplay": true,
+            "autoplay_speed": 7
+          }
+        },
+        "list-collections-template": {
+          "type": "list-collections-template",
+          "settings": {
+            "title_enable": true,
+            "display_type": "all",
+            "sort": "alphabetical",
+            "grid": "3"
+          }
+        },
+        "1524685456938": {
+          "type": "background-image-text",
+          "settings": {
+            "subtitle": "Impressive",
+            "title": "Large image with text box",
+            "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.</p>",
+            "button_label": "Shop this ⟶",
+            "button_link": "shopify://collections/all",
+            "image": "",
+            "focal_point": "center",
+            "color_border": "#e5e5e5",
+            "layout": "right",
+            "height": 650,
+            "framed": false,
+            "parallax": true
+          }
+        },
+        "1524685919990": {
+          "type": "featured-collection",
+          "settings": {
+            "title": "Featured collection",
+            "home_featured_products": "",
+            "per_row": 4,
+            "rows": 1,
+            "mobile_scrollable": true,
+            "view_all": true,
+            "divider": false
+          }
+        },
+        "1524685997883": {
+          "type": "newsletter",
+          "settings": {
+            "title": "Join the club.",
+            "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>",
+            "color_background": "#000000",
+            "color_text": "#ffffff"
+          }
+        },
+        "1524686167862": {
+          "type": "featured-collection",
+          "settings": {
+            "title": "Featured collection",
+            "home_featured_products": "",
+            "per_row": 3,
+            "rows": 1,
+            "mobile_scrollable": true,
+            "view_all": true,
+            "divider": false
+          }
+        },
+        "1524686876171": {
+          "type": "featured-collections",
+          "blocks": {
+            "1524686876171-0": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "title": "",
+                "focal_point": "center center"
+              }
+            },
+            "1524686876171-1": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "title": "",
+                "focal_point": "center center"
+              }
+            },
+            "1588626135647": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "title": "",
+                "focal_point": "center center"
+              }
+            },
+            "1588626162332": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "title": "",
+                "focal_point": "center center"
+              }
+            },
+            "1588626173524": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "title": "",
+                "focal_point": "center center"
+              }
+            }
+          },
+          "block_order": [
+            "1524686876171-0",
+            "1524686876171-1",
+            "1588626135647",
+            "1588626162332",
+            "1588626173524"
+          ],
+          "settings": {
+            "title": "Collections",
+            "divider": false,
+            "per_row": 5,
+            "enable_gutter": true
+          }
+        },
+        "1525878145666": {
+          "type": "promo-grid",
+          "blocks": {
+            "1525879359021": {
+              "type": "advanced",
+              "settings": {
+                "subheading": "",
+                "heading": "Your promotion.",
+                "textarea": "",
+                "cta_text1": "Shop This",
+                "cta_link1": "shopify://collections/all",
+                "cta_text2": "",
+                "cta_link2": "",
+                "image": "",
+                "video_url": "",
+                "width": "33",
+                "height": 560,
+                "text_size": 115,
+                "text_align": "vertical-bottom horizontal-left",
+                "focal_point": "80% 50%",
+                "color_accent": "#000000",
+                "boxed": false,
+                "framed": false
+              }
+            },
+            "1588625715338": {
+              "type": "advanced",
+              "settings": {
+                "subheading": "",
+                "heading": "Another promotion.",
+                "textarea": "",
+                "cta_text1": "Shop This",
+                "cta_link1": "",
+                "cta_text2": "",
+                "cta_link2": "",
+                "image": "",
+                "video_url": "",
+                "width": "33",
+                "height": 500,
+                "text_size": 115,
+                "text_align": "vertical-center horizontal-center",
+                "focal_point": "center",
+                "color_accent": "#000000",
+                "boxed": false,
+                "framed": false
+              }
+            },
+            "1588625789930": {
+              "type": "advanced",
+              "settings": {
+                "subheading": "",
+                "heading": "A boxed promotion.",
+                "textarea": "Include smaller text.",
+                "cta_text1": "Shop This",
+                "cta_link1": "",
+                "cta_text2": "",
+                "cta_link2": "",
+                "image": "",
+                "video_url": "",
+                "width": "33",
+                "height": 500,
+                "text_size": 100,
+                "text_align": "vertical-bottom horizontal-left",
+                "focal_point": "center",
+                "color_accent": "#000000",
+                "boxed": true,
+                "framed": false
+              }
+            }
+          },
+          "block_order": ["1525879359021", "1588625715338", "1588625789930"],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 10,
+            "space_above": true,
+            "space_below": false
+          }
+        },
+        "1525881294487": {
+          "type": "promo-grid",
+          "blocks": {
+            "1588626352304": {
+              "type": "product",
+              "settings": {
+                "product": "",
+                "subheading": "Limited time",
+                "heading": "Announce your product",
+                "textarea": "Include the smaller details of your promotion in text below the title.",
+                "link_label": "Learn more",
+                "label": "New",
+                "enable_price": true,
+                "width": "50",
+                "text_size": 100,
+                "color_tint": "#000000",
+                "color_tint_opacity": 0,
+                "framed": false
+              }
+            },
+            "1588626372747": {
+              "type": "simple",
+              "settings": {
+                "link": "",
+                "text": "",
+                "image": "",
+                "width": "50",
+                "height": 300,
+                "color_tint": "#000000",
+                "color_tint_opacity": 8,
+                "framed": false
+              }
+            }
+          },
+          "block_order": ["1588626352304", "1588626372747"],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 40,
+            "space_above": true,
+            "space_below": false
+          }
+        },
+        "1526493275292": {
+          "type": "promo-grid",
+          "blocks": {
+            "1588625972876": {
+              "type": "advanced",
+              "settings": {
+                "subheading": "",
+                "heading": "Powerful flexibility.",
+                "textarea": "Include the smaller details of your promotion in text below the title.",
+                "cta_text1": "Shop This",
+                "cta_link1": "",
+                "cta_text2": "",
+                "cta_link2": "",
+                "image": "",
+                "video_url": "",
+                "width": "50",
+                "height": 700,
+                "text_size": 115,
+                "text_align": "vertical-bottom horizontal-left",
+                "focal_point": "center",
+                "color_accent": "#000000",
+                "boxed": false,
+                "framed": false
+              }
+            },
+            "1588625975479": {
+              "type": "advanced",
+              "settings": {
+                "subheading": "",
+                "heading": "Adaptive layouts",
+                "textarea": "Include the smaller details of your promotion in text below the title.",
+                "cta_text1": "Shop This",
+                "cta_link1": "",
+                "cta_text2": "Shop All",
+                "cta_link2": "",
+                "image": "",
+                "video_url": "",
+                "width": "50",
+                "height": 500,
+                "text_size": 100,
+                "text_align": "vertical-center horizontal-center",
+                "focal_point": "center",
+                "color_accent": "rgba(0,0,0,0)",
+                "boxed": true,
+                "framed": false
+              }
+            }
+          },
+          "block_order": ["1588625972876", "1588625975479"],
+          "settings": {
+            "full_width": true,
+            "gutter_size": 20,
+            "space_above": true,
+            "space_below": false
+          }
+        },
+        "collection-promotions": {
+          "type": "collection-promotions",
+          "blocks": {
+            "1526501699095": {
+              "type": "banner",
+              "settings": {
+                "promo_collection": "",
+                "heading": "Summer Savings",
+                "text": "Add the details of your promotion",
+                "link": "shopify://collections/all",
+                "label": "Shop now",
+                "image": "",
+                "color_tint": "#66a7d7",
+                "color_tint_opacity": 14,
+                "framed": false
+              }
+            },
+            "1588794963981": {
+              "type": "advanced",
+              "settings": {
+                "promo_collection": "",
+                "subheading": "",
+                "heading": "Free shipping over $100",
+                "textarea": "",
+                "cta_text1": "Learn more",
+                "cta_link1": "",
+                "cta_text2": "",
+                "cta_link2": "",
+                "image": "",
+                "video_url": "",
+                "width": "100",
+                "height": 300,
+                "text_size": 100,
+                "text_align": "vertical-bottom horizontal-left",
+                "focal_point": "center",
+                "color_accent": "#ffffff",
+                "boxed": false,
+                "framed": false
+              }
+            }
+          },
+          "block_order": ["1526501699095", "1588794963981"],
+          "settings": {
+            "gutter_size": 17
+          }
+        },
+        "footer-promotions": {
+          "type": "footer-promotions",
+          "blocks": {
+            "footer-promotions-0": {
+              "type": "promotion",
+              "settings": {
+                "enable_image": true,
+                "image": "",
+                "title": "Site-wide promotion",
+                "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.</p>",
+                "button_label": "Optional button",
+                "button_link": ""
+              }
+            },
+            "footer-promotions-1": {
+              "type": "promotion",
+              "settings": {
+                "enable_image": true,
+                "image": "",
+                "title": "Site-wide promotion",
+                "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.</p>",
+                "button_label": "Optional button",
+                "button_link": ""
+              }
+            },
+            "footer-promotions-2": {
+              "type": "promotion",
+              "settings": {
+                "enable_image": true,
+                "image": "",
+                "title": "Site-wide promotion",
+                "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.</p>",
+                "button_label": "Optional button",
+                "button_link": ""
+              }
+            }
+          },
+          "block_order": [
+            "footer-promotions-0",
+            "footer-promotions-1",
+            "footer-promotions-2"
+          ],
+          "settings": {
+            "hide_homepage": false,
+            "image_size": "wide"
+          }
+        },
+        "1588626192341": {
+          "type": "featured-collections",
+          "blocks": {
+            "1588626192341-0": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "title": "",
+                "focal_point": "center center"
+              }
+            },
+            "1588626192341-1": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "title": "",
+                "focal_point": "center center"
+              }
+            },
+            "1588626192341-2": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "title": "",
+                "focal_point": "center center"
+              }
+            }
+          },
+          "block_order": [
+            "1588626192341-0",
+            "1588626192341-1",
+            "1588626192341-2"
+          ],
+          "settings": {
+            "title": "More collections",
+            "divider": false,
+            "per_row": 3,
+            "enable_gutter": true
+          }
+        },
+        "1588626476600": {
+          "type": "featured-content",
+          "settings": {
+            "title": "Rich text",
+            "text": "<p>A sentence or two introducing your brand, what you sell, and what makes your brand compelling to customers.</p>",
+            "align_text": "center",
+            "narrow_column": true,
+            "enlarge_text": true,
+            "divider": true
+          }
+        },
+        "1588626523224": {
+          "type": "promo-grid",
+          "blocks": {
+            "1588626523224-0": {
+              "type": "simple",
+              "settings": {
+                "link": "",
+                "text": "",
+                "image": "",
+                "width": "33",
+                "height": 340,
+                "color_tint": "#000000",
+                "color_tint_opacity": 8,
+                "framed": false
+              }
+            },
+            "1588626523224-1": {
+              "type": "simple",
+              "settings": {
+                "link": "",
+                "text": "",
+                "image": "",
+                "width": "33",
+                "height": 300,
+                "color_tint": "#000000",
+                "color_tint_opacity": 8,
+                "framed": false
+              }
+            },
+            "1588626529491": {
+              "type": "simple",
+              "settings": {
+                "link": "",
+                "text": "",
+                "image": "",
+                "width": "33",
+                "height": 300,
+                "color_tint": "#000000",
+                "color_tint_opacity": 8,
+                "framed": false
+              }
+            }
+          },
+          "block_order": [
+            "1588626523224-0",
+            "1588626523224-1",
+            "1588626529491"
+          ],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 5,
+            "space_above": false,
+            "space_below": true
+          }
+        }
+      },
+      "content_for_index": [
+        "1523298253705",
+        "1525878145666",
+        "1498163293234",
+        "1524685919990",
+        "1526493275292",
+        "1524686876171",
+        "1588626192341",
+        "1524685456938",
+        "1525881294487",
+        "1524686167862",
+        "1588626476600",
+        "1588626523224",
+        "1524685997883"
+      ]
+    },
+    "Bold": {
+      "color_body_bg": "#000000",
+      "color_body_text": "#ffffff",
+      "color_price": "#d1ba98",
+      "color_savings_text": "#b30000",
+      "color_borders": "#2b2a27",
+      "color_button": "#9f8561",
+      "color_button_text": "#ffffff",
+      "color_cart_dot": "#b30000",
+      "color_small_image_bg": "#000000",
+      "color_large_image_bg": "#111111",
+      "color_header": "#000000",
+      "color_header_text": "#ffffff",
+      "color_announcement": "#cf2424",
+      "color_announcement_text": "#ffffff",
+      "color_footer": "#000000",
+      "color_footer_text": "#ffffff",
+      "color_drawer_background": "#000000",
+      "color_drawer_text": "#ffffff",
+      "color_drawer_border": "#2b2a27",
+      "color_drawer_button": "#9f8561",
+      "color_drawer_button_text": "#ffffff",
+      "color_modal_overlays": "#67635d",
+      "color_image_overlay": "#000000",
+      "color_image_overlay_opacity": 15,
+      "color_image_overlay_text_shadow": 30,
+      "type_header_font_family": "fjalla_one_n4",
+      "type_header_spacing": "150",
+      "type_header_base_size": 45,
+      "type_header_line_height": 1.2,
+      "type_header_capitalize": true,
+      "type_headers_align_text": true,
+      "type_base_font_family": "itc_conduit_n4",
+      "type_base_spacing": "50",
+      "type_base_size": 18,
+      "type_base_line_height": 1.4,
+      "type_body_align_text": true,
+      "type_navigation_style": "heading",
+      "type_navigation_size": 18,
+      "type_product_style": "heading",
+      "type_collection_font": "heading",
+      "type_collection_size": 23,
+      "button_style": "angled",
+      "icon_weight": "5px",
+      "icon_linecaps": "miter",
+      "vendor_enable": false,
+      "search_enable": false,
+      "sku_enable": false,
+      "quantity_enable": false,
+      "variant_type": "button",
+      "inventory_enable": false,
+      "product_save_amount": true,
+      "product_zoom_enable": false,
+      "quick_shop_enable": true,
+      "quick_shop_text": "Quick view",
+      "product_grid_image_size": "square",
+      "product_hover_image": false,
+      "product_color_swatches": false,
+      "collection_color_swatches": false,
+      "product_content_collapse_1": false,
+      "product_content_collapse_2": true,
+      "product_content_collapse_3": true,
+      "product_contact": false,
+      "enable_product_reviews": true,
+      "reviews_layout": "expandable",
+      "collection_grid_style": "overlaid-box",
+      "collection_grid_shape": "landscape",
+      "collection_grid_image": "collection",
+      "collection_grid_text_align": "bottom-center",
+      "collection_grid_tint": "#000000",
+      "collection_grid_opacity": 10,
+      "collection_grid_gutter": true,
+      "cart_type": "drawer",
+      "social_facebook_link": "https://www.facebook.com/shopify",
+      "social_twitter_link": "https://twitter.com/shopify",
+      "social_youtube_link": "https://www.youtube.com/user/shopify",
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#000000",
+      "checkout_input_background_color_mode": "transparent",
+      "checkout_sidebar_background_color": "#000000",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_accent_color": "#ae9878",
+      "checkout_button_color": "#ae9878",
+      "checkout_error_color": "#ff6d6d",
+      "color_image_2": "#cf2424",
+      "color_image_2_opacity": 0,
+      "color_image_1": "#6d1414",
+      "color_image_1_opacity": 0,
+      "type_accent_style": "body",
+      "type_accent_bold": true,
+      "type_accent_capitalize": true,
+      "type_button_font": "heading",
+      "type_button_capitalize": false,
+      "type_header_accent_transform": true,
+      "type_base_accent_transform": true,
+      "collection_grid_font": "heading",
+      "color_image_bg": "#000000",
+      "breadcrumb": true,
+      "color_sale_tag": "#990000",
+      "color_input": "#ffffff",
+      "checkout_banner_background_color": "#ffffff",
+      "checkout_call_to_action_color": "#a26b25",
+      "sections": {
+        "header": {
+          "type": "header",
+          "blocks": {
+            "1524768779513": {
+              "type": "logo",
+              "settings": {}
+            }
+          },
+          "block_order": ["1524768779513"],
+          "settings": {
+            "main_menu_link_list": "main-menu",
+            "main_menu_alignment": "left-center",
+            "header_style": "normal",
+            "sticky_index": true,
+            "sticky_collection": false,
+            "announcement_compact": false,
+            "toolbar_social": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1494292487693": {
+              "type": "newsletter",
+              "settings": {}
+            },
+            "1526406521795": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer",
+                "container_width": 25
+              }
+            },
+            "1525444454442": {
+              "type": "logo_social",
+              "settings": {
+                "container_width": 95
+              }
+            }
+          },
+          "block_order": ["1494292487693", "1526406521795", "1525444454442"],
+          "settings": {
+            "show_payment_icons": true
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "subcollection_style": "above",
+            "subcollections_per_row": 3,
+            "per_row": 5,
+            "mobile_flush_grid": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "social_enable": true,
+            "image_size": "large"
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "social_sharing_blog": true
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "blog_show_tag_filter": true,
+            "blog_show_rss": false,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "blog_show_comments": true,
+            "blog_show_author": false,
+            "blog_image_size": "wide"
+          }
+        },
+        "1499790633921": {
+          "type": "background-image-text",
+          "settings": {
+            "button_link": "shopify://collections/all",
+            "focal_point": "center",
+            "color_border": "#090909",
+            "layout": "right",
+            "height": 750,
+            "framed": false,
+            "parallax": true
+          }
+        },
+        "product-sections-template": {
+          "type": "product-sections-template",
+          "blocks": {
+            "sections-1592408474529": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "right"
+              }
+            },
+            "sections-1592410313636": {
+              "type": "background-image-text",
+              "settings": {
+                "subtitle": "Why choose us?",
+                "title": "Explain your brand philosophy",
+                "text": "<p>Use this section to explain your company philosophy or standards. Showcase lifestyle photography for added emphasis. This content will appear on all products.</p>",
+                "button_label": "",
+                "button_link": "",
+                "image": "",
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 650,
+                "parallax": true
+              }
+            },
+            "sections-1592408476245": {
+              "type": "testimonials",
+              "settings": {
+                "title": "Testimonials",
+                "align_text": "center",
+                "round_images": false,
+                "testimonial_1": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.</p>",
+                "image_1": "",
+                "author_1": "Author's name",
+                "testimonial_2": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.</p>",
+                "image_2": "",
+                "author_2": "Author's name"
+              }
+            },
+            "sections-1592410272428": {
+              "type": "image-hero",
+              "settings": {
+                "parallax": true,
+                "title": "Two line\ntitle image",
+                "title_size": 80,
+                "subheading": "And optional subtext",
+                "link": "",
+                "link_text": "Optional button",
+                "link_2": "",
+                "link_text_2": "",
+                "color_accent": "#ffffff",
+                "text_align": "vertical-center horizontal-center",
+                "image": "",
+                "focal_point": "center center",
+                "section_height": "650px",
+                "mobile_height": "auto"
+              }
+            },
+            "sections-1592410318615": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "left"
+              }
+            }
+          },
+          "block_order": [
+            "sections-1592410313636",
+            "sections-1592408476245",
+            "sections-1592408474529",
+            "sections-1592410318615",
+            "sections-1592410272428"
+          ],
+          "settings": {}
+        },
+        "product-story-sections": {
+          "type": "product-story-sections",
+          "blocks": {
+            "1592408474529": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "right"
+              }
+            },
+            "1592410313636": {
+              "type": "background-image-text",
+              "settings": {
+                "subtitle": "Why choose us?",
+                "title": "Explain your brand philosophy",
+                "text": "<p>Use this section to explain your company philosophy or standards. Showcase lifestyle photography for added emphasis. This content will appear on all products.</p>",
+                "button_label": "",
+                "button_link": "",
+                "image": "",
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 650,
+                "parallax": true
+              }
+            },
+            "1592408476245": {
+              "type": "testimonials",
+              "settings": {
+                "title": "Testimonials",
+                "align_text": "center",
+                "round_images": false,
+                "testimonial_1": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.</p>",
+                "image_1": "",
+                "author_1": "Author's name",
+                "testimonial_2": "<p>Add customer reviews and testimonials to showcase your store&rsquo;s happy customers and to provide social proof.</p>",
+                "image_2": "",
+                "author_2": "Author's name"
+              }
+            },
+            "1592410272428": {
+              "type": "image-hero",
+              "settings": {
+                "parallax": true,
+                "title": "Two line\ntitle image",
+                "title_size": 80,
+                "subheading": "And optional subtext",
+                "link": "",
+                "link_text": "Optional button",
+                "link_2": "",
+                "link_text_2": "",
+                "color_accent": "#ffffff",
+                "text_align": "vertical-center horizontal-center",
+                "image": "",
+                "focal_point": "center center",
+                "section_height": "650px",
+                "mobile_height": "auto"
+              }
+            },
+            "1592410318615": {
+              "type": "text-and-image",
+              "settings": {
+                "image": "",
+                "image_width": 500,
+                "subtitle": "Improved",
+                "button_label": "Optional button",
+                "button_link": "",
+                "layout": "left"
+              }
+            }
+          },
+          "block_order": [
+            "1592410313636",
+            "1592408476245",
+            "1592408474529",
+            "1592410318615",
+            "1592410272428"
+          ],
+          "settings": {}
+        },
+        "page-sections-template": {
+          "type": "page-sections-template",
+          "blocks": {
+            "page-rich-text": {
+              "type": "rich-text",
+              "settings": {
+                "align_text": "center",
+                "narrow_column": true,
+                "enlarge_text": true
+              }
+            },
+            "page-text-columns": {
+              "type": "text-columns",
+              "settings": {}
+            },
+            "page-background-image-text": {
+              "type": "background-image-text",
+              "settings": {
+                "alignment": "center",
+                "color_border": "#f4f4f4",
+                "layout": "right",
+                "height": 550
+              }
+            },
+            "page-featured-collection": {
+              "type": "featured-collection",
+              "settings": {
+                "per_row": 4,
+                "rows": 1,
+                "view_all": true
+              }
+            }
+          },
+          "block_order": [
+            "page-rich-text",
+            "page-text-columns",
+            "page-background-image-text",
+            "page-featured-collection"
+          ],
+          "settings": {
+            "page_title_enable": false,
+            "page_content_enable": false
+          }
+        },
+        "newsletter-popup": {
+          "type": "newsletter-popup",
+          "settings": {}
+        },
+        "1524768368258": {
+          "type": "slideshow",
+          "blocks": {
+            "1524768368258-0": {
+              "type": "image",
+              "settings": {
+                "link": "shopify://collections/all",
+                "link_text": "Shop all",
+                "text_align": "vertical-center horizontal-left",
+                "focal_point": "top center"
+              }
+            }
+          },
+          "block_order": ["1524768368258-0"],
+          "settings": {
+            "section_height": "750px",
+            "mobile_height": "auto",
+            "parallax": true,
+            "style": "minimal",
+            "autoplay": true,
+            "autoplay_speed": 5
+          }
+        },
+        "collection-header": {
+          "type": "collection-header",
+          "settings": {
+            "enable": true,
+            "collection_image_enable": false,
+            "parallax": false
+          }
+        },
+        "collection-sidebar": {
+          "type": "collection-sidebar",
+          "blocks": {
+            "1524772785241": {
+              "type": "subcollections",
+              "settings": {}
+            },
+            "1524772580942": {
+              "type": "tags_all",
+              "settings": {}
+            }
+          },
+          "block_order": ["1524772785241", "1524772580942"],
+          "settings": {
+            "enable_sidebar": true,
+            "filter_style": "sidebar",
+            "tags_combine": false,
+            "enable_sort": true
+          }
+        },
+        "1525290496166": {
+          "type": "featured-collections",
+          "blocks": {
+            "1525290496166-0": {
+              "type": "collection",
+              "settings": {}
+            },
+            "1525290496166-2": {
+              "type": "collection",
+              "settings": {}
+            },
+            "1525290496166-1": {
+              "type": "collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1525290496166-0",
+            "1525290496166-2",
+            "1525290496166-1"
+          ],
+          "settings": {
+            "divider": false,
+            "per_row": 3,
+            "enable_gutter": true
+          }
+        },
+        "1525969132569": {
+          "type": "promo-grid",
+          "blocks": {
+            "1525969870126": {
+              "type": "product",
+              "settings": {
+                "link_label": "Shop now",
+                "label": "New",
+                "enable_price": true,
+                "width": "50",
+                "text_size": 100,
+                "color_tint": "#f8ebd4",
+                "color_tint_opacity": 0,
+                "framed": true
+              }
+            },
+            "1525969996422": {
+              "type": "product",
+              "settings": {
+                "link_label": "Shop now",
+                "label": "New",
+                "enable_price": true,
+                "width": "50",
+                "text_size": 100,
+                "color_tint": "#ff0000",
+                "color_tint_opacity": 0,
+                "framed": true
+              }
+            }
+          },
+          "block_order": ["1525969870126", "1525969996422"],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 5,
+            "space_above": false,
+            "space_below": false
+          }
+        },
+        "1526048428302": {
+          "type": "featured-collection",
+          "settings": {
+            "per_row": 4,
+            "rows": 1,
+            "view_all": false,
+            "divider": false
+          }
+        },
+        "1526048519234": {
+          "type": "newsletter",
+          "settings": {
+            "color_background": "#171615",
+            "color_text": "#ffffff"
+          }
+        },
+        "1526048620689": {
+          "type": "blog-posts",
+          "settings": {
+            "title": "Our blog",
+            "blog": "news",
+            "post_limit": 3,
+            "blog_show_tags": false,
+            "blog_show_date": true,
+            "blog_show_comments": false,
+            "blog_show_author": false,
+            "view_all": true,
+            "blog_image_size": "wide",
+            "divider": false
+          }
+        },
+        "collection-promotions": {
+          "type": "collection-promotions",
+          "blocks": {
+            "1526501090474": {
+              "type": "advanced",
+              "settings": {
+                "cta_link1": "shopify://collections/all",
+                "width": "50",
+                "height": 400,
+                "text_size": 120,
+                "text_align": "vertical-center horizontal-center",
+                "focal_point": "center",
+                "boxed": false,
+                "framed": true
+              }
+            },
+            "1526501130849": {
+              "type": "sale_collection",
+              "settings": {
+                "width": "50",
+                "boxed": false,
+                "framed": true
+              }
+            },
+            "1526501360047": {
+              "type": "banner",
+              "settings": {
+                "label": "Shop 2017",
+                "color_tint": "#514f4b",
+                "color_tint_opacity": 20,
+                "framed": false
+              }
+            }
+          },
+          "block_order": ["1526501090474", "1526501130849", "1526501360047"],
+          "settings": {
+            "gutter_size": 20
+          }
+        },
+        "1526480838446": {
+          "type": "background-image-text",
+          "settings": {
+            "button_link": "shopify://collections/all",
+            "focal_point": "center",
+            "color_border": "#f4f4f4",
+            "layout": "left",
+            "height": 750,
+            "framed": false,
+            "parallax": true
+          }
+        },
+        "1526481284428": {
+          "type": "featured-content",
+          "settings": {
+            "align_text": "center",
+            "narrow_column": true,
+            "enlarge_text": true,
+            "divider": false
+          }
+        },
+        "1526481405629": {
+          "type": "promo-grid",
+          "blocks": {
+            "1526481405629-1": {
+              "type": "advanced",
+              "settings": {
+                "width": "100",
+                "height": 660,
+                "text_size": 120,
+                "text_align": "vertical-center horizontal-center",
+                "focal_point": "center",
+                "boxed": false,
+                "framed": false
+              }
+            }
+          },
+          "block_order": ["1526481405629-1"],
+          "settings": {
+            "full_width": false,
+            "gutter_size": 34,
+            "space_above": false,
+            "space_below": true
+          }
+        }
+      },
+      "content_for_index": [
+        "1524768368258",
+        "1526481284428",
+        "1525969132569",
+        "1525290496166",
+        "1526048428302",
+        "1526480838446",
+        "1499790633921",
+        "1526048519234",
+        "1526048620689",
+        "1526481405629"
+      ]
+    }
+  }
+}

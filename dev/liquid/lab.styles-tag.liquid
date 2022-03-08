@@ -1,0 +1,26 @@
+{% comment %}
+  shoplab
+  Include assets based on page_type
+{% endcomment %}
+
+<link rel="preload" as="style" href="{{ 'lab.theme.css' | asset_url }}" onload="this.onload=null;this.rel='stylesheet'">
+
+{%- case request.page_type -%}
+
+  {%- when "index" -%}
+    <link rel="preload" as="style" href="{{ 'lab.index.css' | asset_url }}" onload="this.onload=null;this.rel='stylesheet'">
+  
+  {%- when "collection" -%}
+    <link rel="preload" as="style" href="{{ 'lab.collection.css' | asset_url }}" onload="this.onload=null;this.rel='stylesheet'">
+  
+  {%- when "product" -%}
+    <link rel="preload" as="style" href="{{ 'lab.product.css' | asset_url }}" onload="this.onload=null;this.rel='stylesheet'">
+  
+  {%- when "page" -%}
+    <link rel="preload" as="style" href="{{ 'lab.page.css' | asset_url }}" onload="this.onload=null;this.rel='stylesheet'">
+  
+  {%- when "cart" -%}
+    <link rel="preload" as="style" href="{{ 'lab.cart.css' | asset_url }}" onload="this.onload=null;this.rel='stylesheet'">
+ 
+{%- endcase -%}
+ 

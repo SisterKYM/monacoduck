@@ -1,0 +1,30 @@
+# $PROJECT_DIR/themekit_ignores
+# plain file names
+config/settings_data.json
+
+# globs
+*.md
+.git/*
+.idea/*
+.*code-workspace
+dev/*
+
+# locales
+locales/da.json
+locales/de.json
+locales/es.json
+locales/it.json
+locales/fr.json
+locales/nl.json
+locales/pt-BR.json
+locales/pt-PT.json 
+
+# Ultimate Filter and Search App 
+assets/usf-boot.js
+assets/usf-icons.eot
+assets/usf-icons.ttf
+assets/usf-icons.woff
+assets/usf.js
+assets/usf.css
+templates/product.qshtml.liquid
+

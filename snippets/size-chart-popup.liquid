@@ -1,0 +1,98 @@
+{%- comment -%}
+  Inputs:
+    This rendered from product-template.liquid section and using its section object
+    For show size popup per-product, you need to add a block in "Product pages" section and assign it to some tag related to product
+    Also, block Heading should be Groessentabelle or Size chart
+{%- endcomment -%}  
+
+<style>
+.modal-open .modal--solid:before {
+  background: #fff !important;
+}
+.modal{
+  color: #000 !important;
+  background: rgba(0,0,0,0.7);
+}
+.modal__close{
+  color: #000;
+}
+.modal__close:hover {
+  color: #000;
+}
+
+#Sizechart-Modal {
+  flex-wrap: wrap;
+}
+
+#Sizechart-Modal .modal__inner {
+  max-width: 600px;
+  max-height: calc(100% - 80px);
+  align-items: flex-start;
+  overflow-y: auto;
+  background-color: #fff;
+  padding: 10px 5px;
+  margin-top: 80px;
+}
+
+@media (max-width: 768px){
+  #Sizechart-Modal {
+    margin-top: 60px;
+  }
+  #Sizechart-Modal .modal__inner{
+    width: 90%;
+    display: block;
+    max-height: calc(100vh - 135px);
+    padding-top: 15px;
+    margin-top: 60px;
+  }
+}
+.modal-open .modal:before {
+  display: none !important;
+}
+#Sizechart-Modal .modal__close {
+  top: 60px !important;
+}
+</style>
+<a href="#" class="btn btn--secondary btnSelectSize js-modal-open-Sizechart-Modal" aria-expanded="false" style="text-transform: inherit">
+  <svg xmlns="http://www.w3.org/2000/svg" width="29" height="10"><defs><style>.a{fill:none;stroke:#220923}</style></defs><g class="a"><path d="M0 0h29v10H0z"/><path fill="none" d="M.5.5h28v9H.5z"/></g><path class="a" d="M5.4.5v4.7M12.8.5v4.7M20.2.5v4.7M9 .5v3.7M16.5.5v3.7M24 .5v3.7"/></svg>
+  {{ 'products.general.size_chart' | t }}
+</a>	
+<div id="Sizechart-Modal" class="modal modal--solid">
+  <div class="modal__inner">
+    <div class="modal__centered page-width text-center">
+      <div class="modal__centered-content">
+        {%- for block in section.blocks -%}
+          {%- for tag in product.tags  -%}
+            {%- if tag == block.settings.type -%}                
+                  {%- assign blockTitle = block.settings.title | handleize -%}
+                  {%- if blockTitle == "groessentabelle" or blockTitle == "groessenratgeber" or blockTitle == "size-chart" -%}
+                    {%- if product.metafields.custom_fields["halbe_nummer_grer"] == "1" or product.metafields.custom_fields["halbe_nummer_grer"] == 1 -%}
+                    <div id="customField-halbe_nummer_grer">
+                      {{ settings.product_metatext_halbe_nummer_grer }}
+                    </div>
+                    {%- endif -%}
+                    {%- if product.metafields.custom_fields["ganze_nummer_grer"] == "1" or product.metafields.custom_fields["ganze_nummer_grer"] == 1 -%}
+                    <div id="customField-ganze_nummer_grer">
+                      {{ settings.product_metatext_ganze_nummer_grer }}
+                    </div>
+                    {%- endif -%}
+                    {{ pages[block.settings.page].content }}
+                  {%- endif -%}              
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+​
+  <button type="button" class="modal__close js-modal-close text-link">
+    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"/></svg>
+    <span class="icon__fallback-text">{{ 'general.accessibility.close_modal' | t | json }}</span>
+  </button>
+</div>
+<script>
+  document.addEventListener('page:loaded', function () {
+    let modal = new theme.Modals('Sizechart-Modal', 'Sizechart-Modal');
+    console.log(modal);
+  });
+</script>

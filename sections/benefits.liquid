@@ -1,0 +1,66 @@
+<div class="claim-section benefits page-width"> 
+  <div>
+    {%- for block in section.blocks -%}   
+    <div class="claim-content grid__item">
+      <span class="claim__image-wrapper">
+        {%- liquid
+          assign image = block.settings.image
+          if image contains '.jpg' 
+            assign img = image | img_url: '50x', format: 'pjpg'
+            assign img_small = image | img_url: '10x', format: 'pjpg'
+          else
+            assign img = image | img_url: '50x'
+            assign img_small = image | img_url: '10x'
+          endif
+        -%}
+        <a href="{{block.settings.link}}">
+        <img 
+          class="claim-image lazyload" 
+          data-src="{{ img }}" 
+          src="{{ img_small }}"
+        />
+      </span>
+      <span class="h1 claim__text">
+        {{ block.settings.text }}
+      </span>
+      </a>
+    </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Benefits bar",
+    "class": "index-section",
+    "blocks": [
+      {
+        "type": "Benefit",
+        "name": "Benefit",
+        "settings": [ 
+          {
+            "id": "image",
+            "type": "image_picker",
+            "label": "Image"
+          },
+          {
+            "id": "text",
+            "type": "text",
+            "label": "Text"
+          },
+          {
+            "id": "link",
+            "type": "url",
+            "label": "Link"
+            }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Benefits bar",
+        "category": "Advanced layout"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,397 @@
+{%- capture form_id -%}AddToCartForm-{{ section_id }}{%- endcapture -%}
+{%- form 'product', product, id: form_id, class: 'product-single__form' -%}
+  {%- unless product.has_only_default_variant -%}
+    {%- for option in product.options_with_values -%}
+      {%- liquid
+        if settings.product_color_swatches
+          assign is_color = false
+          assign color_option_index = 0
+          assign swatch_trigger = 'products.general.color_swatch_trigger' | t | downcase
+          assign color_option_index = forloop.index0
+          assign downcased_option = option.name | downcase
+          if downcased_option contains swatch_trigger
+            assign is_color = true
+          elsif swatch_trigger == 'color' and downcased_option contains 'colour'
+            assign is_color = true
+          endif
+        endif
+      -%}
+
+      {%- if settings.variant_type == 'button' -%}
+        {%- render 'variant-button',
+          section_id: section_id,
+          option: option,
+          forloop: forloop,
+          is_color: is_color,
+          color_option_index: color_option_index
+        -%}
+      {%- else -%}
+        {%- render 'variant-dropdown',
+          section_id: section_id,
+          option: option,
+          forloop: forloop
+        -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endunless -%}
+
+  <select name="id" id="ProductSelect-{{ section_id }}" class="product-single__variants no-js">
+    {%- for variant in product.variants -%}
+      {%- if variant.available -%}
+        <option {% if variant == product.selected_or_first_available_variant %}
+          selected="selected"{% endif %}
+          value="{{ variant.id }}">
+          {{ variant.title }} - {{ variant.price | money_with_currency }}
+        </option>
+      {%- else -%}
+        <option disabled="disabled">
+          {{ variant.title }} - {{ 'products.product.sold_out' | t }}
+        </option>
+      {%- endif -%}
+    {%- endfor -%}
+  </select>
+
+  {%- if settings.quantity_enable -%}
+    <div class="product__quantity product__quantity--{{ settings.variant_type }}">
+      <label for="Quantity-{{ section_id }}">{{ 'products.product.quantity' | t }}</label>
+      {%- render 'quantity-input', id: section_id, qty: 1, min: 1 -%}
+    </div>
+  {%- endif -%}
+
+  {%- assign inventory_visible = false -%}
+  {%- if settings.inventory_enable and current_variant.inventory_management == 'shopify' -%}
+    {%- if current_variant.inventory_quantity <= settings.inventory_threshold and current_variant.inventory_quantity >= 0 -%}
+      {%- assign inventory_visible = true -%}
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- liquid
+    if current_variant.inventory_quantity == 0 or current_variant.inventory_policy == 'continue'
+      assign inventory_visible = false
+    endif
+
+    assign show_incoming = false
+    if current_variant.incoming and inventory_visible == false and current_variant.inventory_quantity <= settings.inventory_threshold
+      assign show_incoming = true
+    endif
+  -%}
+
+  {%- if settings.inventory_enable -%}
+    <div
+      id="ProductInventory-{{ section_id }}"
+      class="product__inventory{% unless inventory_visible %} hide{% endunless %}"
+      >
+      {%- if current_variant.available -%}
+        {{ 'products.product.stock_label' | t: count: current_variant.inventory_quantity }}
+      {%- else -%}
+        {{ 'products.product.sold_out' | t }}
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  {%- if settings.inventory_transfers_enable -%}
+    <div
+      id="ProductIncomingInventory-{{ section_id }}"
+      class="product__inventory{% if inventory_visible %} hide{% endif %}">
+      {%- if show_incoming == true -%}
+        {%- if current_variant.next_incoming_date -%}
+          {%- assign date = current_variant.next_incoming_date | date: format: 'date' -%}
+          {%- if current_variant.available -%}
+            {{ 'products.product.will_not_ship_until' | t: date: date }}
+          {%- else -%}
+            {{ 'products.product.will_be_in_stock_after' | t: date: date }}
+          {%- endif -%}
+        {%- else -%}
+          {{ 'products.product.waiting_for_stock' | t }}
+        {%- endif -%}
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  {%- if product.metafields.size_recommendation_text != "" -%}
+  <div class="product-single__recommendation-text">
+    {{ product.metafields.custom_fields.size_recommendation_text	 }}
+  </div>
+  {%- endif -%}
+
+  {%- liquid
+    assign enable_dynamic_buttons = false
+    if settings.enable_payment_button and template != 'product.preorder'
+      assign enable_dynamic_buttons = true
+    endif
+  -%}
+
+  {%- if enable_dynamic_buttons -%}
+    <div class="payment-buttons">
+  {%- endif -%}
+
+    {%- liquid
+      assign default_text = 'products.product.add_to_cart' | t
+      assign button_text = 'products.product.add_to_cart' | t
+      if template == 'product.preorder'
+        assign default_text = 'products.product.preorder' | t
+        assign button_text = 'products.product.preorder' | t
+      endif
+
+      unless current_variant.available
+        assign button_text = 'products.product.sold_out' | t
+      endunless
+    -%}
+
+    {%- if current_variant.inventory_quantity == 0 and product.tags contains "NOS"  and current_variant.available -%}
+      {%- assign default_text = 'products.product.preorder' | t -%}
+      {%- assign button_text = 'products.product.preorder' | t -%}
+    {%- endif -%}
+
+    {%- if product.tags contains "NOS" -%}
+    <script>
+      document.addEventListener('page:loaded', function () {
+        jQuery(function ($) {
+          // Update button text on Variant change
+          document.addEventListener('variant:change', function(evt) {
+            let variant = evt.detail.variant;
+            let inventory = window.inventories[{{ product.id }}][variant.id];
+            let button_text_default = "{{ 'products.product.add_to_cart' | t }}";
+            let button_text_preorder = "{{ 'products.product.preorder' | t }}";
+            let button_text_sold = "{{ 'products.product.sold_out' | t }}";
+            let $button_text = $("#AddToCartText-{{ product.id }}");
+            if(inventory.quantity == 0) {
+              if(variant.available) {
+                $button_text.html(button_text_preorder);
+              }
+              else {
+                $button_text.html(button_text_sold);
+              }
+            }
+            else {
+              $button_text.html(button_text_default);
+            }
+          });
+        });
+      });
+    </script>
+    {%- endif -%}
+
+    {%- if product.metafields.custom_fields["fitting_form"] != "" or product.metafields.custom_fields["fitting_form"] != null -%}
+      <div class="under-buttons-text under-buttons-text__preorder" style="{{ textStatePreorder }}"> 
+        {{ product.metafields.custom_fields["fitting_form"] }}
+      </div>
+    {%- endif -%}
+    
+    {%- if section.settings.under_buttons_text != "" -%}
+      <div class="under-buttons-text" style="{{ textState }}">
+      {{ section.settings.under_buttons_text }}
+      </div>
+    {%- endif -%}
+
+
+    <div class="align-item-center justify-content-between">
+      <button
+        {% if product.empty? %}type="button"{% else %}type="submit"{% endif %}
+        name="add"
+        id="AddToCart-{{ section_id }}"
+        class="btn btn--full add-to-cart{% if enable_dynamic_buttons %} btn--secondary{% endif %}"
+        {% unless current_variant.available %} disabled="disabled" style="display: none;" {% endunless %}>
+        <span id="AddToCartText-{{ section_id }}" data-default-text="{{ default_text }}">
+          {{ button_text }}
+        </span>
+      </button>
+      {% if settings.wishlist_enable %}
+        <div class="swym-wishlist-button-bar"></div>
+
+        {%- comment -%}
+        ADDED
+        {%- endcomment -%}
+        {% render 'swym-product-view', product: product %}
+        <style>
+          [id*=AddToCartForm] .swym-add-to-wishlist {
+            float: right;
+            margin: -34px 10px 0 0;
+            position: relative;
+            z-index: 2;
+            background: none !important;
+          }
+          [id*=AddToCartForm] .swym-add-to-wishlist.swym-added {
+            background: none !important;
+          }
+          [id*=AddToCartForm] .swym-add-to-wishlist.swym-added path {
+            fill: #fff !important;
+          }
+        </style>
+        <button class="product_{{product.id}}  swym-add-to-wishlist" data-swaction="addToWishlist" data-product-id="{{product.id | json}}">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.8 32.861" style="display: block; width: 20px; height: 20px;">
+            <g id="heart_white" transform="translate(1.5 1.5)">
+              <path id="Pfad_155" data-name="Pfad 155" class="cls-2" d="M3312.5,1765.905c0-3.156-3.319-6.275-7.076-6.275-5.957,0-9.312,5-9.312,10.072,0,13.639,16.419,19.789,16.419,19.789s16.381-6.15,16.381-19.765c0-4.372-2.9-10.1-9.335-10.1C3315.823,1759.63,3312.5,1762.75,3312.5,1765.905Z" transform="translate(-3296.112 -1759.63)"></path>
+            </g>
+          </svg>
+        </button>
+      {% endif %}
+
+    </div>
+
+  {% unless product.tags contains 'bis-hidden' %}
+  <a href="#" class="btn btn--full btn--primary" {% if current_variant.available %} style="display: none" {% endif %} id="BIS_trigger" data-variant-id="{{ current_variant.id }}">
+    {%- comment -%}<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-email" viewBox="0 0 64 64"><path d="M63 52H1V12h62zM1 12l25.68 24h9.72L63 12M21.82 31.68L1.56 51.16m60.78.78L41.27 31.68"/></svg>{%- endcomment -%}
+   <p>{{ 'products.product.sold_out' | t }}</p>
+  </a>
+  {% endunless %}
+  
+
+  {%- if enable_dynamic_buttons -%}
+      {{ form | payment_button }}
+  {%- endif -%}
+
+  {%- assign reviews = section.blocks | where: "type", "product_reviews" -%}
+    {%- if reviews.size > 0 -%}
+      <style>
+      .product-review {
+        margin: 2rem 0;
+        padding: 0px 15px;
+      }
+      .review-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+      .review-container::before {
+        content: '\201C';
+        position: absolute;
+        top: -25px;
+        left: -15px;
+        font-size: 60px;
+        font-style: italic;
+        line-height: 1;
+      }
+      .review-container::after {
+        content: '\201D';
+        position: absolute;
+        bottom: -25px;
+        right: 0px;
+        color: #1f001e;
+        font-size: 60px;
+        font-style: italic;
+        line-height: 1;
+      }
+      .image-container {
+        min-width: 80px;
+        min-height: 80px;
+      }
+      .text-container {
+      }
+      .review-image {
+        margin-right: 1rem;
+        border-radius: 50%;
+        width: 65px;
+        height: 65px;
+        outline: 2px solid #ffcf6f;
+        padding: 2px;
+      }
+      .review-name {
+        margin-bottom: 0;
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .review-text {
+        font-size: 14px;
+        margin-bottom: 0;
+        font-weight: 300;
+        font-style: italic;
+      }
+    </style>
+
+      {%- for block in reviews -%}
+        {%- render 'product-review', block: block -%}
+      {%- endfor -%}
+    {%- endif -%}
+
+  <div class="display-payment">
+    {% assign enabled_payment_types = 'visa,master,maestro,american_express,paypal,apple_pay,google_pay,amazon,klarna,sofort' | remove: ' ' | split: ',' %}
+    {%- for type in enabled_payment_types -%}
+        {{ type | payment_type_svg_tag: class: 'payment-icons__icon' }}     
+    {%- endfor -%}
+ </div>
+
+  {%- if enable_dynamic_buttons -%}
+    </div>
+  {%- endif -%}
+  {%- if current_variant.inventory_quantity == 0 and current_variant.inventory_policy == 'continue' 
+        and product.tags contains "NOS"
+  -%}
+    {%- assign textState = "display: none;" -%}
+    {%- assign textStatePreorder = "display: block;" -%}
+  {%- else -%}
+    {%- assign textState = "display: block;" -%}
+    {%- assign textStatePreorder = "display: none;" -%}
+  {%- endif -%}
+  <div class="tooltip-bottom" data-tooltip="{{ section.settings.shipping_return_text }}" style="padding: 15px 10px;text-align: center;width: 100%;">
+    <a href="{{ section.settings.shipping_return_url }}" class="product_shipping_return_text">{{ 'products.product.shipping_return_label' | t }}</a>
+  </div>
+  <textarea id="VariantsJson-{{ section_id }}" class="hide" aria-hidden="true" aria-label="Product JSON">
+    {{ product.variants | json }}
+  </textarea>
+  {%- if product.options.size > 1 -%}
+    <textarea id="CurrentVariantJson-{{ section_id }}" class="hide" aria-hidden="true" aria-label="Variant JSON">
+      {{ current_variant | json }}
+    </textarea>
+  {%- endif -%}
+    
+  
+  {% comment %}
+  <script type="text/javascript" async="" src="//app.backinstock.org/widget/34791_1612347369.js?v=5&amp;shop=monacoduck-development.myshopify.com"></script>
+  {% endcomment %}
+  <script>
+    document.addEventListener('page:loaded', function () {
+      jQuery(function ($) {
+        // Update delivery text (under-buttons-text) on Variant change
+        document.addEventListener('variant:change', function(evt) {
+          let variant = evt.detail.variant;
+          let inventory = window.inventories[{{ product.id }}][variant.id];
+          if(inventory.quantity == 0) {
+            $(".under-buttons-text").hide();
+            $(".under-buttons-text__preorder").show();
+          }
+          else {
+            $(".under-buttons-text").show();
+            $(".under-buttons-text__preorder").hide();
+          }
+
+          if(variant.available) {
+            $("#BIS_trigger").hide(); 
+            $(".add-to-cart").show();
+          }
+          else {
+            $("#BIS_trigger").show();
+            $(".add-to-cart").hide();
+          }
+        });
+      });
+    });
+
+  </script>
+
+  
+  <style>
+    #BIS_trigger {
+      margin-top: 10px;
+      vertical-align: middle;
+      
+    }
+
+    #BIS_trigger p {
+      margin: 0 0 0 10px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    
+    .btn--primary {
+      background-color: #000;
+    }
+  </style>
+  
+  <!-- Back in Stock helper snippet -->
+  {% render 'back-in-stock-helper' %}
+  <!-- End Back in Stock helper snippet -->
+
+{%- endform -%}
+
+

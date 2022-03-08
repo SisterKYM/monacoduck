@@ -1,0 +1,16 @@
+development:
+  password: 
+  theme_id: ""
+  store: 
+  bucket_size: 40
+  refill_rate: 2
+  concurrency: 2
+  timeout: 30s
+  ## Ignore files and app installed assets
+  ignore_files:
+    - config/settings_data.json
+    - "*.md"
+    - ".git/*"
+    - ".idea"
+    - "*.code-workspace"
+    - "dev/*"
