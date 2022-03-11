@@ -118,11 +118,6 @@ If changes are requested, then you can do them in the same branch of course `fea
 
 Upon closing the Pull Request, your `feat/my_branch_title` will be deleted automatically. 
 
-#### Author
-- (mrpacman101)[https://github.com/mrpacman101] 
- 
-#### Contributor
-- Want to support us? Create a PR to add changes to this template-repository
  
 #### Make this happen
 - Improve error handling
