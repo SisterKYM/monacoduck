@@ -123,4 +123,3 @@ Upon closing the Pull Request, your `feat/my_branch_title` will be deleted autom
 - Improve error handling
 - Integrate proper sass linter 
 
-#### 2021 All rights reserved - shoplab UG (haftungsbeschraenkt)
